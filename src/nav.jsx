@@ -41,6 +41,8 @@ export default function Navigation() {
                         src={Avatar}
                         alt="Test"
                         className='profile'/>
+                        
+                        <span className='dropdown'>Dropdown</span>
                     </li>
                 </ul>
             </nav>
