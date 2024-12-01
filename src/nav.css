@@ -15,7 +15,7 @@ nav {
 ul {
     align-items: center;
     display: flex;
-    gap: 20px;
+    gap: 16px;
     list-style: none;
 }
 
@@ -27,7 +27,8 @@ li {
     padding: 6px;
 }
 
-.hovered:hover {
+.hovered:hover,
+.notification-icon:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -37,8 +38,8 @@ li {
 }
 
 .logo {
-    height: 50px;
-    width: 50px;
+    height: 48px;
+    width: 48px;
 }
 
 .search-icon {
@@ -47,8 +48,9 @@ li {
     display: flex;
     justify-content: space-between;
     height: 25px;
+    margin: 0 50px;
     opacity: 0.5;
-    width: 300px;
+    width: 400px;
 }
 
 .search-bar-placeholder {
@@ -71,6 +73,11 @@ li {
     background-color: rgba(44, 44, 44, 0.5);
 }
 
-.notification {
+.notification-icon {
     padding-bottom: 0;
+}
+
+.notification {
+    height: 20px;
+    width: 20px;
 }

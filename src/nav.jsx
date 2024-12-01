@@ -31,7 +31,7 @@ export default function Navigation() {
                                 /
                         </div>
                     </li>
-                    <li className='hovered notification-icon'>
+                    <li className='notification-icon'>
                         <img src={Notification}
                         alt="Notification"
                         className='notification'
