@@ -1,6 +1,7 @@
 import Logo from '../public/Logo.png'
 import Search from '../public/Search.png'
 import Notification from '../public/Notification.png'
+import Avatar from '../public/AvatarTest.jpg'
 import './nav.css'
 
 export default function Navigation() {
@@ -35,7 +36,12 @@ export default function Navigation() {
                         className='notification'
                         />
                     </li>
-                    <li className='hovered'>Account</li>
+                    <li className='profile-icon'>
+                        <img
+                        src={Avatar}
+                        alt="Test"
+                        className='profile'/>
+                    </li>
                 </ul>
             </nav>
         </>
