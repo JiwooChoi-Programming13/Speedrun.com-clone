@@ -35,6 +35,7 @@ export default function Navigation() {
                         alt="Notification"
                         className='notification'
                         />
+                        <p className='tooltip'>Notifications</p>
                     </li>
                     <li className='profile-icon'>
                         <img

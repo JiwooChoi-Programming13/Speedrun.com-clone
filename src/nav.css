@@ -77,12 +77,25 @@ ul {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.search-bar:hover {
-    background-color: rgba(50, 50, 50, 0.4);
+.notification-icon {
+    position: relative;
+    padding: 10px 8px 4px 8px;
 }
 
-.notification-icon {
-    padding: 10px 8px 4px 8px;
+.notification-icon:hover {
+    display: block;
+}
+
+.tooltip {
+    background-color: black;
+    color: white;
+    display: none;
+    font-size: 14px;
+    left: -24px;
+    padding: 4px;
+    pointer-events: none;
+    position: absolute;
+    top: 40px;
 }
 
 .notification-icon,
