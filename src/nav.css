@@ -31,7 +31,7 @@ li {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.image-container {
+.logo-icon {
     align-items: center;
     display: flex;
 }
@@ -39,4 +39,8 @@ li {
 .logo {
     height: 54px;
     width: 54px;
+}
+
+.notification {
+    padding-bottom: 0;
 }
