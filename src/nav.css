@@ -1,4 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 ul {
+    align-items: center;
+    background-color: rgb(25 156 119);
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -7,6 +14,12 @@ ul {
 
 li {
     cursor: pointer;
+    color: white;
+}
+
+.image-container {
+    align-items: center;
+    display: flex;
 }
 
 .logo {
