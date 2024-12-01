@@ -51,6 +51,7 @@ ul {
     justify-content: space-between;
     gap: 8px;
     margin: 0 50px;
+    position: relative;
 }
 
 .search {
@@ -82,17 +83,18 @@ ul {
     padding: 10px 8px 4px 8px;
 }
 
-.notification-icon:hover {
+.notification-icon:hover .notification-tooltip {
     display: block;
 }
 
-.tooltip {
+.notification-tooltip {
     background-color: black;
+    border-radius: 4px;
     color: white;
     display: none;
     font-size: 14px;
-    left: -24px;
-    padding: 4px;
+    left: -26px;
+    padding: 5px;
     pointer-events: none;
     position: absolute;
     top: 40px;
