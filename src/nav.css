@@ -24,10 +24,6 @@ ul {
     cursor: pointer;
     color: white;
     font-size: 18px;
-}
-
-.hovered,
-.notification-icon {
     padding: 10px;
 }
 
@@ -89,7 +85,7 @@ ul {
 .profile-icon {
     border-radius: 6px;
     cursor: pointer;
-    padding-bottom: 4px;
+    padding: 6px 6px 2px 6px;
 }
 
 .notification {
@@ -99,7 +95,6 @@ ul {
 
 .profile {
     border-radius: 15px;
-    height: 28px;
-    padding: 6px 6px 2px 6px;
-    width: 28px;
+    height: 30px;
+    width: 30px;
 }
