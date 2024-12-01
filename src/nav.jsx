@@ -1,9 +1,14 @@
+import Logo from '../public/Logo.png'
+import './nav.css'
+
 export default function Navigation() {
     return (
         <>
             <nav>
                 <ul>
-                    <li>Logo</li>
+                    <li>
+                        <img src={Logo} alt="Logo" />
+                    </li>
                     <li>Games</li>
                     <li>About</li>
                     <li>Help</li>
