@@ -50,22 +50,25 @@ li {
     display: flex;
     justify-content: space-between;
     margin: 0 50px;
-    
 }
 
-.search-icon input {
-    background-color: rgba(175, 175, 175, 0.5);
+.search-bar {
+    background-color: rgba(50, 50, 50, 0.3);
     border: none;
     border-radius: 6px;
     cursor: pointer;
     color: white;
     font-size: 16px;
-    padding: 8px;
+    padding: 8px 8px 8px 12px;
     width: 400px;
 }
 
-.search-icon input:hover {
-    background-color: rgba(175, 175, 175, 0.8);
+.search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.search-bar:hover {
+    background-color: rgba(50, 50, 50, 0.4);
 }
 
 .notification-icon {
