@@ -81,16 +81,23 @@ ul {
     background-color: rgba(50, 50, 50, 0.4);
 }
 
+.notification-icon {
+    padding: 10px 8px 4px 8px;
+}
+
 .notification-icon,
 .profile-icon {
     border-radius: 6px;
     cursor: pointer;
-    padding: 6px 6px 2px 6px;
 }
 
 .notification {
     height: 20px;
     width: 20px;
+}
+
+.profile-icon {
+    padding: 8px;
 }
 
 .profile {
