@@ -1,4 +1,5 @@
 import Logo from '../public/Logo.png'
+import Search from '../public/Search.png'
 import Notification from '../public/Notification.png'
 import './nav.css'
 
@@ -18,7 +19,18 @@ export default function Navigation() {
                     <li className='hovered'>Games</li>
                     <li className='hovered'>About</li>
                     <li className='hovered'>Help</li>
-                    <li className='hovered'>Search</li>
+                    <li className='search-icon'>
+                        <div className='search-bar-placeholder'>
+                        <img
+                        src={Search}
+                        alt="Search"
+                        className='search'/>
+                        <p>Search...</p>
+                        </div>
+                        <div className='search-bar-shortcut'>
+                                /
+                        </div>
+                    </li>
                     <li className='hovered notification-icon'>
                         <img src={Notification}
                         alt="Notification"

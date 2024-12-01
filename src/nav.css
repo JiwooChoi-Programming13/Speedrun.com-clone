@@ -37,8 +37,38 @@ li {
 }
 
 .logo {
-    height: 54px;
-    width: 54px;
+    height: 50px;
+    width: 50px;
+}
+
+.search-icon {
+    background-color: rgba(89, 89, 89, 0.3);
+    border: 1px solid rgb(48, 48, 48);
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    opacity: 0.5;
+    width: 300px;
+}
+
+.search-bar-placeholder {
+    display: flex;
+    flex: 1;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.search-bar-shortcut {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    font-size: 16px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.search-icon:hover {
+    background-color: rgba(44, 44, 44, 0.5);
 }
 
 .notification {
