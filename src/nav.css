@@ -68,22 +68,6 @@ li {
     background-color: rgba(175, 175, 175, 0.8);
 }
 
-.search-bar-placeholder {
-    display: flex;
-    flex: 1;
-    font-size: 16px;
-    gap: 10px;
-}
-
-.search-bar-shortcut {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 4px;
-    font-size: 16px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
 .notification-icon {
     padding-bottom: 2px;
 }
