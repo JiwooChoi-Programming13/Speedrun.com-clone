@@ -28,7 +28,7 @@ export default function Navigation() {
                             className='search'/>
                         </label>
 
-                        <input className='search-bar' type="text" id='search-bar' placeholder='Search'/>
+                        <input className='search-bar' type="text" id='search-bar' placeholder='Search...'/>
                     </li>
                     <li className='notification-icon'>
                         <img src={Notification}

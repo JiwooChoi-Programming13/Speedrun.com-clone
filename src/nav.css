@@ -19,7 +19,7 @@ ul {
     list-style: none;
 }
 
-li {
+.hovered {
     border-radius: 6px;
     cursor: pointer;
     color: white;
@@ -34,12 +34,14 @@ li {
 .hovered:hover,
 .notification-icon:hover,
 .search:hover,
-.profile:hover {
+.profile-icon:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .logo-icon {
     align-items: center;
+    color: white;
+    cursor: pointer;
     display: flex;
 }
 
@@ -83,8 +85,11 @@ li {
     background-color: rgba(50, 50, 50, 0.4);
 }
 
-.notification-icon {
-    padding-bottom: 2px;
+.notification-icon,
+.profile-icon {
+    border-radius: 6px;
+    cursor: pointer;
+    padding-bottom: 4px;
 }
 
 .notification {
@@ -93,8 +98,8 @@ li {
 }
 
 .profile {
-    border-radius: 20px;
-    height: 30px;
-    padding: 10px;
-    width: 30px;
+    border-radius: 15px;
+    height: 28px;
+    padding: 6px 6px 2px 6px;
+    width: 28px;
 }
