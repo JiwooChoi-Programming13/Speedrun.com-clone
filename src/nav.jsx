@@ -6,8 +6,13 @@ export default function Navigation() {
         <>
             <nav>
                 <ul>
-                    <li>
-                        <img src={Logo} alt="Logo" />
+                    <li className='image-container'>
+                        <img
+                        src={Logo}
+                        alt="Logo"
+                        className='logo'
+                        />
+                        <h2>Speedrun.com</h2>
                     </li>
                     <li>Games</li>
                     <li>About</li>
