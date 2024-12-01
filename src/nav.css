@@ -32,7 +32,8 @@ li {
 }
 
 .hovered:hover,
-.notification-icon:hover {
+.notification-icon:hover,
+.search:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -49,17 +50,27 @@ li {
 .search-icon {
     display: flex;
     justify-content: space-between;
+    gap: 8px;
     margin: 0 50px;
+}
+
+.search {
+    border-radius: 8px;
+    cursor: pointer;
+    height: 26px;
+    padding: 6px;
+    vertical-align: middle;
 }
 
 .search-bar {
     background-color: rgba(50, 50, 50, 0.3);
     border: none;
     border-radius: 6px;
+    box-sizing: border-box;
     cursor: pointer;
     color: white;
     font-size: 16px;
-    padding: 8px 8px 8px 12px;
+    padding: 8px 8px 8px 14px;
     width: 400px;
 }
 
