@@ -12,7 +12,7 @@ export default function Navigation() {
                         alt="Logo"
                         className='logo'
                         />
-                        <h2>Speedrun.com</h2>
+                        <h3>SPEEDRUN.COM</h3>
                     </li>
                     <li>Games</li>
                     <li>About</li>

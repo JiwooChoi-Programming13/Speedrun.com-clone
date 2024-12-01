@@ -1,20 +1,28 @@
 * {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-ul {
+nav {
     align-items: center;
     background-color: rgb(25 156 119);
     display: flex;
-    gap: 20px;
     justify-content: center;
+    padding-bottom: 8px;
+}
+
+ul {
+    align-items: center;
+    display: flex;
+    gap: 20px;
     list-style: none;
 }
 
 li {
     cursor: pointer;
     color: white;
+    font-size: 18px;
 }
 
 .image-container {
@@ -23,6 +31,6 @@ li {
 }
 
 .logo {
-    height: 60px;
-    width: 60px;
+    height: 54px;
+    width: 54px;
 }
