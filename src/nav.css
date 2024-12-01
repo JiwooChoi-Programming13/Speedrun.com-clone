@@ -6,10 +6,10 @@
 
 nav {
     align-items: center;
-    background-color: rgb(25 156 119);
+    background-color: rgb(25, 156, 119);
     display: flex;
     justify-content: center;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
 }
 
 ul {
@@ -20,9 +20,15 @@ ul {
 }
 
 li {
+    border-radius: 6px;
     cursor: pointer;
     color: white;
     font-size: 18px;
+    padding: 6px;
+}
+
+.hovered:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .image-container {

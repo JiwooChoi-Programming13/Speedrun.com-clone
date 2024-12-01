@@ -14,12 +14,12 @@ export default function Navigation() {
                         />
                         <h3>SPEEDRUN.COM</h3>
                     </li>
-                    <li>Games</li>
-                    <li>About</li>
-                    <li>Help</li>
-                    <li>Search</li>
-                    <li>Notify</li>
-                    <li>Account</li>
+                    <li className='hovered'>Games</li>
+                    <li className='hovered'>About</li>
+                    <li className='hovered'>Help</li>
+                    <li className='hovered'>Search</li>
+                    <li className='hovered'>Notify</li>
+                    <li className='hovered'>Account</li>
                 </ul>
             </nav>
         </>
