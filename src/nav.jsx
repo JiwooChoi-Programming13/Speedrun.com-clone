@@ -20,16 +20,7 @@ export default function Navigation() {
                     <li className='hovered'>About</li>
                     <li className='hovered'>Help</li>
                     <li className='search-icon'>
-                        <div className='search-bar-placeholder'>
-                        <img
-                        src={Search}
-                        alt="Search"
-                        className='search'/>
-                        <p>Search...</p>
-                        </div>
-                        <div className='search-bar-shortcut'>
-                                /
-                        </div>
+                        <input type="text" placeholder='Search'/>
                     </li>
                     <li className='notification-icon'>
                         <img src={Notification}

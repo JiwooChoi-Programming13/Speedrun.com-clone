@@ -9,7 +9,7 @@ nav {
     background-color: rgb(25, 156, 119);
     display: flex;
     justify-content: center;
-    padding-bottom: 6px;
+    padding: 10px 0;
 }
 
 ul {
@@ -24,7 +24,11 @@ li {
     cursor: pointer;
     color: white;
     font-size: 18px;
-    padding: 6px;
+}
+
+.hovered,
+.notification-icon {
+    padding: 10px;
 }
 
 .hovered:hover,
@@ -43,14 +47,25 @@ li {
 }
 
 .search-icon {
-    background-color: rgba(89, 89, 89, 0.3);
-    border: 1px solid rgb(48, 48, 48);
     display: flex;
     justify-content: space-between;
-    height: 25px;
     margin: 0 50px;
-    opacity: 0.5;
+    
+}
+
+.search-icon input {
+    background-color: rgba(175, 175, 175, 0.5);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    padding: 8px;
     width: 400px;
+}
+
+.search-icon input:hover {
+    background-color: rgba(175, 175, 175, 0.8);
 }
 
 .search-bar-placeholder {
@@ -69,12 +84,8 @@ li {
     padding-right: 8px;
 }
 
-.search-icon:hover {
-    background-color: rgba(44, 44, 44, 0.5);
-}
-
 .notification-icon {
-    padding-bottom: 0;
+    padding-bottom: 2px;
 }
 
 .notification {
