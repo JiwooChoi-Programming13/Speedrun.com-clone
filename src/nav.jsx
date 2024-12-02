@@ -43,7 +43,21 @@ export default function Navigation() {
                         alt="Test"
                         className='profile'/>
                         
-                        <span className='dropdown'>Dropdown</span>
+                        <span>Dropdown</span>
+                        
+                        <div className='dropdown-menu'>
+                            <div className='dropdown-menu-list'>
+                                <p>Username</p>
+                            </div>
+
+                            <div className='dropdown-menu-list'>
+                                <p>Settings</p>
+                            </div>
+
+                            <div className='dropdown-menu-list'>
+                                <p>Sign out</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>

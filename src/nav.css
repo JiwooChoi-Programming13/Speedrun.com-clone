@@ -114,7 +114,9 @@ ul {
 .profile-icon {
     align-items: center;
     display: flex;
+    gap: 12px;
     padding: 8px;
+    position: relative;
 }
 
 .profile {
@@ -123,6 +125,14 @@ ul {
     width: 30px;
 }
 
-.dropdown {
+.dropdown-menu {
+    background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    left: 44px;
+    gap: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 48px;
 }
