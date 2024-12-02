@@ -127,12 +127,30 @@ ul {
 
 .dropdown-menu {
     background-color: black;
+    border-radius: 10px;
     color: white;
+    display: none;
+    left: 0;
+    gap: 10px;
+    padding: 0 6px;
+    position: absolute;
+    pointer-events: none;
+    top: 48px;
+    width: 10vw;
+}
+
+.dropdown-menu-list {
     display: flex;
     flex-direction: column;
-    left: 44px;
-    gap: 20px;
+    pointer-events: fill;
+    border-radius: 10px;
     padding: 10px;
-    position: absolute;
-    top: 48px;
+}
+
+.dropdown-menu-list:hover {
+    background-color: rgba(23, 140, 107);
+}
+
+.profile-icon::selection .dropdown-menu {
+    display: block;
 }
