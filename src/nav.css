@@ -84,20 +84,21 @@ ul {
 }
 
 .notification-icon:hover .notification-tooltip {
-    display: block;
+    opacity: 1;
 }
 
 .notification-tooltip {
     background-color: black;
     border-radius: 4px;
     color: white;
-    display: none;
     font-size: 14px;
     left: -26px;
     padding: 5px;
     pointer-events: none;
     position: absolute;
+    opacity: 0;
     top: 40px;
+    transition: opacity 800ms;
 }
 
 .notification-icon,
