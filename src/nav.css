@@ -130,7 +130,6 @@ ul {
     background-color: black;
     border-radius: 10px;
     color: white;
-    /* display: none; */
     left: -10px;
     position: absolute;
     pointer-events: none;
