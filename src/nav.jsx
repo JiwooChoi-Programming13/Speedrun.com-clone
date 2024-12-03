@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Logo from '../public/Logo.png'
 import Search from '../public/Search.png'
 import Notification from '../public/Notification.png'
@@ -5,6 +6,12 @@ import Avatar from '../public/AvatarTest.jpg'
 import './nav.css'
 
 export default function Navigation() {
+    const [active, setActive] = useState(false);
+    
+    const handleDropdown = () => {
+        setActive(!active);
+    };
+
     return (
         <>
             <nav>
@@ -37,15 +44,15 @@ export default function Navigation() {
                         />
                         <p className='notification-tooltip'>Notifications</p>
                     </li>
-                    <li className='profile-icon'>
+                    <li className='profile-icon' onClick={handleDropdown}>
                         <img
                         src={Avatar}
                         alt="Test"
                         className='profile'/>
                         
                         <span>Dropdown</span>
-                        
-                        <div className='dropdown-menu'>
+                        {active && (
+                            <div className='dropdown-menu' >
                             <div className='dropdown-menu-list'>
                                 <p>Username</p>
                             </div>
@@ -58,6 +65,7 @@ export default function Navigation() {
                                 <p>Sign out</p>
                             </div>
                         </div>
+                        )}
                     </li>
                 </ul>
             </nav>
