@@ -1,4 +1,4 @@
-@media (max-width: 1210px) {
+@media (max-width: 1190px) {
     .navigation {
         justify-content: space-around;
     }
@@ -13,6 +13,10 @@
 }
 
 @media (max-width: 800px) {
+    .navigation {
+        justify-content: space-evenly;
+    }
+
     .hovered {
         display: none;
     }

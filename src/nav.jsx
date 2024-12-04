@@ -64,7 +64,7 @@ export default function Navigation() {
                     alt="Test"
                     className='profile'/>
                     
-                    <span>Dropdown</span>
+                    <span className='down-arrow'>&#8964;</span>
                     {active && (
                     <div className='dropdown-menu'>
                         <DropdownList
