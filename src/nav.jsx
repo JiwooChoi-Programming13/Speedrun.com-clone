@@ -4,6 +4,7 @@ import Search from '../public/Search.png'
 import Notification from '../public/Notification.png'
 import Avatar from '../public/AvatarTest.jpg'
 import './nav.css'
+import './nav-media-queries.css'
 
 function DropdownList({text, className = "dropdown-menu-list"}) {
     return (

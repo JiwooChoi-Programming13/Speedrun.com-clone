@@ -47,6 +47,7 @@ ul {
 }
 
 .search-icon {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     gap: 8px;
@@ -57,7 +58,8 @@ ul {
 .search {
     border-radius: 8px;
     cursor: pointer;
-    height: 26px;
+    height: 24px;
+    margin-top: 4px;
     padding: 6px;
     vertical-align: middle;
 }

@@ -1,0 +1,9 @@
+@media (max-width: 1210px) {
+    .search-icon {
+        margin-right: 0;
+    }
+
+    .search-bar {
+        display: none;
+    }
+}
