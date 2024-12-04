@@ -1,9 +1,19 @@
 @media (max-width: 1210px) {
+    .navigation {
+        justify-content: space-around;
+    }
+
     .search-icon {
         margin-right: 0;
     }
 
     .search-bar {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .hovered {
         display: none;
     }
 }

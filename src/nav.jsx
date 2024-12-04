@@ -22,8 +22,8 @@ export default function Navigation() {
     };
 
     return (
-        <nav>
-            <ul>
+        <div className='navigation'>
+            <div className='list'>
                 <li className='logo-icon'>
                     <img
                     src={Logo}
@@ -35,8 +35,10 @@ export default function Navigation() {
 
                 <li className='hovered'>Games</li>
                 <li className='hovered'>About</li>
-                <li className='hovered'>Help</li>
+                <li className='hovered help-tooltip'>Help</li>
+            </div>
 
+            <div className='list'>
                 <li className='search-icon'>
                     <label htmlFor="search-bar">
                         <img
@@ -79,7 +81,7 @@ export default function Navigation() {
                     </div>
                     )}
                 </li>
-            </ul>
-        </nav>
+            </div>
+        </div>
     )
 }

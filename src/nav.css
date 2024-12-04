@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-nav {
+.navigation {
     align-items: center;
     background-color: rgb(25, 156, 119);
     display: flex;
@@ -12,9 +12,10 @@ nav {
     padding: 10px 0;
 }
 
-ul {
+.list{
     align-items: center;
     display: flex;
+    justify-content: center;
     gap: 16px;
     list-style: none;
 }
