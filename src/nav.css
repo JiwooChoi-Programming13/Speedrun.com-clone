@@ -117,20 +117,20 @@
 .profile-icon {
     align-items: center;
     display: flex;
-    gap: 12px;
+    gap: 8px;
     padding: 8px;
     position: relative;
 }
 
 .profile {
-    border-radius: 17px;
-    height: 34px;
-    width: 34px;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
 }
 
 .down-arrow {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .dropdown-menu {
@@ -142,7 +142,7 @@
     pointer-events: none;
     padding: 8px;
     top: 48px;
-    width: 12vw;
+    width: 10vw;
 }
 
 .dropdown-menu-list {

@@ -24,22 +24,22 @@ export default function Navigation() {
     return (
         <div className='navigation'>
             <div className='list'>
-                <li className='logo-icon'>
+                <div className='logo-icon'>
                     <img
                     src={Logo}
                     alt="Logo"
                     className='logo'
                     />
                     <h3>SPEEDRUN.COM</h3>
-                </li>
+                </div>
 
-                <li className='hovered'>Games</li>
-                <li className='hovered'>About</li>
-                <li className='hovered help-tooltip'>Help</li>
+                <div className='hovered'>Games</div>
+                <div className='hovered'>About</div>
+                <div className='hovered help-tooltip'>Help</div>
             </div>
 
             <div className='list'>
-                <li className='search-icon'>
+                <div className='search-icon'>
                     <label htmlFor="search-bar">
                         <img
                         src={Search}
@@ -48,23 +48,24 @@ export default function Navigation() {
                     </label>
 
                     <input className='search-bar' type="text" id='search-bar' placeholder='Search...'/>
-                </li>
+                </div>
 
-                <li className='notification-icon'>
+                <div className='notification-icon'>
                     <img src={Notification}
                     alt="Notification"
                     className='notification'
                     />
                     <p className='notification-tooltip'>Notifications</p>
-                </li>
+                </div>
 
-                <li className='profile-icon' onClick={handleDropdown}>
+                <div className='profile-icon' onClick={handleDropdown}>
                     <img
                     src={Avatar}
                     alt="Test"
                     className='profile'/>
                     
-                    <span className='down-arrow'>&#8964;</span>
+                    <p className='down-arrow'>&#9207;</p>
+                    
                     {active && (
                     <div className='dropdown-menu'>
                         <DropdownList
@@ -80,7 +81,7 @@ export default function Navigation() {
                         />
                     </div>
                     )}
-                </li>
+                </div>
             </div>
         </div>
     )
