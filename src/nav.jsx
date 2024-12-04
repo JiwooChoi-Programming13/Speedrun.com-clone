@@ -34,6 +34,7 @@ export default function Navigation() {
                 </div>
 
                 <div className='hovered'>Games</div>
+                <div className='hovered'>Series</div>
                 <div className='hovered'>About</div>
                 <div className='hovered help-tooltip'>Help</div>
             </div>
