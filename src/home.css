@@ -1,7 +1,6 @@
 body {
     background-color: rgb(17, 22, 24);
     color: white;
-    font-family: Industry, ui-sans-serif, system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue';
 }
 
 .container {
@@ -16,7 +15,6 @@ body {
     background-color: rgb(27, 20, 41);
     border-radius: 16px;
     padding: 50px;
-    width: max-content;
 }
 
 .games-list {
@@ -34,7 +32,8 @@ body {
     position: relative;
 }
 
-.top-info {
+.release-year {
+    font-size: 12px;
     background-color: black;
     border-radius: 4px;
     padding: 2px 4px 2px 4px;
@@ -43,15 +42,11 @@ body {
     top: 4px;
 }
 
-.release-year {
-    font-size: 12px;
-}
-
-.bottom-info {
+.game-title {
     border-radius: 4px;
     bottom: 6px;
+    color: black;
     left: 10px;
-    padding: 2px 4px 2px 4px;
     position: absolute;
 }
 
