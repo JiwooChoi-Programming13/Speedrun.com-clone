@@ -1,14 +1,18 @@
 import { useState } from 'react'
-import Logo from '../public/Logo.png'
-import Search from '../public/Search.png'
-import Notification from '../public/Notification.png'
-import Avatar from '../public/AvatarTest.jpg'
+import Logo from '../src/assets/Logo.png'
+import Search from '../src/assets/Search.png'
+import Notification from '../src/assets/Notification.png'
+import Avatar from '../src/assets/AvatarTest.jpg'
+import Account from '../src/assets/Account.png'
+import Settings from '../src/assets/Settings.png'
+import Logout from '../src/assets/Logout.png'
 import './nav.css'
 import './nav-media-queries.css'
 
-function DropdownList({text, className = "dropdown-list"}) {
+function DropdownList({text, className = "dropdown-list", src, alt}) {
     return (
         <div className={className}>
+            <img className='dropdown-image' src={src} alt={alt}/>
             <p>{text}</p>
         </div>
     )
@@ -71,15 +75,21 @@ export default function Navigation() {
                     <div className='dropdown-menu'>
                         <div className='dropdown-menu-list'>
                             <DropdownList
-                            text="Username"
+                                text="Username"
+                                src={Account}
+                                alt="Account"
                             />
 
                             <DropdownList
-                            text="Settings"
+                                text="Settings"
+                                src={Settings}
+                                alt="Settings"
                             />
 
                             <DropdownList
-                            text="Sign out"
+                                text="Sign out"
+                                src={Logout}
+                                alt="Logout"
                             />
                         </div>
                     </div>
