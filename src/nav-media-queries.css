@@ -1,10 +1,14 @@
 @media (max-width: 1190px) {
+    .logo-icon h3 {
+        font-size: 20px;
+    }
+
     .navigation {
         justify-content: space-around;
     }
 
-    .list {
-        font-size: 12px;
+    .hovered {
+        font-size: 16px;
     }
 
     .search-icon {
