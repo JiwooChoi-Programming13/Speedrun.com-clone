@@ -6,17 +6,28 @@ body {
 
 .container {
     align-items: center;
-    background-color: rgb(27, 20, 41);
     display: flex;
     justify-content: center;
     margin-top: 20vh;
     height: 40vh;
 }
 
+.games-list-container {
+    background-color: rgb(27, 20, 41);
+    border-radius: 16px;
+    padding: 50px;
+    width: max-content;
+}
+
+.games-list {
+    display: flex;
+    gap: 16px;
+}
+
 .game-image {
     border-radius: 10px;
-    height: 200px;
-    width: 140px;
+    height: 190px;
+    width: 130px;
 }
 
 .game-content {
