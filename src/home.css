@@ -5,15 +5,28 @@ body {
 
 .container {
     align-items: center;
+    background-color: rgb(27, 20, 41);
     display: flex;
     justify-content: center;
-    height: 60vh;
+    margin-top: 20vh;
+    height: 40vh;
 }
 
-.games-list-container {
-    background-color: rgb(27, 20, 41);
+.games-list {
+    background-color: black;
 }
 
 .game-image {
-    height: 170px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.game-content {
+    position: relative;
+}
+
+.top-info {
+    top: 0;
+    position: absolute;
+    right: 0;
 }
