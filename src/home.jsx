@@ -9,18 +9,23 @@ export default function Home() {
             <div className="container">
                 <div className="games-list-container">
                     <div className="games-list">
-                        <div className="game-content">
-                        <img className="game-image" src={GameImage} alt="Super Mario 64"/>
-                            <div className="top-info">
-                                <p>1996</p>
-                            </div>
-                            <p>Super Mario 64</p>
-                            <div>
-                                <div>
-                                    <p>Active players: 46</p>
+                        <div >
+                            <div className="game-content">
+                            <img className="game-image" src={GameImage} alt="Super Mario 64"/>
+                                <div className="top-info">
+                                    <p className="release-year">1996</p>
                                 </div>
-                                <p>N64</p>
-                                <p>+3</p>
+                                <div className="bottom-info">
+                                    <p>Super Mario 64</p>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div className="details-content">
+                                <p className="active-players">417 active players</p>
+                                <div className="platform">
+                                    <p>N64</p>
+                                    <p>+3</p>
+                                </div>
                             </div>
                         </div>
                     </div>

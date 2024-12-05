@@ -1,6 +1,7 @@
 body {
     background-color: rgb(17, 22, 24);
     color: white;
+    font-family: Industry, ui-sans-serif, system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue';
 }
 
 .container {
@@ -12,13 +13,10 @@ body {
     height: 40vh;
 }
 
-.games-list {
-    background-color: black;
-}
-
 .game-image {
     border-radius: 10px;
     height: 200px;
+    width: 140px;
 }
 
 .game-content {
@@ -26,7 +24,41 @@ body {
 }
 
 .top-info {
-    top: 0;
+    background-color: black;
+    border-radius: 4px;
+    padding: 2px 4px 2px 4px;
     position: absolute;
-    right: 0;
+    right: 4px;
+    top: 4px;
+}
+
+.release-year {
+    font-size: 12px;
+}
+
+.bottom-info {
+    border-radius: 4px;
+    bottom: 6px;
+    left: 10px;
+    padding: 2px 4px 2px 4px;
+    position: absolute;
+}
+
+.details-content {
+    background-color: rgb(37, 47, 55);
+    border-radius: 0 0 6px 6px;
+    display: flex;
+    margin-top: -4px;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.active-players {
+    color: rgba(209, 213, 219, .8);
+    font-size: 14px;
+}
+
+.platform {
+    display: flex;
+    gap: 10px;
 }
