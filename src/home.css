@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(17, 22, 24);
+    color: white;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.games-list-container {
+    background-color: rgb(27, 20, 41);
+}
+
+.game-image {
+    height: 170px;
+}
