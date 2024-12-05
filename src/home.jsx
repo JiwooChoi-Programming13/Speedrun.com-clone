@@ -18,13 +18,12 @@ export default function Home() {
                                 <div className="bottom-info">
                                     <p>Super Mario 64</p>
                                 </div>
-                                <div></div>
                             </div>
                             <div className="details-content">
                                 <p className="active-players">417 active players</p>
-                                <div className="platform">
-                                    <p>N64</p>
-                                    <p>+3</p>
+                                <div className="platform-container">
+                                    <p className="platform">N64</p>
+                                    <p className="platform">+3</p>
                                 </div>
                             </div>
                         </div>
