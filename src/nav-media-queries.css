@@ -3,6 +3,10 @@
         justify-content: space-around;
     }
 
+    .list {
+        font-size: 12px;
+    }
+
     .search-icon {
         margin: 0;
     }
@@ -23,9 +27,5 @@
 @media (max-width: 800px) {
     .navigation {
         justify-content: space-evenly;
-    }
-
-    .hovered {
-        display: none;
     }
 }

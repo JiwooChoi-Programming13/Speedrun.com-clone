@@ -51,7 +51,7 @@ export default function Navigation() {
                     <input className='search-bar' type="text" id='search-bar' placeholder='Search...'/>
                 </div>
 
-                <div className='notification-icon'>
+                <div className='hovered notification-icon'>
                     <img src={Notification}
                     alt="Notification"
                     className='notification'
