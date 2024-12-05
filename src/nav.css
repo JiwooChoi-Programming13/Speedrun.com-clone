@@ -142,7 +142,7 @@
     background-color: rgb(37, 47, 55);
     border-radius: 10px;
     color: white;
-    left: -15px;
+    left: -40px;
     position: absolute;
     pointer-events: none;
     padding: 8px;
@@ -160,7 +160,7 @@
     align-items: center;
     border-radius: 10px;
     display: flex;
-    font-size: 16px;
+    font-size: 18px;
     gap: 6px;
     pointer-events: fill;
     padding: 6px;
