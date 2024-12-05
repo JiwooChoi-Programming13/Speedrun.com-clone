@@ -6,7 +6,7 @@ import Avatar from '../public/AvatarTest.jpg'
 import './nav.css'
 import './nav-media-queries.css'
 
-function DropdownList({text, className = "dropdown-menu-list"}) {
+function DropdownList({text, className = "dropdown-list"}) {
     return (
         <div className={className}>
             <p>{text}</p>
@@ -69,17 +69,19 @@ export default function Navigation() {
                     
                     {active && (
                     <div className='dropdown-menu'>
-                        <DropdownList
-                        text="Username"
-                        />
+                        <div className='dropdown-menu-list'>
+                            <DropdownList
+                            text="Username"
+                            />
 
-                        <DropdownList
-                        text="Settings"
-                        />
+                            <DropdownList
+                            text="Settings"
+                            />
 
-                        <DropdownList
-                        text="Sign out"
-                        />
+                            <DropdownList
+                            text="Sign out"
+                            />
+                        </div>
                     </div>
                     )}
                 </div>

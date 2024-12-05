@@ -101,6 +101,7 @@
     opacity: 0;
     top: 40px;
     transition: opacity 600ms;
+    z-index: 1;
 }
 
 .notification-icon {
@@ -140,7 +141,7 @@
     background-color: black;
     border-radius: 10px;
     color: white;
-    left: -10px;
+    left: -15px;
     position: absolute;
     pointer-events: none;
     padding: 8px;
@@ -149,15 +150,18 @@
 }
 
 .dropdown-menu-list {
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin: 6px 0;
-    pointer-events: fill;
-    padding: 6px 10px;
+    gap: 10px;
 }
 
-.dropdown-menu-list:hover {
+.dropdown-list {
+    border-radius: 10px;
+    font-size: 18px;
+    pointer-events: fill;
+    padding: 6px;
+}
+
+.dropdown-list:hover {
     background-color: rgba(23, 140, 107);
 }

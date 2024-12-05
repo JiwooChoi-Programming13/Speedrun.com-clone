@@ -23,7 +23,7 @@
         width: max-content;
     }
 
-    .dropdown-menu-list {
+    .dropdown-list {
         padding: 6px 20px 6px 10px;
     }
 }
@@ -31,5 +31,9 @@
 @media (max-width: 800px) {
     .navigation {
         justify-content: space-evenly;
+    }
+
+    .dropdown-list {
+        font-size: 14px;
     }
 }
