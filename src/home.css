@@ -24,8 +24,8 @@ body {
 
 .game-image {
     border-radius: 10px;
-    height: 190px;
-    width: 130px;
+    height: 200px;
+    width: 140px;
 }
 
 .game-content {
@@ -45,8 +45,10 @@ body {
 .game-title {
     border-radius: 4px;
     bottom: 6px;
-    color: black;
-    left: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    left: 4px;
     position: absolute;
 }
 
