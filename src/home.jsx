@@ -1,4 +1,5 @@
 import Navigation from "./components/navigation/nav.jsx"
+import Random from "./assets/Random.png"
 import games from "./games-list.jsx"
 import "./home.css"
 
@@ -20,6 +21,12 @@ export default function Home() {
                             <select className="options">
                                 <option value="Most active players">Most active players</option>
                             </select>
+                        </div>
+                        <div className="game-select">
+                            <button className="random-game-button">
+                                Random game
+                                <img src={Random} alt="Select random game" />
+                            </button>
                         </div>
                     </div>
                     <div className="games-list">
