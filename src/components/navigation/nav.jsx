@@ -27,7 +27,7 @@ export default function Navigation() {
 
     return (
         <div className='navigation'>
-            <div className='list'>
+            <div className='navigation-list'>
                 <div className='logo-icon'>
                     <img
                     src={Logo}
@@ -43,7 +43,7 @@ export default function Navigation() {
                 <div className='hovered help-tooltip'>Help</div>
             </div>
 
-            <div className='list'>
+            <div className='navigation-list'>
                 <div className='search-icon'>
                     <label htmlFor="search-bar">
                         <img

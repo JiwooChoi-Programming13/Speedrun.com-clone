@@ -17,6 +17,11 @@ body {
     padding: 50px;
 }
 
+.list-container {
+    display: flex;
+    gap: 10px;
+}
+
 .games-list {
     display: flex;
     gap: 16px;
@@ -67,12 +72,12 @@ body {
     font-size: 13px;
 }
 
-.platform-container {
+.game-platform-container {
     display: flex;
     gap: 10px;
 }
 
-.platform {
+.game-platform {
     background-color: rgb(23, 87, 24);
     border-radius: 10px;
     font-size: 14px;

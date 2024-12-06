@@ -8,6 +8,20 @@ export default function Home() {
             <Navigation/>
             <div className="container">
                 <div className="games-list-container">
+                    <div className="list-container">
+                        <div className="list">
+                            <h3>Platform</h3>
+                            <select>
+                                <option value="Any platform">Any platform</option>
+                            </select>
+                        </div>
+                        <div className="list">
+                            <h3>Sort by</h3>
+                            <select>
+                                <option value="Most active players">Most active players</option>
+                            </select>
+                        </div>
+                    </div>
                     <div className="games-list">
                         {games.map((game) => {
                             return (
@@ -19,9 +33,9 @@ export default function Home() {
                                 </div>
                                 <div className="details-content">
                                     <p className="active-players">{game.activePlayers} active players</p>
-                                    <div className="platform-container">
-                                        <p className="platform">{game.platform}</p>
-                                        <p className="platform">+3</p>
+                                    <div className="game-platform-container">
+                                        <p className="game-platform">{game.platform}</p>
+                                        <p className="game-platform">+3</p>
                                     </div>
                                 </div>
                             </div>
