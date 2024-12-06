@@ -70,14 +70,26 @@ body {
     gap: 16px;
 }
 
-.game-image {
-    border-radius: 10px;
-    height: 200px;
-    width: 140px;
+.game {
+    cursor: pointer;
 }
 
 .game-content {
     position: relative;
+}
+
+.game-content::after {
+    box-shadow: inset 0 -18px 16px black;
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.game-image {
+    border-radius: 10px;
+    height: 200px;
+    width: 140px;
+    z-index: -1;
 }
 
 .release-year {
@@ -94,10 +106,11 @@ body {
     border-radius: 4px;
     bottom: 6px;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-    left: 4px;
+    left: 6px;
     position: absolute;
+    z-index: 1;
 }
 
 .details-content {
@@ -107,7 +120,7 @@ body {
     flex-direction: column;
     gap: 4px;
     margin-top: -4px;
-    padding: 6px;
+    padding: 8px;
 }
 
 .active-players {

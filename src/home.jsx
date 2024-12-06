@@ -34,7 +34,7 @@ export default function Home() {
                             return (
                                 <div key={game.id} className="game">
                                 <div className="game-content">
-                                <img className="game-image" src={game.image} alt={game.name}/>
+                                    <img className="game-image" src={game.image} alt={game.name}/>
                                     <div className="release-year">{game.releaseYear}</div>
                                     <div className="game-title">{game.name}</div>
                                 </div>
