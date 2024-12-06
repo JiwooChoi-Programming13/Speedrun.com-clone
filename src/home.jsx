@@ -11,13 +11,13 @@ export default function Home() {
                     <div className="list-container">
                         <div className="list">
                             <h3>Platform</h3>
-                            <select>
+                            <select className="options">
                                 <option value="Any platform">Any platform</option>
                             </select>
                         </div>
                         <div className="list">
                             <h3>Sort by</h3>
-                            <select>
+                            <select className="options">
                                 <option value="Most active players">Most active players</option>
                             </select>
                         </div>
