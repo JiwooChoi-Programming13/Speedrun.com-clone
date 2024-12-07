@@ -33,6 +33,13 @@ const games = [{
     platform: "PC",
     releaseYear: "2017",
     activePlayers: "130",
+}, {
+    id: 5,
+    name: "Granny",
+    image: "https://cdn2.steamgriddb.com/grid/5788c89947da0ee5c644bb4368475cba.jpg",
+    platform: "Android",
+    releaseYear: "2017",
+    activePlayers: "104"
 }];
 
 export default games;
