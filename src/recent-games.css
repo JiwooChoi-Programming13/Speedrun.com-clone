@@ -1,0 +1,12 @@
+.recent-games-container {
+    background-color: rgb(27, 20, 41);
+    border-radius: 16px;
+    align-self: flex-start;
+    padding: 30px;
+}
+
+.recent-game-image {
+    border-radius: 10px;
+    height: 80px;
+    width: 50px;
+}
