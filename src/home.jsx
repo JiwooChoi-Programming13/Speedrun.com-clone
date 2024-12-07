@@ -42,7 +42,9 @@ export default function Home() {
                                     <p className="active-players">{game.activePlayers} active players</p>
                                     <div className="game-platform-container">
                                         <p className="game-platform">{game.platform}</p>
-                                        <p className="game-platform">+3</p>
+                                        {game.otherPlatforms.length > 0 ? (
+                                        <p className="game-platform">+{game.otherPlatforms.length}</p>
+                                        ) : null}
                                     </div>
                                 </div>
                             </div>
