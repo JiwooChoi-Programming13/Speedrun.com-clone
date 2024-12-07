@@ -6,17 +6,9 @@ import Avatar from '../../assets/AvatarTest.jpg'
 import Account from '../../assets/Account.png'
 import Settings from '../../assets/Settings.png'
 import Logout from '../../assets/Logout.png'
+import NavigationDropdown from '../dropdown-menus/nav-dropdown.jsx'
 import './nav.css'
 import './nav-media-queries.css'
-
-function DropdownList({text, className = "dropdown-list", src, alt}) {
-    return (
-        <div className={className}>
-            <img className='dropdown-image' src={src} alt={alt}/>
-            <p>{text}</p>
-        </div>
-    )
-}
 
 export default function Navigation() {
     const [active, setActive] = useState(false);
@@ -74,19 +66,19 @@ export default function Navigation() {
                     {active && (
                     <div className='dropdown-menu'>
                         <div className='dropdown-menu-list'>
-                            <DropdownList
+                            <NavigationDropdown
                                 text="Username"
                                 src={Account}
                                 alt="Account"
                             />
 
-                            <DropdownList
+                            <NavigationDropdown
                                 text="Settings"
                                 src={Settings}
                                 alt="Settings"
                             />
 
-                            <DropdownList
+                            <NavigationDropdown
                                 text="Sign out"
                                 src={Logout}
                                 alt="Logout"

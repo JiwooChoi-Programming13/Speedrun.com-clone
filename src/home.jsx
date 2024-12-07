@@ -6,7 +6,7 @@ import "./home.css";
 export default function Home() {
     return (
         <>
-            <Navigation/>
+            <Navigation />
             <div className="container">
                 <div className="games-list-container">
                     <div className="list-container">
