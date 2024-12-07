@@ -27,6 +27,8 @@ const games = [{
         "PS5", "XboxOneSeriesX", "XboxOneSeriesS", "Gamepass"
     ],
     releaseYear: "2024",
+    releaseMonth: "10",
+    releaseDay: "25",
     activePlayers: "369",
 }, {
     id: 3,
@@ -38,6 +40,8 @@ const games = [{
         "XboxOneSeriesX", "XboxOneSeriesS"
     ],
     releaseYear: "2024",
+    releaseMonth: "10",
+    releaseDay: "25",
     activePlayers: "334",
 }, {
     id: 4,
@@ -65,6 +69,8 @@ const games = [{
     platform: "PC",
     otherPlatforms: [],
     releaseYear: "2024",
+    releaseMonth: "09",
+    releaseDay: "18",
     activePlayers: "138",
 }, {
     id: 7,
@@ -76,6 +82,8 @@ const games = [{
         "XboxOneSeriesX", "XboxOneSeriesS"
     ],
     releaseYear: "2024",
+    releaseMonth: "10",
+    releaseDay: "25",
     activePlayers: "138",
 }, {
     id: 8,
@@ -92,6 +100,8 @@ const games = [{
     platform: "Switch",
     otherPlatforms: [],
     releaseYear: "2024",
+    releaseMonth: "09",
+    releaseDay: "26",
     activePlayers: "106",
 }, {
     id: 10,
@@ -108,6 +118,8 @@ const games = [{
     platform: "Switch",
     otherPlatforms: [],
     releaseYear: "2024",
+    releaseMonth: "10",
+    releaseDay: "17",
     activePlayers: "68",
 }, {
     id: 12,
@@ -116,6 +128,8 @@ const games = [{
     platform: "PC",
     otherPlatforms: ["PS5"],
     releaseYear: "2024",
+    releaseMonth: "10",
+    releaseDay: "06",
     activePlayers: "66",
 }, {
     id: 13,
@@ -124,6 +138,8 @@ const games = [{
     platform: "PC",
     otherPlatforms: [],
     releaseYear: "2024",
+    releaseMonth: "10",
+    releaseDay: "11",
     activePlayers: "138",
 }, ];
 

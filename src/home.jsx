@@ -1,11 +1,12 @@
 import Navigation from "./components/navigation/nav.jsx";
 import Random from "./assets/Random.png";
 import GamesList from "./components/game-data/games-list-display.jsx";
-import GameTest from "./assets/GameTest.png"
+import RecentGamesList from "./components/game-data/recent-games-list.jsx";
 import "./games-list.css";
 import "./recent-games.css";
 
 export default function Home() {
+
     return (
         <>
             <Navigation />
@@ -40,36 +41,9 @@ export default function Home() {
                     <div className="recent-games-content">
                         <h4 className="recent-games-category">POPULAR NEW GAMES</h4>
 
+                        
                         <div className="recent-games-grid">
-                            <div className="recent-games-list">
-                                <div className="recent-game-details">
-                                    <img className="recent-game-image" src={GameTest} alt="" />
-                                    <div className="">
-                                        <h4 className="recent-game-title">Call of Duty: Black Ops 6 Zombies</h4>
-                                        <p className="release-date">Released 2024-10-25</p>
-                                    </div>
-                                </div>
-
-                                <div className="recent-active-players">
-                                    <p>369</p>
-                                    <p className="players">Players</p>
-                                </div>
-                            </div>
-
-                            <div className="recent-games-list">
-                                <div className="recent-game-details">
-                                    <img className="recent-game-image" src={GameTest} alt="" />
-                                    <div className="">
-                                        <h4 className="recent-game-title">Call of Duty: Black Ops 6 Zombies</h4>
-                                        <p className="release-date">Released 2024-10-25</p>
-                                    </div>
-                                </div>
-
-                                <div className="recent-active-players">
-                                    <p>369</p>
-                                    <p className="players">Players</p>
-                                </div>
-                            </div>
+                            <RecentGamesList />
                         </div>
                     </div>
                 </div>
