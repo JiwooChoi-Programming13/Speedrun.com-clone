@@ -95,9 +95,9 @@ body {
 }
 
 .release-year {
-    font-size: 12px;
     background-color: black;
     border-radius: 4px;
+    font-size: 12px;
     padding: 2px 4px 2px 4px;
     position: absolute;
     right: 4px;

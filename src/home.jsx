@@ -37,19 +37,18 @@ export default function Home() {
                 </div>
 
                 <div className="recent-games-container">
-                    <div>
+                    <div className="recent-games-content">
                         <div>
                             <h4>POPULAR NEW GAMES</h4>
                         </div>
-                        <div>
-                            <div>
-                                <div>
+                        <div className="recent-games-menu">
+                            <div className="recent-games-list">
+                                <div className="recent-game-details">
                                     <img className="recent-game-image" src={GameTest} alt="" />
-                                </div>
-
-                                <div>
-                                    <h4>Call of Duty: Black Ops 6 Zombies</h4>
-                                    <p>Released 2024-10-25</p>
+                                    <div className="">
+                                        <h4 className="recent-game-title">Call of Duty: Black Ops 6 Zombies</h4>
+                                        <p className="release-date">Released 2024-10-25</p>
+                                    </div>
                                 </div>
 
                                 <div>
