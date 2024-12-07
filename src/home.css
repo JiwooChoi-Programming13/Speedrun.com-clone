@@ -72,6 +72,7 @@ body {
 
 .game {
     cursor: pointer;
+    width: 140px;
 }
 
 .game-content {
@@ -131,11 +132,12 @@ body {
 .game-platform-container {
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .game-platform {
     background-color: rgb(23, 87, 24);
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 13px;
     padding: 2px 6px 3px 6px;
 }
