@@ -1,7 +1,7 @@
-import Navigation from "./components/navigation/nav.jsx"
-import Random from "./assets/Random.png"
-import games from "./games-list.jsx"
-import "./home.css"
+import Navigation from "./components/navigation/nav.jsx";
+import Random from "./assets/Random.png";
+import GamesList from "./components/game-data/games-list-display.jsx";
+import "./home.css";
 
 export default function Home() {
     return (
@@ -30,31 +30,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="games-list">
-                        {games.map((game) => {
-                            return (
-                                <div key={game.id} className="game">
-                                <div className="game-content">
-                                    <img className="game-image" src={game.image} alt={game.name}/>
-                                    <div className="release-year">{game.releaseYear}</div>
-                                    <div className="game-title">{game.name}</div>
-                                </div>
-                                <div className="details-content">
-                                    <p className="active-players">{game.activePlayers} active players</p>
-                                    <div className="game-platform-container">
-                                        <p className="game-platform">{game.platform}</p>
-
-                                        {game.otherPlatforms.length > 1 ? (
-                                        <p className="game-platform">+{game.otherPlatforms.length}</p>
-                                        ) : null}
-
-                                        {game.otherPlatforms.length === 1 ? (
-                                            <p className="game-platform">{game.otherPlatforms}</p>
-                                        ) : null}
-                                    </div>
-                                </div>
-                            </div>
-                            )
-                        })}
+                        <GamesList />
                     </div>
                 </div>
             </div>
