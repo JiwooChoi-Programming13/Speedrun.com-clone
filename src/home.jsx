@@ -42,8 +42,13 @@ export default function Home() {
                                     <p className="active-players">{game.activePlayers} active players</p>
                                     <div className="game-platform-container">
                                         <p className="game-platform">{game.platform}</p>
-                                        {game.otherPlatforms.length > 0 ? (
+
+                                        {game.otherPlatforms.length > 1 ? (
                                         <p className="game-platform">+{game.otherPlatforms.length}</p>
+                                        ) : null}
+
+                                        {game.otherPlatforms.length === 1 ? (
+                                            <p className="game-platform">{game.otherPlatforms}</p>
                                         ) : null}
                                     </div>
                                 </div>
