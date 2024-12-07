@@ -2,25 +2,33 @@
     background-color: rgb(27, 20, 41);
     border-radius: 16px;
     align-self: flex-start;
-    padding: 20px;
     width: 27vw;
 }
 
-.recent-games-content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.recent-games-category {
+    padding: 14px;
+}
+
+.recent-games-grid {
+    display: grid;
+    row-gap: 10px;
 }
 
 .recent-games-list {
     color: rgb(73, 182, 151);
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+}
+
+.recent-games-list:nth-child(odd) {
+    background-color: rgb(39, 32, 51);
 }
 
 .recent-game-details {
     display: flex;
-    gap: 10px;
+    gap: 6px;
 }
 
 .recent-game-image {
@@ -30,7 +38,14 @@
     width: 50px;
 }
 
-.release-date {
+.recent-active-players {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.release-date,
+.players {
     color: rgba(209, 213, 219, .8);
     font-size: 13px;
 }
