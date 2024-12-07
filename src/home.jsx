@@ -38,16 +38,10 @@ export default function Home() {
                 </div>
 
                 <div className="recent-games-container">
-                    <div className="recent-games-content">
                         <h4 className="recent-games-category">POPULAR NEW GAMES</h4>
-
-                        
-                        <div className="recent-games-grid">
-                            <RecentGamesList />
-                        </div>
+                        <RecentGamesList />
                     </div>
                 </div>
-            </div>
         </>
     )
 }

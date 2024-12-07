@@ -140,7 +140,7 @@ const games = [{
     releaseYear: "2024",
     releaseMonth: "10",
     releaseDay: "11",
-    activePlayers: "138",
+    activePlayers: "47",
 }, ];
 
 export default games;

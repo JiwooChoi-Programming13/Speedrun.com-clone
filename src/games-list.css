@@ -14,7 +14,7 @@ body {
 .games-list-container {
     background-color: rgb(27, 20, 41);
     border-radius: 16px;
-    padding: 50px;
+    padding: 30px 20px;
 }
 
 .list-container {

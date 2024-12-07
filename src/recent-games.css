@@ -2,44 +2,55 @@
     background-color: rgb(27, 20, 41);
     border-radius: 16px;
     align-self: flex-start;
-    width: 27vw;
+    width: 26vw;
 }
 
 .recent-games-category {
     padding: 14px;
 }
 
-.recent-games-grid {
-    display: grid;
-    row-gap: 10px;
-}
-
 .recent-games-list {
-    color: rgb(73, 182, 151);
+    align-items: center;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
-.recent-games-list:nth-child(odd) {
+.recent-games-list:nth-child(even) {
     background-color: rgb(39, 32, 51);
 }
 
+.recent-games-list:nth-child(:last-child):hover {
+    border-radius: 16px;
+}
+
+.recent-games-list:hover {
+    background-color: rgba(113, 106, 125, 0.4);
+}
+
 .recent-game-details {
+    align-items: center;
     display: flex;
     gap: 6px;
 }
 
 .recent-game-image {
-    border-radius: 10px;
+    border-radius: 16px;
     height: 50px;
     object-fit: contain;
     width: 50px;
 }
 
+.recent-game-title {
+    color: rgb(73, 182, 151);
+    font-size: 15px;
+    width: 18vw;
+}
+
 .recent-active-players {
     align-items: center;
+    color: rgb(73, 182, 151);
     display: flex;
     flex-direction: column;
 }
