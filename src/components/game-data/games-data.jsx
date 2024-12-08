@@ -8,7 +8,7 @@ const games = [{
         "Stadia", "PS5", "XboxOneSeriesX", "XboxOneSeriesS"
     ],
     releaseYear: "2018",
-    activePlayers: "581",
+    activePlayers: 581,
 }, {
     id: 1,
     name: "Super Mario 64",
@@ -16,7 +16,7 @@ const games = [{
     platform: "N64",
     otherPlatforms: ["WiiVC", "WiiUVC", "Switch"],
     releaseYear: "1996",
-    activePlayers: "417",
+    activePlayers: 417,
 }, {
     id: 2,
     name: "Call of Duty: Black Ops 6 Zombies",
@@ -29,7 +29,7 @@ const games = [{
     releaseYear: "2024",
     releaseMonth: "10",
     releaseDay: "25",
-    activePlayers: "369",
+    activePlayers: 369,
 }, {
     id: 3,
     name: "Shadow Generations",
@@ -42,7 +42,7 @@ const games = [{
     releaseYear: "2024",
     releaseMonth: "10",
     releaseDay: "25",
-    activePlayers: "334",
+    activePlayers: 334,
 }, {
     id: 4,
     name: "Minecraft: Java Edition",
@@ -50,7 +50,7 @@ const games = [{
     platform: "PC",
     otherPlatforms: [],
     releaseYear: "2011",
-    activePlayers: "253",
+    activePlayers: 253,
 }, {
     id: 5,
     name: "Cuphead",
@@ -61,7 +61,7 @@ const games = [{
         "PS5", "XboxOneSeriesX", "XboxOneSeriesS", "SteamDeck"
     ],
     releaseYear: "2017",
-    activePlayers: "200",
+    activePlayers: 200,
 }, {
     id: 6,
     name: "UFO 50",
@@ -71,7 +71,7 @@ const games = [{
     releaseYear: "2024",
     releaseMonth: "09",
     releaseDay: "18",
-    activePlayers: "138",
+    activePlayers: 138,
 }, {
     id: 7,
     name: "Sonic Generations",
@@ -84,7 +84,7 @@ const games = [{
     releaseYear: "2024",
     releaseMonth: "10",
     releaseDay: "25",
-    activePlayers: "138",
+    activePlayers: 138,
 }, {
     id: 8,
     name: "Getting over it with Bennet Foddy",
@@ -92,7 +92,7 @@ const games = [{
     platform: "PC",
     otherPlatforms: ["Android", "IOS"],
     releaseYear: "2017",
-    activePlayers: "130",
+    activePlayers: 130,
 }, {
     id: 9,
     name: "The legend of Zelda: Echoes of Wisdom",
@@ -120,7 +120,7 @@ const games = [{
     releaseYear: "2024",
     releaseMonth: "10",
     releaseDay: "17",
-    activePlayers: "68",
+    activePlayers: 68,
 }, {
     id: 12,
     name: "Silent Hill 2 (2024)",
@@ -130,7 +130,7 @@ const games = [{
     releaseYear: "2024",
     releaseMonth: "10",
     releaseDay: "06",
-    activePlayers: "66",
+    activePlayers: 66,
 }, {
     id: 13,
     name: "WEBFISHING",
@@ -140,7 +140,20 @@ const games = [{
     releaseYear: "2024",
     releaseMonth: "10",
     releaseDay: "11",
-    activePlayers: "47",
-}, ];
+    activePlayers: 47,
+}, {
+    id: 14,
+    name: "Roblox: Pressure",
+    image: "https://cdn2.steamgriddb.com/grid/1d18a1008a6c41ad5343528b64af3971.png",
+    platform: "PS4",
+    otherPlatforms: [
+        "XboxOne", "PC", "Android",
+        "IOS", "Mac"
+    ],
+    releaseYear: "2024",
+    releaseMonth: "07",
+    releaseDay: "07",
+    activePlayers: 301,
+}];
 
 export default games;
