@@ -1,9 +1,11 @@
 import games from "./games-data.jsx";
 
 export default function GamesList() {
+    const sorting = games.sort((a, b) => b.activePlayers - a.activePlayers);
+
     return (
         <>
-        {games.map((game) =>
+        {sorting.map((game) =>
                 <div key={game.id} className="game">
                 <div className="game-content">
                     <img className="game-image" src={game.image} alt={game.name}/>

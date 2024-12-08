@@ -110,7 +110,7 @@ const games = [{
     platform: "Android",
     otherPlatforms: ["IOS"],
     releaseYear: "2017",
-    activePlayers: "104"
+    activePlayers: 104,
 }, {
     id: 11,
     name: "Super Mario Party Jamboree",
