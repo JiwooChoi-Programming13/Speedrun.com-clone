@@ -4,6 +4,7 @@ import GamesList from "./components/game-data/games-list-display.jsx";
 import RecentGamesList from "./components/game-data/recent-games-list.jsx";
 import "./games-list.css";
 import "./recent-games.css";
+import "./pages.css";
 
 export default function Home() {
 
@@ -35,13 +36,27 @@ export default function Home() {
                     <div className="games-list">
                         <GamesList />
                     </div>
+
+                    <div className="pages-container">
+                        <div className="pages-content">
+                            <span className="arrows">&#8676;</span>
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span style={{cursor: "default"}}>...</span>
+                            <span>481</span>
+                            <span className="arrows">&#8677;</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="recent-games-container">
-                        <h4 className="recent-games-category">POPULAR NEW GAMES</h4>
-                        <RecentGamesList />
-                    </div>
+                    <h4 className="recent-games-category">POPULAR NEW GAMES</h4>
+                    <RecentGamesList />
                 </div>
+            </div>
         </>
     )
 }

@@ -1,0 +1,22 @@
+.pages-container {
+    display: flex;
+    justify-content: center;   
+    margin-top: 10px;
+}
+
+.pages-content {
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    display: inherit;
+    gap: 20px;
+    padding: 6px;
+}
+
+.pages-content span {
+    cursor: pointer;
+}
+
+.arrows {
+    font-size: 25px;
+}
