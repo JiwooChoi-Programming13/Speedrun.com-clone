@@ -92,7 +92,6 @@ body {
     border-radius: 10px;
     height: 200px;
     width: 140px;
-    z-index: -1;
 }
 
 .release-year {
@@ -142,4 +141,25 @@ body {
     border-radius: 10px;
     font-size: 14px;
     padding: 2px 6px 3px 6px;
+}
+
+.other-platform-container {
+    position: relative;
+}
+
+.game-other-platforms {
+    border-radius: 10px;
+    background-color: black;
+    bottom: 30px;
+    /* display: none; */
+    font-size: 14px;
+    left: -30px;
+    padding: 12px;
+    position: absolute;
+    width: min-content;
+    z-index: 1;
+}
+
+.game-other-platforms:hover {
+    display: block;
 }
