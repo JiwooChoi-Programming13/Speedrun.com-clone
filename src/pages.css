@@ -13,10 +13,11 @@
     padding: 6px;
 }
 
-.pages-content span {
+.pages-content p {
     cursor: pointer;
 }
 
 .arrows {
+    cursor: pointer;
     font-size: 25px;
 }

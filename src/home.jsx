@@ -40,13 +40,13 @@ export default function Home() {
                     <div className="pages-container">
                         <div className="pages-content">
                             <span className="arrows">&#8676;</span>
-                            <span>1</span>
-                            <span>2</span>
-                            <span>3</span>
-                            <span>4</span>
-                            <span>5</span>
-                            <span style={{cursor: "default"}}>...</span>
-                            <span>481</span>
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                            <p>5</p>
+                            <p style={{cursor: "default"}}>...</p>
+                            <p>481</p>
                             <span className="arrows">&#8677;</span>
                         </div>
                     </div>
