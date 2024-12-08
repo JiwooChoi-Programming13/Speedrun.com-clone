@@ -24,9 +24,7 @@ export default function GamesList() {
                                     <p className="game-other-platforms">{game.otherPlatforms.join(' ')}</p>
                                 </div>
                             </div>
-                        ) : null}
-                        
-                        {game.otherPlatforms.length === 1 ? (
+                        ) : game.otherPlatforms.length === 1 ? (
                             <p className="game-platform">{game.otherPlatforms}</p>
                         ) : null}
                     </div>
