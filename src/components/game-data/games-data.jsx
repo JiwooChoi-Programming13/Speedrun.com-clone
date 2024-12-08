@@ -5,7 +5,7 @@ const games = [{
     platform: "PC",
     otherPlatforms: [
         "XboxOne", "PC", "Switch", "XboxOneX", "XboxOneS",
-        "Stadia", "PS5", "XboxOneSeriesX", "XboxOneSeriesS"
+        "Stadia", "PS5", "XboxSeriesX", "XboxSeriesS"
     ],
     releaseYear: 2018,
     activePlayers: 581,

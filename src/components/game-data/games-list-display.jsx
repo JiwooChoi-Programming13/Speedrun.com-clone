@@ -19,11 +19,11 @@ export default function GamesList() {
 
                         {game.otherPlatforms.length > 1 ? (
                             <div className="other-platform-container">
-                                <p className="game-platform">+{game.otherPlatforms.length}</p>
-                                {game.otherPlatforms && (
-                                <p className="game-other-platforms">{game.otherPlatforms.join(' ')}</p>
-                        )}
-                        </div>
+                                <div className="game-platform">
+                                    +{game.otherPlatforms.length}
+                                    <p className="game-other-platforms">{game.otherPlatforms.join(' ')}</p>
+                                </div>
+                            </div>
                         ) : null}
                         
                         {game.otherPlatforms.length === 1 ? (
