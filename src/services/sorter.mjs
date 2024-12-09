@@ -1,6 +1,4 @@
-import Game from "../models/game";
-
-export const sortGamesByActivePlayers = (games: Game[]): Game[] => {
+export const sortGamesByActivePlayers = (games) => {
   const gamesClone = [...games];
   return gamesClone.sort((a, b) => b.activePlayers - a.activePlayers);
 }

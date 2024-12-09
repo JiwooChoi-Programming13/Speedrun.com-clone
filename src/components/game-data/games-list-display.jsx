@@ -1,4 +1,4 @@
-import { sortGamesByActivePlayers } from "../../services/sorter.js";
+import { sortGamesByActivePlayers } from "../../services/sorter.mjs";
 import games from "./games-data.jsx";
 
 export default function GamesList() {
