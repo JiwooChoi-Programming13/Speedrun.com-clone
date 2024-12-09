@@ -1,8 +1,9 @@
+import { sortGamesByActivePlayers } from "../../services/sorter";
 import games from "./games-data";
 
 export default function RecentGamesList() {
     const recent = games.filter((game) => game.releaseYear >= 2024);
-    const players = recent.sort((a, b) => b.activePlayers - a.activePlayers);
+    const players = sortGamesByActivePlayers(recent);
 
     return (
         <>
