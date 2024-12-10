@@ -7,18 +7,22 @@ export default function About() {
         <>
             <Navigation />
             <div className="background"></div>
+
             <div className="about-container">
                 <div className="title-container">
-                    <div className="title">
+                    <div className="title-content">
                         <img className="title-logo" src={Logo} alt="" />
-                        <h1>Speedrun.com</h1>
+                        <h1 className="title">SPEEDRUN.COM (NOT!)</h1>
                     </div>
-                    <p className="title-text">
-                        Speedrun.com (Not!) is the leading platfrom for game
-                        communities to organize around the activity of speedrunning.
-                        We host communities for thousands of games, each with
-                        their own leaderboards, rules, moderators, and particapants.
-                    </p>
+                    <div className="title-text">
+                        <p>
+                            Speedrun.com (Not!) is the leading platfrom for game
+                            communities to organize around the activity of speedrunning.
+                            We host communities for thousands of games, each with
+                            their own leaderboards, rules, moderators,
+                            and participants.
+                        </p>
+                    </div>
                 </div>
             </div>
         </>
