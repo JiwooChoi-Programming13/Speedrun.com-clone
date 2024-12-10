@@ -10,6 +10,8 @@
     display: flex;
     justify-content: center;
     padding: 8px 0;
+    position: sticky;
+    top: 0;
 }
 
 .navigation-list{

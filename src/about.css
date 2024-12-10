@@ -18,6 +18,10 @@
     margin: 20vh;
 }
 
+.title-container {
+    margin-bottom: 20vh;
+}
+
 .title-content {
     align-items: center;
     display: flex;

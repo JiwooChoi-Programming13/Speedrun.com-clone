@@ -24,6 +24,14 @@ export default function About() {
                         </p>
                     </div>
                 </div>
+
+                <div className="explain-container">
+                    <div>
+                        <div>
+                            <h2>WHAT IS SPEEDRUNNING?</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )
