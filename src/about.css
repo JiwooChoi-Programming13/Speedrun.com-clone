@@ -9,3 +9,23 @@
     width: 100%;
     z-index: -1;
 }
+
+.about-container {
+    margin: 10vh;
+}
+
+.title-logo {
+    height: 70px;
+    width: 70px;
+}
+
+.title {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.title-text {
+    font-size: 18px;
+    width: 50vw;
+}
