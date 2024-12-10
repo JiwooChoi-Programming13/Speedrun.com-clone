@@ -38,8 +38,25 @@
     font-size: 1.6rem;
 }
 
-.title-text p {
+.title-text,
+.explanation-text {
     font-size: 1.6rem;
     text-align: center;
     width: 52vw;
+}
+
+.explanation-text {
+    color: rgba(209, 213, 219, 0.8);
+    font-size: 1.4rem;
+}
+
+.explanation-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-example {
+    border: none;
+    margin-top: 4vh;
 }
