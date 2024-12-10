@@ -1,7 +1,8 @@
 import games from "./games-data.jsx";
+import { SortGames } from "./sorting.jsx";
 
 export default function GamesList() {
-    const sorting = games.sort((a, b) => b.activePlayers - a.activePlayers);
+    const sorting = SortGames(games);
 
     return (
         <>
