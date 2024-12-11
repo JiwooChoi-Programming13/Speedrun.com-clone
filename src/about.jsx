@@ -1,5 +1,6 @@
 import Navigation from "./components/navigation/nav.jsx"
 import Logo from "./assets/Logo.png"
+import Checkmark from "./assets/Checkmark.png"
 import "./about.css"
 
 export default function About() {
@@ -92,6 +93,33 @@ export default function About() {
                             tools for runners to track their progress, and fans
                             to follow along.
                         </p>
+                    </div>
+
+                    <div className="features-grid-container">
+                        <div className="features-grid-content">
+                            <img src={Checkmark} alt="Checkmark" />
+                            <p>Leaderboards and rankings</p>
+                        </div>
+
+                        <div className="features-grid-content">
+                            <img src={Checkmark} alt="Checkmark" />
+                            <p>Game cusomization</p>
+                        </div>
+
+                        <div className="features-grid-content">
+                            <img src={Checkmark} alt="Checkmark" />
+                            <p>Moderation tools</p>
+                        </div>
+
+                        <div className="features-grid-content">
+                            <img src={Checkmark} alt="Checkmark" />
+                            <p>User profiles</p>
+                        </div>
+
+                        <div className="features-grid-content">
+                            <img src={Checkmark} alt="Checkmark" />
+                            <p>Notifications from other users</p>
+                        </div>
                     </div>
                 </div>
             </div>
