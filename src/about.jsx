@@ -53,8 +53,8 @@ export default function About() {
                     <div className="stats-content">
                         <p className="info-text">
                             Speedrunning has exploded in popularity in recent years.
-                            Speedrun.com is a vibrant growing platform with millions
-                            of active users.
+                            But not here! Speedrun.com (Not!) is a not so vibrant
+                            growing platform with no less than 1 active user.
                         </p>
                     </div>
 
@@ -120,6 +120,21 @@ export default function About() {
                             <img src={Checkmark} alt="Checkmark" />
                             <p>Notifications from other users</p>
                         </div>
+                    </div>
+                </div>
+
+                <div className="advertise-container">
+                    <div className="title-content">
+                        <h2 className="title">ADVERTISE ON SPEEDRUN.COM (NOT!)</h2>
+                    </div>
+
+                    <div className="advertise-content">
+                        <p className="info-text">
+                            With Speedrun.com (Not!) being a bad influence for
+                            posting your speedruns, why not help yourself and do
+                            exactly just that!
+                        </p>
+                        <button className="button">Post some speedruns</button>
                     </div>
                 </div>
             </div>

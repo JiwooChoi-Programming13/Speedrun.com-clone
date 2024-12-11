@@ -21,7 +21,8 @@
 .title-container,
 .explain-container,
 .stats-container,
-.features-container {
+.features-container,
+.advertise-container {
     margin-bottom: 20vh;
 }
 
@@ -53,7 +54,8 @@
     font-size: 1.3rem;
 }
 
-.explanation-content {
+.explanation-content,
+.advertise-content {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -101,5 +103,17 @@
     border-radius: 10px;
     display: flex;
     gap: 6px;
-    padding: 16px;
+    padding: 18px 26px;
+}
+
+.button {
+    border: none;
+    border-radius: 4px;
+    background-color: #199C77;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 2vh;
 }
