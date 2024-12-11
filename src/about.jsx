@@ -16,7 +16,7 @@ export default function About() {
                         <h1 className="title">SPEEDRUN.COM (NOT!)</h1>
                     </div>
 
-                    <div>
+                    <div className="beginning-content">
                         <p className="title-text">
                             Speedrun.com (Not!) is the false platform for game
                             communities to organize around the activity of speedrunning.
@@ -87,7 +87,8 @@ export default function About() {
                             WHAT FEATURES DOES SPEEDRUN.COM (NOT!) OFFER?
                         </h2>
                     </div>
-                    <div>
+
+                    <div className="features-content">
                         <p className="info-text">
                             Speedrun.com (Not!) offers a comprehensive suite of
                             tools for runners to track their progress, and fans
