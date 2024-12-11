@@ -40,7 +40,7 @@ export default function About() {
                             session.
                         </p>
 
-                        <iframe className="video-example" width="700" height="400" src="https://www.youtube.com/embed/q4hBaYFACIo"
+                        <iframe className="video-example" src="https://www.youtube.com/embed/q4hBaYFACIo"
                         title="Explanation speedrun" allowFullScreen>
                         </iframe>
                     </div>
