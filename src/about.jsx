@@ -17,7 +17,7 @@ export default function About() {
 
                     <div>
                         <p className="title-text">
-                            Speedrun.com (Not!) is the false platfrom for game
+                            Speedrun.com (Not!) is the false platform for game
                             communities to organize around the activity of speedrunning.
                             We host communities for thousands of games, each with
                             their own leaderboards, rules, moderators,
@@ -47,7 +47,7 @@ export default function About() {
 
                 <div className="stats-container">
                     <div className="title-content">
-                        <h2 className="title">HOW BIG IS SPEEDRUN.COM?</h2>
+                        <h2 className="title">HOW BIG IS SPEEDRUN.COM (NOT!)?</h2>
                     </div>
                     <div className="stats-content">
                         <p className="info-text">
@@ -77,6 +77,21 @@ export default function About() {
                             <h3 className="stats">0</h3>
                             <p className="stats-text">Game communities</p>
                         </div>
+                    </div>
+                </div>
+
+                <div className="features-container">
+                    <div className="title-content">
+                        <h2 className="title">
+                            WHAT FEATURES DOES SPEEDRUN.COM (NOT!) OFFER?
+                        </h2>
+                    </div>
+                    <div>
+                        <p className="info-text">
+                            Speedrun.com (Not!) offers a comprehensive suite of
+                            tools for runners to track their progress, and fans
+                            to follow along.
+                        </p>
                     </div>
                 </div>
             </div>
