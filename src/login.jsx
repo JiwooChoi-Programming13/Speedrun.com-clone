@@ -1,24 +1,28 @@
-import Navigation from "./components/navigation/nav.jsx"
+import Navigation from "./components/navigation/nav.jsx";
+import "./login.css"
 
 export default function Login() {
     return (
         <>
             <Navigation />
-            <div>
-                <h2>Login to Speedrun.com (Not!)</h2>
-                <div>
-                    <div>
+            <div className="login-container">
+                <div className="login-content">
+                    <div className="login-title-container">
+                        <h3 className="login-title">Login to Speedrun.com (Not!)</h3>
+                    </div>
+
+                    <div className="input-container">
                         <label htmlFor="username">Username</label>
-                        <input type="text" id="username"/>
-                    </div>
-                    <div>
+                        <input className="login-input" type="text" id="username"/>
+
                         <label htmlFor="password">Password</label>
-                        <input type="password" id="password"/>
+                        <input className="login-input" type="password" id="password"/>
                     </div>
-                </div>
-                <div>
-                    <button>Login</button>
-                    <button>Sign up</button>
+                    <hr />
+                    <div>
+                        <button>Log in</button>
+                        <button>Sign up</button>
+                    </div>
                 </div>
             </div>
         </>
