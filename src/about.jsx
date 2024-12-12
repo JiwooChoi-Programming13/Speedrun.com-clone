@@ -133,7 +133,7 @@ export default function About() {
                         <p className="info-text">
                             With Speedrun.com (Not!) being a bad influence for
                             posting your speedruns, why not help yourself and do
-                            exactly just that!
+                            exactly just that. Have fun!
                         </p>
                         <button className="button">Post some speedruns</button>
                     </div>

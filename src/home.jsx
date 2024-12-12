@@ -15,18 +15,32 @@ export default function Home() {
                 <div className="games-list-container">
                     <div className="list-container">
                         <div className="list">
+                            {/* 
+                            FIXME: Have a platforms list to filter out a list of
+                            specific platform
+                            */}
                             <h3>Platform</h3>
                             <select className="options">
                                 <option value="Any platform">Any platform</option>
                             </select>
                         </div>
                         <div className="list">
+                            {/* 
+                            FIXME: Have a sorting list to sort out a list of
+                            specific categories
+                            */}
                             <h3>Sort by</h3>
                             <select className="options">
-                                <option value="Most active players">Most active players</option>
+                                <option value="Most active players">
+                                    Most active players
+                                </option>
                             </select>
                         </div>
                         <div className="game-select">
+                            {/* 
+                            FIXME: Have a random game selection where you can choose
+                            a random game.
+                            */}
                             <button className="random-game-button">
                                 Random game
                                 <img src={Random} alt="Select random game" />
@@ -38,6 +52,10 @@ export default function Home() {
                     </div>
 
                     <div className="pages-container">
+                        {/* 
+                        FIXME: Make this page scroll to limit the games that can be
+                        shown on each page.
+                        */}
                         <div className="pages-content">
                             <span className="arrows">&#8676;</span>
                             <p>1</p>
