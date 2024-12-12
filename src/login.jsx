@@ -7,8 +7,14 @@ export default function Login() {
             <div>
                 <h2>Login to Speedrun.com (Not!)</h2>
                 <div>
-                    <p>Username</p>
-                    <p>Password</p>
+                    <div>
+                        <label htmlFor="username">Username</label>
+                        <input type="text" id="username"/>
+                    </div>
+                    <div>
+                        <label htmlFor="password">Password</label>
+                        <input type="password" id="password"/>
+                    </div>
                 </div>
                 <div>
                     <button>Login</button>
