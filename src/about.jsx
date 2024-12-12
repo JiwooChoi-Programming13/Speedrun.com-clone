@@ -9,6 +9,10 @@ export default function About() {
             <Navigation />
             <div className="background"></div>
 
+            {/*
+            FIXME: Look for possible styling fixes in the future
+            */}
+
             <div className="about-container">
                 <div className="title-container">
                     <div className="title-content">
