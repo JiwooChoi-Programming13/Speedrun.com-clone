@@ -19,9 +19,10 @@ export default function Login() {
                         <input className="login-input" type="password" id="password"/>
                     </div>
                     <hr />
-                    <div>
-                        <button>Log in</button>
-                        <button>Sign up</button>
+
+                    <div className="button-container">
+                        <button className="login-button">Log in</button>
+                        <button className="other-button">Sign up</button>
                     </div>
                 </div>
             </div>

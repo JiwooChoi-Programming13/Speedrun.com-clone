@@ -9,7 +9,7 @@
     background: rgb(54, 60, 90);
     border-radius: 8px;
     padding: 8px 14px;
-    width: 30vw;
+    width: 28vw;
 }
 
 .login-title-container,
@@ -32,4 +32,30 @@
     border: none;
     border-radius: 4px;
     height: 38px;
+}
+
+hr {
+    opacity: 0.2;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 0;
+}
+
+.login-button,
+.other-button {
+    background-color: #199C77;
+    border: none;
+    border-radius: 2px;
+    color: rgb(220, 220, 220);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+.other-button {
+    background-color: black;
 }
