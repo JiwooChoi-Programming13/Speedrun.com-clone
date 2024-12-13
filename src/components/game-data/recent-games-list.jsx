@@ -1,4 +1,4 @@
-import games from "./games-data";
+import games from "./games-data.jsx";
 import { SortGames } from "./sorting.jsx";
 
 export default function RecentGamesList() {

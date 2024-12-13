@@ -1,4 +1,4 @@
-import Navigation from "./components/navigation/nav.jsx"
+import Navigation from "./components/Navigation/nav.jsx"
 import Logo from "./assets/Logo.png"
 import Checkmark from "./assets/Checkmark.png"
 import "./about.css"

@@ -2,13 +2,8 @@ import { useState } from 'react'
 import Logo from '../../assets/Logo.png'
 import Search from '../../assets/Search.png'
 import Notification from '../../assets/Notification.png'
-import Avatar from '../../assets/AvatarTest.jpg'
-import Account from '../../assets/Account.png'
-import Settings from '../../assets/Settings.png'
-import Logout from '../../assets/Logout.png'
 import NavigationList from './nav-list-item.jsx'
-import NavigationDropdown from './nav-dropdown.jsx'
-import { Link } from 'react-router-dom'
+import SignAccount from './login-nav-buttons.jsx'
 import './nav.css'
 import './nav-media-queries.css'
 
@@ -21,7 +16,7 @@ export default function Navigation() {
 
     return (
         <div className='navigation'>
-            {/* TODO: Have links for the navigation */}
+            {/* TODO: Have links for the navigation (ALMOST DONE) */}
             <div className='navigation-list'>
                 <div className='logo-icon'>
                     <img
@@ -67,42 +62,7 @@ export default function Navigation() {
                     <p className='notification-tooltip'>Notifications</p>
                 </div>
 
-                <div className='profile-icon' onClick={handleDropdown}>
-                    <img
-                    src={Avatar}
-                    alt="Test"
-                    className='profile'/>
-                    
-                    <p className='down-arrow'>&#9207;</p>
-                    
-                    {active && (
-                    <div className='dropdown-menu'>
-                        {/*
-                            FIXME: Make this dropdown show when you are logged in
-                            and show a login and register buttons when not.
-                        */}
-                        <div className='dropdown-menu-list'>
-                            <NavigationDropdown
-                                text="Username"
-                                src={Account}
-                                alt="Account"
-                            />
-
-                            <NavigationDropdown
-                                text="Settings"
-                                src={Settings}
-                                alt="Settings"
-                            />
-
-                            <NavigationDropdown
-                                text="Sign out"
-                                src={Logout}
-                                alt="Logout"
-                            />
-                        </div>
-                    </div>
-                    )}
-                </div>
+                <SignAccount />
             </div>
         </div>
     )

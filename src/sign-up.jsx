@@ -1,4 +1,4 @@
-import Navigation from "./components/navigation/nav";
+import Navigation from "./components/Navigation/nav";
 import "./login.css"
 
 export default function SignUp() {

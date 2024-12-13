@@ -1,7 +1,7 @@
-import Navigation from "./components/navigation/nav.jsx";
+import Navigation from "./components/Navigation/nav.jsx";
 import Random from "./assets/Random.png";
-import GamesList from "./components/game-data/games-list-display.jsx";
-import RecentGamesList from "./components/game-data/recent-games-list.jsx";
+import GamesList from "./components/Game-data/games-list-display.jsx";
+import RecentGamesList from "./components/Game-data/recent-games-list.jsx";
 import "./games-list.css";
 import "./recent-games.css";
 import "./pages.css";
