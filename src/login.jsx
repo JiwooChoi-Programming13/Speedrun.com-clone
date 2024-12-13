@@ -5,6 +5,11 @@ export default function Login() {
     return (
         <>
             <Navigation />
+
+            {/*
+            FIXME: Have a database get the information from the registered account.
+            */}
+
             <div className="login-container">
                 <div className="login-content">
                     <div className="login-title-container">

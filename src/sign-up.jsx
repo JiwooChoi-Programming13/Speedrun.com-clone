@@ -6,6 +6,10 @@ export default function SignUp() {
         <>
             <Navigation />
 
+            {/*
+            FIXME: Have a database for when you register a new account based on the
+            information from the inputs
+            */}
             <div className="login-container">
                 <div className="login-content">
                     <div className="login-title-container">
