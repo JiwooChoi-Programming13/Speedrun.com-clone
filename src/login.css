@@ -2,19 +2,18 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: 90vh;
 }
 
 .login-content {
     background: rgb(54, 60, 90);
     border-radius: 8px;
-    padding: 8px 14px;
-    width: 28vw;
+    width: 24vw;
 }
 
-.login-title-container,
-.input-container {
+.login-title-container {
     margin-bottom: 4vh;
+    padding: 8px 14px 0 14px;
 }
 
 .login-title {
@@ -24,7 +23,9 @@
 .input-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
+    margin-bottom: 2vh;
+    padding: 4px 14px;
 }
 
 .login-input {
@@ -42,13 +43,15 @@ hr {
     display: flex;
     justify-content: space-between;
     margin: 2vh 0;
+    padding: 4px 14px;
+
 }
 
 .login-button,
 .other-button {
     background-color: #199C77;
     border: none;
-    border-radius: 2px;
+    border-radius: 4px;
     color: rgb(220, 220, 220);
     cursor: pointer;
     font-size: 14px;
