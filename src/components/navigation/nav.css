@@ -9,10 +9,13 @@
     background-color: rgb(25, 156, 119);
     display: flex;
     justify-content: center;
+    opacity: 0.9;
     padding: 8px 0;
+    position: sticky;
+    top: 0;
 }
 
-.list{
+.navigation-list{
     align-items: center;
     display: flex;
     justify-content: center;
