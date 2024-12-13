@@ -6,7 +6,7 @@ import Avatar from '../../assets/AvatarTest.jpg'
 import Account from '../../assets/Account.png'
 import Settings from '../../assets/Settings.png'
 import Logout from '../../assets/Logout.png'
-import NavigationDropdown from '../dropdown-menus/nav-dropdown.jsx'
+import NavigationDropdown from './nav-dropdown.jsx'
 import { Link } from 'react-router-dom'
 import './nav.css'
 import './nav-media-queries.css'
@@ -32,11 +32,11 @@ export default function Navigation() {
                 </div>
 
                 <div className='hovered'>
-                    <Link to="/">Games</Link>
+                    <Link className='link' to="/">Games</Link>
                 </div>
                 <div className='hovered'>Series</div>
                 <div className='hovered'>
-                    <Link to="about">About</Link>
+                    <Link className='link' to="about">About</Link>
                 </div>
                 <div className='hovered help-tooltip'>Help</div>
             </div>
