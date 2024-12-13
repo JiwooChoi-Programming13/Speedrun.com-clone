@@ -8,7 +8,7 @@ export default function Login() {
             <div className="login-container">
                 <div className="login-content">
                     <div className="login-title-container">
-                        <h3 className="login-title">Login to Speedrun.com (Not!)</h3>
+                        <h3 className="login-title">LOGIN TO SPEEDRUN.COM (NOT!)</h3>
                     </div>
 
                     <div className="input-container">

@@ -6,7 +6,7 @@
 }
 
 .login-content {
-    background: rgb(54, 60, 90);
+    background: rgb(36, 50, 55);
     border-radius: 8px;
     width: 24vw;
 }
@@ -17,22 +17,30 @@
 }
 
 .login-title {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .input-container {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 16px;
     margin-bottom: 2vh;
     padding: 4px 14px;
+}
+
+.required {
+    color: #199C77;
+    margin-left: 4px;
 }
 
 .login-input {
     background-color: black;
     border: none;
     border-radius: 4px;
-    height: 38px;
+    color: rgb(216, 216, 216);
+    font-size: 15px;
+    height: 16px;
+    padding: 12px;
 }
 
 hr {
@@ -52,7 +60,7 @@ hr {
     background-color: #199C77;
     border: none;
     border-radius: 4px;
-    color: rgb(220, 220, 220);
+    color: rgb(180, 180, 180);
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
