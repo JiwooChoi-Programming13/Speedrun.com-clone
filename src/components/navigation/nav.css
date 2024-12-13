@@ -41,8 +41,8 @@
 .logo-icon {
     align-items: center;
     color: white;
-    cursor: pointer;
     display: flex;
+    pointer-events: none;
 }
 
 .logo {

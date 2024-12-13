@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navigation from "./components/Navigation/nav";
 import "./login.css"
 
@@ -45,7 +46,9 @@ export default function SignUp() {
 
                     <div className="button-container">
                         <button className="login-button">Sign up</button>
-                        <button className="other-button">Already have an account?</button>
+                        <button className="other-button">
+                            <Link className="link" to="/login">Already have an account?</Link>
+                        </button>
                     </div>
                 </div>
             </div>
