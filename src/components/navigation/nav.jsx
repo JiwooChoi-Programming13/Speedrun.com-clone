@@ -6,6 +6,7 @@ import Avatar from '../../assets/AvatarTest.jpg'
 import Account from '../../assets/Account.png'
 import Settings from '../../assets/Settings.png'
 import Logout from '../../assets/Logout.png'
+import NavigationList from './nav-list-item.jsx'
 import NavigationDropdown from './nav-dropdown.jsx'
 import { Link } from 'react-router-dom'
 import './nav.css'
@@ -31,13 +32,15 @@ export default function Navigation() {
                     <h3>SPEEDRUN.COM</h3>
                 </div>
 
-                <div className='hovered'>
-                    <Link className='link' to="/">Games</Link>
-                </div>
+                <NavigationList
+                text="Games"
+                link="/"
+                />
                 <div className='hovered'>Series</div>
-                <div className='hovered'>
-                    <Link className='link' to="about">About</Link>
-                </div>
+                <NavigationList
+                text="About"
+                link="about"
+                />
                 <div className='hovered help-tooltip'>Help</div>
             </div>
 
