@@ -29,8 +29,13 @@ export default function SignUp() {
                             Password
                             <span className="required">*</span>
                         </label>
-                        
                         <input className="login-input" type="password" id="password" required/>
+
+                        <label htmlFor="Location">Location</label>
+                        <select name="Location" className="select">
+                            <option>Choose a country</option>
+                            <option value="Korea">SK</option>
+                        </select>
                     </div>
                     <hr />
 
