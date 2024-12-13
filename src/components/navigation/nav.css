@@ -184,6 +184,30 @@
     padding: 6px 5px 6px 5px;
 }
 
+.buttons-container {
+    display: flex;
+    gap: 10px;
+}
+
+.login {
+    background-color: transparent;
+    border: none;
+}
+
+.sign-up {
+    border: none;
+    border-radius: 6px;
+    color: rgb(25, 156, 119);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 8px;
+}
+
+.sign-up:hover {
+    opacity: 0.9;
+}
+
 @keyframes fade-in {
     from { opacity: 0; }
     to { opacity: 1; }

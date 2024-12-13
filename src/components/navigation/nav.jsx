@@ -1,9 +1,8 @@
 import { useState } from 'react'
+import { Link } from "react-router-dom"
 import Logo from '../../assets/Logo.png'
 import Search from '../../assets/Search.png'
-import Notification from '../../assets/Notification.png'
 import NavigationList from './nav-list-item.jsx'
-import SignAccount from './login-nav-buttons.jsx'
 import './nav.css'
 import './nav-media-queries.css'
 
@@ -34,7 +33,7 @@ export default function Navigation() {
                 <div className='hovered'>Series</div>
                 <NavigationList
                 text="About"
-                link="about"
+                link="/about"
                 />
                 <div className='hovered help-tooltip'>Help</div>
             </div>
@@ -54,15 +53,14 @@ export default function Navigation() {
                     <input className='search-bar' type="text" id='search-bar' placeholder='Search...'/>
                 </div>
 
-                <div className='notification-icon'>
-                    <img src={Notification}
-                    alt="Notification"
-                    className='notification'
-                    />
-                    <p className='notification-tooltip'>Notifications</p>
+                <div className='buttons-container'>
+                    <button className='hovered login'>
+                        <Link className='link' to="/login">Log in</Link>
+                    </button>
+                    <button className='sign-up'>
+                        <Link className='link sign-up' to="/signup">Sign up</Link>
+                    </button>
                 </div>
-
-                <SignAccount />
             </div>
         </div>
     )
