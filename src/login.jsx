@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Navigation from "./components/navigation/nav.jsx";
-import "./login.css"
+import "./CSS/login.css"
 
 export default function Login() {
     return (

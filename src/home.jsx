@@ -2,9 +2,9 @@ import Navigation from "./components/Navigation/nav.jsx";
 import Random from "./assets/Random.png";
 import GamesList from "./components/Game-data/games-list-display.jsx";
 import RecentGamesList from "./components/Game-data/recent-games-list.jsx";
-import "./games-list.css";
-import "./recent-games.css";
-import "./pages.css";
+import "./CSS/games-list.css";
+import "./CSS/recent-games.css";
+import "./CSS/pages.css";
 
 export default function Home() {
 

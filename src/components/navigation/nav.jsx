@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 import Logo from '../../assets/Logo.png'
 import Search from '../../assets/Search.png'
 import NavigationList from './nav-list-item.jsx'
-import './nav.css'
-import './nav-media-queries.css'
+import '../../CSS/nav.css'
+import '../../CSS/nav-media-queries.css'
 
 export default function Navigation() {
     const [active, setActive] = useState(false);

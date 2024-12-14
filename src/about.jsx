@@ -1,7 +1,7 @@
 import Navigation from "./components/Navigation/nav.jsx"
 import Logo from "./assets/Logo.png"
 import Checkmark from "./assets/Checkmark.png"
-import "./about.css"
+import "./CSS/about.css"
 
 export default function About() {
     return (
