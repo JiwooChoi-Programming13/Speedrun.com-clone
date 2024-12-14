@@ -184,14 +184,10 @@
     padding: 6px 5px 6px 5px;
 }
 
-.buttons-container {
-    display: flex;
-    gap: 10px;
-}
-
 .login {
     background-color: transparent;
     border: none;
+    margin-right: 10px;
 }
 
 .sign-up {
@@ -201,7 +197,7 @@
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
-    padding: 0px 8px;
+    padding: 8px;
 }
 
 .sign-up:hover {
