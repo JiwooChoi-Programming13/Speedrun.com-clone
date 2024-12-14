@@ -7,11 +7,12 @@
 @media (max-width: 1090px) {
     .container {
         flex-direction: column;
-        max-width: max-content;
     }
 
-    .games-list-container {
-        width: min-content;
+    .games-list-container,
+    .recent-games-container {
+        margin: 0 12px;
+        min-width: -webkit-fill-available;
     }
 
     .games-list {
@@ -21,7 +22,12 @@
     .recent-games-container {
         display: flex;
         flex-direction: column;
-        margin-left: 12px;
-        min-width: 96vw;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .games-list {
+        grid-template-columns: repeat(6, 1fr);
     }
 }
