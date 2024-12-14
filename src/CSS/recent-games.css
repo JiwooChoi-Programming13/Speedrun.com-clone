@@ -1,8 +1,8 @@
 .recent-games-container {
+    align-self: flex-start;
     background-color: rgb(27, 20, 41);
     border-radius: 16px;
-    align-self: flex-start;
-    width: 27vw;
+    width: 380px;
 }
 
 .recent-games-category {
@@ -44,8 +44,8 @@
 
 .recent-game-title {
     color: rgb(73, 182, 151);
-    font-size: 15px;
-    width: 17vw;
+    font-size: 14px;
+    width: 16vw;
 }
 
 .recent-active-players {
