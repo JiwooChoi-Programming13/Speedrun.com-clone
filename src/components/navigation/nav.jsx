@@ -4,7 +4,7 @@ import Logo from '../../assets/Logo.png'
 import Search from '../../assets/Search.png'
 import NavigationList from './nav-list-item.jsx'
 import '../../CSS/nav.css'
-import '../../CSS/nav-media-queries.css'
+import '../../CSS/media-queries/nav-media-queries.css'
 
 export default function Navigation() {
     const [active, setActive] = useState(false);

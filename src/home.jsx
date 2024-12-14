@@ -5,6 +5,7 @@ import RecentGamesList from "./components/Game-data/recent-games-list.jsx";
 import "./CSS/games-list.css";
 import "./CSS/recent-games.css";
 import "./CSS/pages.css";
+import "./CSS/media-queries/home-media-queries.css"
 
 export default function Home() {
 

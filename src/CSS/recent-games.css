@@ -2,7 +2,7 @@
     background-color: rgb(27, 20, 41);
     border-radius: 16px;
     align-self: flex-start;
-    width: 26vw;
+    width: 27vw;
 }
 
 .recent-games-category {
@@ -45,7 +45,7 @@
 .recent-game-title {
     color: rgb(73, 182, 151);
     font-size: 15px;
-    width: 18vw;
+    width: 17vw;
 }
 
 .recent-active-players {

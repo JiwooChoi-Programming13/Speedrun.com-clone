@@ -74,7 +74,7 @@ body {
 
 .game {
     cursor: pointer;
-    width: 140px;
+    width: 130px;
 }
 
 .game-content {
@@ -82,7 +82,7 @@ body {
 }
 
 .game-content::after {
-    box-shadow: inset 0 -18px 16px black;
+    box-shadow: inset 0 -20px 16px black;
     content: "";
     position: absolute;
     inset: 0;
@@ -90,8 +90,8 @@ body {
 
 .game-image {
     border-radius: 10px;
-    height: 200px;
-    width: 140px;
+    height: 190px;
+    width: 130px;
 }
 
 .release-year {
