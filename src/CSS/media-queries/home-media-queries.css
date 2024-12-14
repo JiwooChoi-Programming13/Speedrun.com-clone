@@ -1,0 +1,27 @@
+@media (max-width: 1178px) {
+    .games-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1090px) {
+    .container {
+        flex-direction: column;
+        max-width: max-content;
+    }
+
+    .games-list-container {
+        width: min-content;
+    }
+
+    .games-list {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .recent-games-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        min-width: 96vw;
+    }
+}

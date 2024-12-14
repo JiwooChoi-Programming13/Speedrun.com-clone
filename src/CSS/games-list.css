@@ -14,7 +14,7 @@ body {
 .games-list-container {
     background-color: rgb(27, 20, 41);
     border-radius: 16px;
-    padding: 30px 20px;
+    padding: 30px 14px;
     padding-bottom: 15px;
 }
 
@@ -63,7 +63,7 @@ body {
     cursor: pointer;
     padding: 10px;
     padding-right: 12px;
-    width: 18vw;
+    width: 240px;
 }
 
 .games-list {
@@ -74,7 +74,7 @@ body {
 
 .game {
     cursor: pointer;
-    width: 130px;
+    width: max-content;
 }
 
 .game-content {
@@ -90,8 +90,9 @@ body {
 
 .game-image {
     border-radius: 10px;
-    height: 190px;
-    width: 130px;
+    height: 170px;
+    object-fit: fill;
+    width: 140px;
 }
 
 .release-year {
