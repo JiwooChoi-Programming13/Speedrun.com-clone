@@ -1,0 +1,14 @@
+@media (max-width: 660px) {
+    .about-container {
+        margin: 0;
+    }
+
+    .title-content {
+        width: min-content;
+    }
+
+    .title-text,
+    .info-text {
+        display: none;
+    }
+}

@@ -2,6 +2,7 @@ import Navigation from "./components/Navigation/nav.jsx"
 import Logo from "./assets/Logo.png"
 import Checkmark from "./assets/Checkmark.png"
 import "./CSS/about.css"
+import "./CSS/media-queries/about-media-queries.css"
 
 export default function About() {
     return (

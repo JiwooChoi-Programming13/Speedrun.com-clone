@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20vh;
     margin-top: 20vh;
 }
 
@@ -23,7 +24,7 @@
 .stats-container,
 .features-container,
 .advertise-container {
-    margin-bottom: 20vh;
+    max-width: 56vw;
 }
 
 .title-content {
@@ -46,7 +47,6 @@
 .info-text {
     font-size: 1.6rem;
     text-align: center;
-    width: 52vw;
 }
 
 .info-text {
@@ -67,9 +67,9 @@
 .video-example {
     border: 10px solid #199C77;
     border-radius: 8px;
-    height: 400px;
+    height: 60vh;
     margin-top: 4vh;
-    width: 700px;
+    width: 48vw;
 }
 
 .grid-container,
