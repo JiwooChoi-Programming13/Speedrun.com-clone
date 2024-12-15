@@ -46,7 +46,7 @@ export default function About() {
                         </p>
 
                         <iframe className="video-example" src="https://www.youtube.com/embed/q4hBaYFACIo"
-                        title="Explanation speedrun" allowFullScreen>
+                        width="700" height="400" title="Explanation speedrun" allowFullScreen>
                         </iframe>
                     </div>
                 </div>

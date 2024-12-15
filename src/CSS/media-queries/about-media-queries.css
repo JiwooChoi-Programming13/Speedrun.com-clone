@@ -1,10 +1,11 @@
 @media (max-width: 660px) {
-    .about-container {
-        margin: 0;
-    }
-
-    .title-content {
-        width: min-content;
+    .title-container,
+    .explain-container,
+    .stats-container,
+    .features-container,
+    .advertise-container {
+        margin-bottom: 10vh;
+        margin-top: 0;
     }
 
     .title-text,
