@@ -2,7 +2,7 @@
     align-self: flex-start;
     background-color: rgb(27, 20, 41);
     border-radius: 16px;
-    width: 380px;
+    min-width: 380px;
 }
 
 .recent-games-category {
