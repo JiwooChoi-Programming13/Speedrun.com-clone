@@ -1,0 +1,82 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+
+.navigation {
+    background-color: rgb(25, 156, 119);
+    max-width: 100%;
+    opacity: 0.9;
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navigation-list{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hovered {
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    padding: 8px 10px;
+}
+
+.hovered:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo-icon {
+    align-items: center;
+    color: white;
+    display: flex;
+    pointer-events: none;
+}
+
+.logo {
+    height: 40px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    min-width: max-content;
+}
+
+.login {
+    background-color: transparent;
+    border: none;
+}
+
+.sign-up {
+    border: none;
+    border-radius: 6px;
+    color: rgb(25, 156, 119);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.sign-up:hover {
+    opacity: 0.9;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

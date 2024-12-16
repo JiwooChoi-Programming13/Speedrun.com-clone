@@ -1,0 +1,94 @@
+.notification-icon {
+    position: relative;
+}
+
+.notification-icon:hover .notification-tooltip {
+    opacity: 1;
+}
+
+.notification-tooltip {
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    left: -26px;
+    padding: 5px;
+    pointer-events: none;
+    position: absolute;
+    opacity: 0;
+    top: 40px;
+    transition: opacity 600ms;
+    z-index: 1;
+}
+
+.notification-icon {
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.notification {
+    height: 20px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+ .profile-icon {
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    position: relative;
+}
+
+.profile {
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+}
+
+.down-arrow {
+    color: white;
+    font-size: 20px;
+}
+
+.dropdown-menu {
+    animation: fade-in 500ms;
+    background-color: rgb(37, 47, 55);
+    border-radius: 10px;
+    color: white;
+    left: -40px;
+    position: absolute;
+    pointer-events: none;
+    padding: 8px;
+    top: 48px;
+    width: 12vw;
+}
+
+.dropdown-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropdown-list {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    font-size: 18px;
+    gap: 6px;
+    pointer-events: fill;
+    padding: 6px;
+}
+
+.dropdown-list:hover {
+    background-color: rgba(23, 140, 107);
+}
+
+.dropdown-image {
+    background: white;
+    border-radius: 20px;
+    padding: 6px 5px 6px 5px;
+}

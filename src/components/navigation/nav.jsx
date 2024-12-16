@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { Link } from "react-router-dom"
+import NavigationList from './nav-list-item.jsx'
 import Logo from '../../assets/Logo.png'
 import Search from '../../assets/Search.png'
-import NavigationList from './nav-list-item.jsx'
-import '../../CSS/nav.css'
-import '../../CSS/media-queries/nav-media-queries.css'
+import '../../CSS/Navigation/nav.css'
+import '../../CSS/Navigation/nav-search-bar.css'
+// import '../../CSS/Media-queries/nav-media-queries.css'
 
 export default function Navigation() {
     const [active, setActive] = useState(false);
@@ -45,7 +46,7 @@ export default function Navigation() {
                         <img
                         src={Search}
                         alt="Search"
-                        className='search'/>
+                        className='hovered search'/>
                     </label>
 
                     <input className='search-bar' type="text" id='search-bar' placeholder='Search...'/>
