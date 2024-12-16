@@ -57,7 +57,32 @@
         flex-direction: column;
     }
 
+    .list {   
+        flex-direction: column;
+    }
+
     .game-select {
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .games-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 370px) {
+    .games-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .options {
+        font-size: 12px;
+        width: min-content;
+    }
+
+    .pages-container {
+        display: none;
     }
 }
