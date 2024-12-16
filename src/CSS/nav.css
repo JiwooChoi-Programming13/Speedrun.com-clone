@@ -2,17 +2,16 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    /* outline: 1px solid red; */
 }
 
 .navigation {
-    align-items: center;
     background-color: rgb(25, 156, 119);
-    display: flex;
-    justify-content: center;
     opacity: 0.9;
     padding: 8px 0;
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 1;
 }
 
@@ -21,7 +20,6 @@
     display: flex;
     justify-content: center;
     gap: 16px;
-    list-style: none;
 }
 
 .hovered {
@@ -47,8 +45,7 @@
 }
 
 .logo {
-    height: 48px;
-    width: 48px;
+    height: 7vh;
 }
 
 .link {
@@ -59,9 +56,7 @@
 .search-icon {
     align-items: center;
     display: flex;
-    justify-content: space-between;
     gap: 8px;
-    margin-left: 50px;
 }
 
 .search {
@@ -83,14 +78,14 @@
     color: white;
     font-size: 16px;
     padding: 8px 8px 8px 14px;
-    width: 400px;
+    width: 300px;
 }
 
 .search-bar::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.notification-icon {
+/* .notification-icon {
     position: relative;
 }
 
@@ -125,7 +120,7 @@
     width: 20px;
 }
 
-.profile-icon {
+ .profile-icon {
     align-items: center;
     border-radius: 6px;
     cursor: pointer;
@@ -183,12 +178,17 @@
     background: white;
     border-radius: 20px;
     padding: 6px 5px 6px 5px;
+} */
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    min-width: max-content;
 }
 
 .login {
     background-color: transparent;
     border: none;
-    margin-right: 10px;
 }
 
 .sign-up {

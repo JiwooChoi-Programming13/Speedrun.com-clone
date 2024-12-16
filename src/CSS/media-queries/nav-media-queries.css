@@ -22,14 +22,6 @@
         font-size: 20px;
     }
 
-    .navigation {
-        justify-content: space-around;
-    }
-
-    .hovered {
-        font-size: 16px;
-    }
-
     .search-icon {
         margin: 0;
     }
@@ -48,9 +40,7 @@
 }
 
 @media (max-width: 870px) {
-    .navigation {
-        justify-content: space-evenly;
-    }
+
 
     .dropdown-list {
         font-size: 14px;

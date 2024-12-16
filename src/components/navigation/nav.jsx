@@ -36,9 +36,7 @@ export default function Navigation() {
                 link="/about"
                 />
                 <div className='hovered help-tooltip'>Help</div>
-            </div>
-
-            <div className='navigation-list'>
+            
                 {/*
                 FIXME: Make the searchbar interactive based on the value of the input
                 */}
