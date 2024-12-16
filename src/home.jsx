@@ -16,26 +16,28 @@ export default function Home() {
                 <div className="games-list-container">
                     <div className="list-container">
                         <div className="list">
-                            {/* 
-                            FIXME: Have a platforms list to filter out a list of
-                            specific platform
-                            */}
-                            <h3>Platform</h3>
-                            <select className="options">
-                                <option value="Any platform">Any platform</option>
-                            </select>
-                        </div>
-                        <div className="list">
-                            {/* 
-                            FIXME: Have a sorting list to sort out a list of
-                            specific categories
-                            */}
-                            <h3>Sort by</h3>
-                            <select className="options">
-                                <option value="Most active players">
-                                    Most active players
-                                </option>
-                            </select>
+                            <div>
+                                {/* 
+                                FIXME: Have a platforms list to filter out a list of
+                                specific platform
+                                */}
+                                <h3>Platform</h3>
+                                <select className="options">
+                                    <option value="Any platform">Any platform</option>
+                                </select>
+                            </div>
+                            <div>
+                                {/* 
+                                FIXME: Have a sorting list to sort out a list of
+                                specific categories
+                                */}
+                                <h3>Sort by</h3>
+                                <select className="options">
+                                    <option value="Most active players">
+                                        Most active players
+                                    </option>
+                                </select>
+                            </div>
                         </div>
                         <div className="game-select">
                             {/* 

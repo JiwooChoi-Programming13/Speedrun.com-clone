@@ -16,6 +16,7 @@
     .games-list-container,
     .recent-games-container {
         margin: 0 12px;
+        width: max-content;
     }
 
     .games-list {
@@ -31,5 +32,32 @@
 @media (max-width: 1050px) {
     .games-list {
         grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 912px) {
+    .games-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .games-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 620px) {
+    .games-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .list-container {
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    .game-select {
+        margin-bottom: 30px;
     }
 }
