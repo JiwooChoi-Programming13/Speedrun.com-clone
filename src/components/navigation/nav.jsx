@@ -5,43 +5,48 @@ import Logo from '../../assets/Logo.png'
 import Search from '../../assets/Search.png'
 import '../../CSS/Navigation/nav.css'
 import '../../CSS/Navigation/nav-search-bar.css'
-// import '../../CSS/Media-queries/nav-media-queries.css'
+import '../../CSS/Media-queries/nav-media-queries.css'
+import "../../CSS/CSS-variables/nav-variables.css"
 
 export default function Navigation() {
-    const [active, setActive] = useState(false);
+    // const [active, setActive] = useState(false);
     
-    const handleDropdown = () => {
-        setActive(!active);
-    };
+    // const handleDropdown = () => {
+    //     setActive(!active);
+    // };
 
     return (
         <div className='navigation'>
             {/* TODO: Have links for the navigation (ALMOST DONE) */}
             <div className='navigation-list'>
-                <div className='logo-icon'>
+                <div className='logo-container'>
                     <img
                     src={Logo}
                     alt="Logo"
-                    className='logo'
+                    className='logo-icon'
                     />
                     <h3>SPEEDRUN.COM</h3>
                 </div>
 
-                <NavigationList
-                text="Games"
-                link="/"
-                />
-                <div className='hovered'>Series</div>
-                <NavigationList
-                text="About"
-                link="/about"
-                />
-                <div className='hovered help-tooltip'>Help</div>
+                <div className='list-item-container'>
+                    <NavigationList
+                    text="Games"
+                    link="/"
+                    />
+                    <div className='hovered'>Series</div>
+                    <NavigationList
+                    text="About"
+                    link="/about"
+                    />
+                    <div className='hovered help-tooltip'>Help</div>
+                </div>
+            </div>
             
                 {/*
                 FIXME: Make the searchbar interactive based on the value of the input
                 */}
-                <div className='search-icon'>
+            <div className='navigation-list'>
+                <div className='search-container'>
                     <label htmlFor="search-bar">
                         <img
                         src={Search}

@@ -7,18 +7,19 @@
 
 .navigation {
     background-color: rgb(25, 156, 119);
-    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
     opacity: 0.9;
-    padding: 8px 0;
+    padding: var(--nav-padding) 0;
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
-.navigation-list{
-    align-items: center;
+.navigation-list, 
+.list-item-container {
     display: flex;
-    justify-content: center;
     gap: 16px;
 }
 
@@ -27,22 +28,23 @@
     cursor: pointer;
     color: white;
     font-size: 18px;
-    padding: 8px 10px;
+    padding: var(--nav-padding) 10px;
 }
 
 .hovered:hover{
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.logo-icon {
+.logo-container {
     align-items: center;
     color: white;
     display: flex;
     pointer-events: none;
 }
 
-.logo {
+.logo-icon {
     height: 40px;
+    width: auto;
 }
 
 .link {
@@ -69,7 +71,7 @@
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
-    padding: 8px;
+    padding: var(--nav-padding);
 }
 
 .sign-up:hover {
