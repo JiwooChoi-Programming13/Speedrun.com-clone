@@ -6,11 +6,11 @@
 }
 
 .navigation {
-    background-color: rgb(25, 156, 119);
-    display: flex;
+    background-color: var(--main-color);
+    display: var(--flexbox);
     justify-content: center;
     gap: 24px;
-    opacity: 0.9;
+    opacity: var(--nav-opacity);
     padding: var(--nav-padding) 0;
     position: sticky;
     top: 0;
@@ -19,7 +19,7 @@
 
 .navigation-list, 
 .list-item-container {
-    display: flex;
+    display: var(--flexbox);
     gap: 16px;
 }
 
@@ -38,8 +38,8 @@
 .logo-container {
     align-items: center;
     color: white;
-    display: flex;
-    pointer-events: none;
+    display: var(--flexbox);
+    pointer-events: var(--no);
 }
 
 .logo-icon {
@@ -49,25 +49,24 @@
 
 .link {
     color: white;
-    text-decoration: none;
+    text-decoration: var(--no);
 }
 
 .buttons-container {
-    display: flex;
-    justify-content: flex-end;
+    display: var(--flexbox);
     gap: 10px;
     min-width: max-content;
 }
 
 .login {
     background-color: transparent;
-    border: none;
+    border: var(--no);
 }
 
 .sign-up {
-    border: none;
+    border: var(--no);
     border-radius: 6px;
-    color: rgb(25, 156, 119);
+    color: var(--main-color);
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
@@ -75,7 +74,7 @@
 }
 
 .sign-up:hover {
-    opacity: 0.9;
+    opacity: var(--nav-opacity);
 }
 
 @keyframes fade-in {

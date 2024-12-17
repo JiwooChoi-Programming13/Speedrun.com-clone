@@ -1,0 +1,7 @@
+:root {
+    --flexbox: flex;
+    --main-color: rgb(25, 156, 119);
+    --nav-padding: 8px;
+    --nav-opacity: 0.9;
+    --no: none;
+}

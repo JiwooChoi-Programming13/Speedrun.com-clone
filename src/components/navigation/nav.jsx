@@ -6,7 +6,7 @@ import Search from '../../assets/Search.png'
 import '../../CSS/Navigation/nav.css'
 import '../../CSS/Navigation/nav-search-bar.css'
 import '../../CSS/Media-queries/nav-media-queries.css'
-import "../../CSS/CSS-variables/nav-variables.css"
+import "../../CSS/CSS-variables/variables.css"
 
 export default function Navigation() {
     // const [active, setActive] = useState(false);
@@ -27,7 +27,6 @@ export default function Navigation() {
                     />
                     <h3>SPEEDRUN.COM</h3>
                 </div>
-
                 <div className='list-item-container'>
                     <NavigationList
                     text="Games"
@@ -56,10 +55,12 @@ export default function Navigation() {
 
                     <input className='search-bar' type="text" id='search-bar' placeholder='Search...'/>
                 </div>
-
                 <div className='buttons-container'>
-                    <button className='hovered login'>
-                        <Link className='link' to="/login">Log in</Link>
+                    <button className='login'>
+                        <NavigationList
+                        text="Log in"
+                        link="/login"
+                        />
                     </button>
                     <button className='sign-up'>
                         <Link className='link sign-up' to="/signup">Sign up</Link>
