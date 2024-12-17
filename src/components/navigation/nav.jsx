@@ -27,6 +27,7 @@ export default function Navigation() {
                     />
                     <h3>SPEEDRUN.COM</h3>
                 </div>
+                {/* TODO: Make another dropdown for the list-item-container */}
                 <div className='list-item-container'>
                     <NavigationList
                     text="Games"
@@ -63,7 +64,7 @@ export default function Navigation() {
                         />
                     </button>
                     <button className='sign-up'>
-                        <Link className='link sign-up' to="/signup">Sign up</Link>
+                        <Link className='link' to="/signup">Sign up</Link>
                     </button>
                 </div>
             </div>

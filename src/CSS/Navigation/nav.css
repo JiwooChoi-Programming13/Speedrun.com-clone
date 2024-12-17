@@ -39,7 +39,7 @@
     align-items: center;
     color: white;
     display: var(--flexbox);
-    pointer-events: var(--no);
+    pointer-events: var(--none);
 }
 
 .logo-icon {
@@ -49,7 +49,7 @@
 
 .link {
     color: white;
-    text-decoration: var(--no);
+    text-decoration: var(--none);
 }
 
 .buttons-container {
@@ -60,17 +60,20 @@
 
 .login {
     background-color: transparent;
-    border: var(--no);
+    border: var(--none);
 }
 
 .sign-up {
-    border: var(--no);
+    border: var(--none);
     border-radius: 6px;
-    color: var(--main-color);
     cursor: pointer;
+    padding: var(--nav-padding);
+}
+
+.sign-up a {
+    color: var(--main-color);
     font-size: 15px;
     font-weight: bold;
-    padding: var(--nav-padding);
 }
 
 .sign-up:hover {
