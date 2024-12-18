@@ -1,8 +1,7 @@
 import Navigation from "./components/Navigation/nav.jsx"
 import Logo from "./assets/Logo.png"
 import Checkmark from "./assets/Checkmark.png"
-import "./CSS/about.css"
-import "./CSS/media-queries/about-media-queries.css"
+import "./index.css"
 
 export default function About() {
     return (
@@ -14,28 +13,28 @@ export default function About() {
             FIXME: Look for possible styling fixes in the future
             */}
 
-            <div className="about-container">
-                <div className="title-container">
-                    <div className="title-content">
-                        <img className="title-logo" src={Logo} alt="" />
-                        <h1 className="title">SPEEDRUN.COM (NOT!)</h1>
-                    </div>
+            <div className="flex flex-col gap-40 mt-20">
+                <div>
+                    <div className="about-container">
+                        <div className="flex items-center">
+                            <img className="h-20" src={Logo} alt="" />
+                            <h1 className="title">SPEEDRUN.COM (NOT!)</h1>
+                        </div>
 
-                    <div className="beginning-content">
-                        <p className="title-text">
-                            Speedrun.com (Not!) is the false platform for game
-                            communities to organize around the activity of speedrunning.
-                            We host communities for thousands of games, each with
-                            their own leaderboards, rules, moderators,
-                            and participants.
-                        </p>
+                        <div>
+                            <p className="info-text text-white">
+                                Speedrun.com (Not!) is the false platform for game
+                                communities to organize around the activity of speedrunning.
+                                We host communities for thousands of games, each with
+                                their own leaderboards, rules, moderators,
+                                and participants.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <div className="explain-container">
-                    <div className="title-content">
-                        <h2 className="title">WHAT IS SPEEDRUNNING?</h2>
-                    </div>
+                <div className="about-container">
+                    <h2 className="title">WHAT IS SPEEDRUNNING?</h2>
 
                     <div className="explanation-content">
                         <p className="info-text">
@@ -51,10 +50,9 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="stats-container">
-                    <div className="title-content">
-                        <h2 className="title">HOW BIG IS SPEEDRUN.COM (NOT!)?</h2>
-                    </div>
+                <div className="about-container">
+                    <h2 className="title">HOW BIG IS SPEEDRUN.COM (NOT!)?</h2>
+
                     <div className="stats-content">
                         <p className="info-text">
                             Speedrunning has exploded in popularity in recent years.
@@ -86,13 +84,11 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="features-container">
-                    <div className="title-content">
-                        <h2 className="title">
-                            WHAT FEATURES DOES SPEEDRUN.COM (NOT!) OFFER?
-                        </h2>
-                    </div>
-
+                <div className="about-container">
+                    <h2 className="title">
+                        WHAT FEATURES DOES SPEEDRUN.COM (NOT!) OFFER?
+                    </h2>
+                    
                     <div className="features-content">
                         <p className="info-text">
                             Speedrun.com (Not!) offers a comprehensive suite of
@@ -129,8 +125,8 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="advertise-container">
-                    <div className="title-content">
+                <div className="about-container mb-20">
+                    <div>
                         <h2 className="title">ADVERTISE ON SPEEDRUN.COM (NOT!)</h2>
                     </div>
 
