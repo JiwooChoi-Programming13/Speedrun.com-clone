@@ -10,3 +10,13 @@
         /* outline: 1px solid red; */
     }
 }
+
+@layer components {
+    .hovered {
+        @apply rounded-md cursor-pointer text-white text-lg py-1 px-2
+    }
+
+    .hovered:hover {
+        @apply bg-[#ffffff1a]
+    }
+}
