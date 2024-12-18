@@ -13,8 +13,8 @@ export default function Home() {
     return (
         <>
             <Navigation />
-            <div className="flex justify-center gap-10 my-40">
-                <div className="bg-[#1b1429] rounded-2xl px-8 py-3 pb-4">
+            <div className="flex justify-center gap-4 my-40">
+                <div className="bg-[#1b1429] rounded-2xl px-4 py-3 pb-4">
                     <div className="flex items-center justify-between gap-2">
                         <div className="flex gap-4 mb-5">
                             <div>
@@ -65,7 +65,7 @@ export default function Home() {
                                 </svg>
                             </button>
                     </div>
-                    <div className="gap-4 grid grid-cols-5 max-w-full">
+                    <div className="gap-4 grid grid-cols-5">
                         <GamesList />
                     </div>
 

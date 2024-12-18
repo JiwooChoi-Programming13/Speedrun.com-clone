@@ -10,7 +10,7 @@ export default function Navigation() {
     // };
 
     return (
-        <div className='bg-[#199c77] opacity-90 top-0 sticky z-10'>
+        <div className='bg-[#199c77] opacity-95 top-0 sticky z-20'>
             {/* TODO: Have links for the navigation (ALMOST DONE) */}
             <div className='flex gap-4 justify-center w-full py-2 px-2 max-[1126px]:justify-between max-[1126px]:gap-2'>
                 <div className='flex gap-4'>

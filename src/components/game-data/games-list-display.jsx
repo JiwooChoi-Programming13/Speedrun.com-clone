@@ -7,9 +7,9 @@ export default function GamesList() {
     return (
         <>
         {sorting.map((game) =>
-                <div key={game.id} className="cursor-pointer min-w-max">
+                <div key={game.id} className="cursor-pointer w-auto max-w-32">
                 <div className="game-content">
-                    <img className="h-44 rounded-xl w-32" src={game.image} alt={game.name}/>
+                    <img className="rounded-xl" src={game.image} alt={game.name}/>
                     <div className="absolute bg-black rounded text-xs p-1 right-1 top-1">{game.releaseYear}</div>
                     <div className="absolute bottom-2 left-1 rounded-sm text-xs font-bold z-10">{game.name}</div>
                 </div>
