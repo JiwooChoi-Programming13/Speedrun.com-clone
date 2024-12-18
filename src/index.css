@@ -25,6 +25,10 @@
         @apply bg-[#ffffff1a]
     }
 
+    .options {
+        @apply bg-black rounded-md cursor-pointer mt-2 p-2 w-52;
+    }    
+
     .game-content {
         @apply relative
     }
@@ -37,39 +41,28 @@
     }
 
     .game-platform {
-        background-color: #175718;
-        border-radius: 10px;
-        font-size: 14px;
-        padding: 2px 6px 3px 6px;
+        @apply bg-[#175718] font-bold rounded-lg text-xs py-1 px-1;
     }
 
     .game-other-platforms-long,
     .game-other-platforms-short {
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.9);
-        bottom: 28px;
-        font-size: 14px;
-        left: -30px;
-        padding: 10px;
-        padding-right: 14px;
-        opacity: 0;
-        position: absolute;
-        pointer-events: none;
-        text-align: center;
+        @apply absolute bg-[#000000e6] bottom-7 font-normal -left-7 opacity-0 p-2.5 pointer-events-none rounded-lg text-center text-sm w-24 z-20;
         transition: opacity 300ms;
-        width: 70px;
-        z-index: 1;
     }
 
     .game-other-platforms-short {
-        left: -26px;
-        padding: 6px;
+        @apply -left-6 p-1.5 w-20;
     }
 
     .game-platform:hover {
         .game-other-platforms-long,
         .game-other-platforms-short {
-            opacity: 1;
+            @apply opacity-100;
         }
+    }
+
+    .release-date,
+    .players {
+        @apply text-[#d1d5dbcc] text-sm;
     }
 }
