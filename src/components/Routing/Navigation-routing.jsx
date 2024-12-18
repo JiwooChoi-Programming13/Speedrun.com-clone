@@ -8,7 +8,7 @@ import Navigation from '../Navigation/nav.jsx'
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <Navigation />,
+        element: <Home />,
     },
     {
         path: "/about",

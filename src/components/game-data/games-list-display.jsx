@@ -7,19 +7,19 @@ export default function GamesList() {
     return (
         <>
         {sorting.map((game) =>
-                <div key={game.id} className="game">
+                <div key={game.id} className="cursor-pointer">
                 <div className="game-content">
-                    <img className="game-image" src={game.image} alt={game.name}/>
-                    <div className="release-year">{game.releaseYear}</div>
-                    <div className="game-title">{game.name}</div>
+                    <img className="h-44 rounded-xl w-32" src={game.image} alt={game.name}/>
+                    <div className="absolute bg-black rounded text-xs p-1 right-1 top-1">{game.releaseYear}</div>
+                    <div className="absolute rounded-sm bottom-2 text-sm font-bold z-10">{game.name}</div>
                 </div>
-                <div className="details-content">
-                    <p className="active-players">{game.activePlayers} active players</p>
-                    <div className="game-platform-container">
+                <div className="bg-[#252f37] flex flex-col gap-1 -mt-1 p-2 rounded-b-md rounded-r-md">
+                    <p className="text-[#d1d5dbcc] text-sm">{game.activePlayers} active players</p>
+                    <div className="flex gap-2 flex-wrap">
                         <p className="game-platform">{game.platform}</p>
 
                         {game.otherPlatforms.length > 1 ? (
-                            <div className="other-platform-container">
+                            <div className="relative">
                                 <div className="game-platform">
                                     +{game.otherPlatforms.length}
                                     {game.otherPlatforms.length > 3 ? (

@@ -9,6 +9,11 @@
         padding: 0;
         /* outline: 1px solid red; */
     }
+
+    body {
+        background-color: rgb(17, 22, 24);
+        color: white;
+    }
 }
 
 @layer components {
@@ -18,5 +23,53 @@
 
     .hovered:hover {
         @apply bg-[#ffffff1a]
+    }
+
+    .game-content {
+        @apply relative
+    }
+
+    .game-content::after {
+        box-shadow: inset 0 -20px 16px black;
+        content: "";
+        position: absolute;
+        inset: 0;
+    }
+
+    .game-platform {
+        background-color: #175718;
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 2px 6px 3px 6px;
+    }
+
+    .game-other-platforms-long,
+    .game-other-platforms-short {
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.9);
+        bottom: 28px;
+        font-size: 14px;
+        left: -30px;
+        padding: 10px;
+        padding-right: 14px;
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+        text-align: center;
+        transition: opacity 300ms;
+        width: 70px;
+        z-index: 1;
+    }
+
+    .game-other-platforms-short {
+        left: -26px;
+        padding: 6px;
+    }
+
+    .game-platform:hover {
+        .game-other-platforms-long,
+        .game-other-platforms-short {
+            opacity: 1;
+        }
     }
 }

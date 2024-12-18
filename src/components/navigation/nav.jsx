@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import { Link } from "react-router-dom"
 import NavigationList from './nav-list-item.jsx'
 import Logo from '../../assets/Logo.png'
-import "../../index.css"
 
 export default function Navigation() {
     // const [active, setActive] = useState(false);

@@ -2,20 +2,20 @@ import Navigation from "./components/Navigation/nav.jsx";
 import Random from "./assets/Random.png";
 import GamesList from "./components/Game-data/games-list-display.jsx";
 import RecentGamesList from "./components/Game-data/recent-games-list.jsx";
-import "./CSS/games-list.css";
-import "./CSS/recent-games.css";
-import "./CSS/pages.css";
-import "./CSS/media-queries/home-media-queries.css"
+// import "./CSS/games-list.css";
+// import "./CSS/recent-games.css";
+// import "./CSS/pages.css";
+// import "./CSS/media-queries/home-media-queries.css"
 
 export default function Home() {
 
     return (
         <>
             <Navigation />
-            <div className="container">
-                <div className="games-list-container">
-                    <div className="list-container">
-                        <div className="list">
+            <div className="flex justify-center gap-10 mx-40">
+                <div className="bg-[#1b1429] rounded-2xl px-8 py-3 pb-4">
+                    <div className="flex items-center justify-between gap-2">
+                        <div className="flex gap-4 mb-5">
                             <div>
                                 {/* 
                                 FIXME: Have a platforms list to filter out a list of
@@ -50,7 +50,7 @@ export default function Home() {
                             </button>
                         </div>
                     </div>
-                    <div className="games-list">
+                    <div className="gap-4 grid grid-cols-5">
                         <GamesList />
                     </div>
 
