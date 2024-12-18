@@ -10,7 +10,7 @@ export default function RecentGamesList() {
             {players.map((game) => 
             <div key={game.id} className="cursor-pointer flex items-center justify-between p-3.5 even:bg-[#272033] last:hover:rounded-b-lg hover:bg-[#716a7d66]">
                 <div className="flex items-center gap-1.5">
-                    <img className="h-12 object-contain w-12" src={game.image} alt={game.name} />
+                    <img className="h-12 object-contain rounded-2xl w-12" src={game.image} alt={game.name} />
                     <div>
                         <h4 className="text-[#49b697] text-sm w-52">{game.name}</h4>
                         <p className="release-date">Released {game.releaseYear}-{game.releaseMonth}-{game.releaseDay}</p>
