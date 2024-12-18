@@ -5,7 +5,7 @@ import Logo from '../../assets/Logo.png'
 import Search from '../../assets/Search.png'
 import '../../CSS/Navigation/nav.css'
 import '../../CSS/Navigation/nav-search-bar.css'
-import '../../CSS/Media-queries/nav-media-queries.css'
+// import '../../CSS/Media-queries/nav-media-queries.css'
 import "../../CSS/CSS-variables/variables.css"
 
 export default function Navigation() {
@@ -17,6 +17,9 @@ export default function Navigation() {
 
     return (
         <div className='navigation'>
+            <h1 className="text-3xl font-bold underline">
+                Hello world!
+                </h1>
             {/* TODO: Have links for the navigation (ALMOST DONE) */}
             <div className='navigation-list'>
                 <div className='logo-container'>
@@ -42,9 +45,9 @@ export default function Navigation() {
                 </div>
             </div>
             
-                {/*
-                FIXME: Make the searchbar interactive based on the value of the input
-                */}
+            {/*
+            FIXME: Make the searchbar interactive based on the value of the input
+            */}
             <div className='navigation-list'>
                 <div className='search-container'>
                     <label htmlFor="search-bar">

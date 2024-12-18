@@ -36,7 +36,7 @@
 @media (max-width: 746px) {
     .logo-container h3,
     .list-item-container {
-        display: var(--no);
+        display: var(--none);
     }
 
     /* .dropdown-list {
