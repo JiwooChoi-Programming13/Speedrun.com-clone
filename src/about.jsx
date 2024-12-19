@@ -1,7 +1,7 @@
 import Navigation from "./components/Navigation/nav.jsx"
 import Logo from "./assets/Logo.png"
-import Checkmark from "./assets/Checkmark.png"
 import StatsGrid from "./components/About/stats-grid.jsx"
+import FeaturesGrid from "./components/About/features-grid.jsx"
 import "./index.css"
 
 export default function About() {
@@ -93,30 +93,25 @@ export default function About() {
                     {/* TODO: Make a component prop to avoid repetition */}
 
                     <div className="features-grid-container">
-                        <div className="features-grid-content">
-                            <img src={Checkmark} alt="Checkmark" />
-                            <p>Leaderboards and rankings</p>
-                        </div>
+                        <FeaturesGrid
+                        text="Leaderboards and rankings"
+                        />
 
-                        <div className="features-grid-content">
-                            <img src={Checkmark} alt="Checkmark" />
-                            <p>Game cusomization</p>
-                        </div>
+                        <FeaturesGrid
+                        text="Game cusomization"
+                        />
 
-                        <div className="features-grid-content">
-                            <img src={Checkmark} alt="Checkmark" />
-                            <p>Moderation tools</p>
-                        </div>
+                        <FeaturesGrid
+                        text="Moderation tools"
+                        />
 
-                        <div className="features-grid-content">
-                            <img src={Checkmark} alt="Checkmark" />
-                            <p>User profiles</p>
-                        </div>
+                        <FeaturesGrid
+                        text="User profiles"
+                        />
 
-                        <div className="features-grid-content">
-                            <img src={Checkmark} alt="Checkmark" />
-                            <p>Notifications from other users</p>
-                        </div>
+                        <FeaturesGrid
+                        text="Notifications from other users"
+                        />
                     </div>
                 </div>
 
