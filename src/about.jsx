@@ -14,7 +14,7 @@ export default function About() {
             FIXME: Look for possible styling fixes in the future
             */}
 
-            <div className="flex flex-col gap-40 mt-20 px-2">
+            <div className="flex flex-col gap-40 mt-20">
                 <div className="about-container">
                     <div className="flex items-center">
                         <img className="h-20" src={Logo} />
@@ -60,7 +60,7 @@ export default function About() {
                             <span className="block">(That being me)</span>
                         </p>
 
-                    <div className="grid grid-cols-4 gap-2.5">
+                    <div className="gap-2.5 grid grid-cols-4">
                         <StatsGrid
                         text="Yearly visitors"
                         />
@@ -90,9 +90,7 @@ export default function About() {
                         to follow along.
                     </p>
 
-                    {/* TODO: Make a component prop to avoid repetition */}
-
-                    <div className="features-grid-container">
+                    <div className="gap-4 grid grid-cols-2">
                         <FeaturesGrid
                         text="Leaderboards and rankings"
                         />
@@ -110,7 +108,7 @@ export default function About() {
                         />
 
                         <FeaturesGrid
-                        text="Notifications from other users"
+                        text="Notifications"
                         />
                     </div>
                 </div>
