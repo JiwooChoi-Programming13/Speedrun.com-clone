@@ -12,7 +12,7 @@ export default function RecentGamesList() {
                 <div className="flex items-center gap-1.5">
                     <img className="h-12 object-contain rounded-2xl w-12" src={game.image} alt={game.name} />
                     <div>
-                        <h4 className="text-[#49b697] text-sm w-52">{game.name}</h4>
+                        <h4 className="font-bold text-[#49b697] text-sm w-52">{game.name}</h4>
                         <p className="release-date">Released {game.releaseYear}-{game.releaseMonth}-{game.releaseDay}</p>
                     </div>
                 </div>

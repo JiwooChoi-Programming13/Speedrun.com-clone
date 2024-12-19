@@ -66,15 +66,18 @@
     }
 
     .background {
-        @apply fixed h-full opacity-5 w-full -z-10;
-        background-image: linear-gradient(30deg, #199C77 12%, transparent 12.5%, transparent 87%, #199C77 87.5%, #199C77), linear-gradient(150deg, #199C77 12%, transparent 12.5%, transparent 87%, #199C77 87.5%, #199C77), linear-gradient(30deg, #199C77 12%, transparent 12.5%, transparent 87%, #199C77 87.5%, #199C77), linear-gradient(150deg, #199C77 12%, transparent 12.5%, transparent 87%, #199C77 87.5%, #199C77), linear-gradient(60deg, #199C7777 25%, transparent 25.5%, transparent 75%, #199C7777 75%, #199C7777), linear-gradient(60deg, #199C7777 25%, transparent 25.5%, transparent 75%, #199C7777 75%, #199C7777);
-        background-size: 20px 35px;
+        @apply bg-[length:20px_35px] fixed h-full opacity-5 scale-[4.5] w-full -z-10;
+        background-image: linear-gradient(30deg, #199C77 12%, transparent 12.5%, transparent 87%, #199C77 87.5%, #199C77),
+        linear-gradient(150deg, #199C77 12%, transparent 12.5%, transparent 87%, #199C77 87.5%, #199C77),
+        linear-gradient(30deg, #199C77 12%, transparent 12.5%, transparent 87%, #199C77 87.5%, #199C77),
+        linear-gradient(150deg, #199C77 12%, transparent 12.5%, transparent 87%, #199C77 87.5%, #199C77),
+        linear-gradient(60deg, #199C7777 25%, transparent 25.5%, transparent 75%, #199C7777 75%, #199C7777),
+        linear-gradient(60deg, #199C7777 25%, transparent 25.5%, transparent 75%, #199C7777 75%, #199C7777);
         background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
-        transform: scale(3);
     }
 
     .about-container {
-        @apply flex flex-col items-center justify-center gap-8;
+        @apply flex flex-col items-center justify-center gap-7;
     }
 
     .title {
@@ -82,6 +85,6 @@
     }
 
     .info-text {
-        @apply text-[#d1d5dbcc] text-center text-xl w-[48rem];
+        @apply text-[#d1d5dbcc] text-center text-xl max-w-[48rem];
     }
 }

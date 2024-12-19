@@ -1,6 +1,7 @@
 import Navigation from "./components/Navigation/nav.jsx"
 import Logo from "./assets/Logo.png"
 import Checkmark from "./assets/Checkmark.png"
+import StatsGrid from "./components/About/stats-grid.jsx"
 import "./index.css"
 
 export default function About() {
@@ -13,39 +14,38 @@ export default function About() {
             FIXME: Look for possible styling fixes in the future
             */}
 
-            <div className="flex flex-col gap-40 mt-20">
-                <div>
-                    <div className="about-container">
-                        <div className="flex items-center">
-                            <img className="h-20" src={Logo} alt="" />
-                            <h1 className="title">SPEEDRUN.COM (NOT!)</h1>
-                        </div>
+            <div className="flex flex-col gap-40 mt-20 px-2">
+                <div className="about-container">
+                    <div className="flex items-center">
+                        <img className="h-20" src={Logo} />
+                        <h1 className="title">SPEEDRUN.COM (NOT!)</h1>
+                    </div>
 
-                        <div>
-                            <p className="info-text text-white">
-                                Speedrun.com (Not!) is the false platform for game
-                                communities to organize around the activity of speedrunning.
-                                We host communities for thousands of games, each with
-                                their own leaderboards, rules, moderators,
-                                and participants.
-                            </p>
-                        </div>
+                    <div>
+                        <p className="info-text text-white">
+                            Speedrun.com (Not!) is the false platform for game
+                            communities to organize around the activity of speedrunning.
+                            We host communities for thousands of games, each with
+                            their own leaderboards, rules, moderators,
+                            and participants.
+                        </p>
                     </div>
                 </div>
 
                 <div className="about-container">
                     <h2 className="title">WHAT IS SPEEDRUNNING?</h2>
 
-                    <div className="explanation-content">
-                        <p className="info-text">
-                            Speedrunning is the act of completing a video game
-                            as fast as possible. Here's a Wii Sports speedrun
-                            where the goal is to complete a Wii Fitness training
-                            session.
-                        </p>
+                    <p className="info-text">
+                        Speedrunning is the act of completing a video game
+                        as fast as possible. Here's a Wii Sports speedrun
+                        where the goal is to complete a Wii Fitness training
+                        session.
+                    </p>
 
-                        <iframe className="video-example" src="https://www.youtube.com/embed/q4hBaYFACIo"
-                        width="700" height="400" title="Explanation speedrun" allowFullScreen>
+                    <div className="box-border border-8 border-[#199C77] rounded-md">
+                        <iframe className=""
+                        src="https://www.youtube.com/embed/q4hBaYFACIo"
+                        width="760" height="440" title="Explanation speedrun" allowFullScreen>
                         </iframe>
                     </div>
                 </div>
@@ -53,34 +53,29 @@ export default function About() {
                 <div className="about-container">
                     <h2 className="title">HOW BIG IS SPEEDRUN.COM (NOT!)?</h2>
 
-                    <div className="stats-content">
                         <p className="info-text">
                             Speedrunning has exploded in popularity in recent years.
                             But not here! Speedrun.com (Not!) is a not so vibrant
                             growing platform with no less than 1 active user.
+                            <span className="block">(That being me)</span>
                         </p>
-                    </div>
 
-                    <div className="grid-container">
-                        <div className="grid-content">
-                            <h3 className="stats">0</h3>
-                            <p className="stats-text">Yearly visitors</p>
-                        </div>
+                    <div className="grid grid-cols-4 gap-2.5">
+                        <StatsGrid
+                        text="Yearly visitors"
+                        />
 
-                        <div className="grid-content">
-                            <h3 className="stats">0</h3>
-                            <p className="stats-text">Speedruns</p>
-                        </div>
+                        <StatsGrid
+                        text="Speedruns"
+                        />
 
-                        <div className="grid-content">
-                            <h3 className="stats">0</h3>
-                            <p className="stats-text">Registered users</p>
-                        </div>
+                        <StatsGrid
+                        text="Registered users"
+                        />
 
-                        <div className="grid-content">
-                            <h3 className="stats">0</h3>
-                            <p className="stats-text">Game communities</p>
-                        </div>
+                        <StatsGrid
+                        text="Game communities"
+                        />
                     </div>
                 </div>
 
@@ -89,13 +84,13 @@ export default function About() {
                         WHAT FEATURES DOES SPEEDRUN.COM (NOT!) OFFER?
                     </h2>
                     
-                    <div className="features-content">
-                        <p className="info-text">
-                            Speedrun.com (Not!) offers a comprehensive suite of
-                            tools for runners to track their progress, and fans
-                            to follow along.
-                        </p>
-                    </div>
+                    <p className="info-text">
+                        Speedrun.com (Not!) offers a comprehensive suite of
+                        tools for runners to track their progress, and fans
+                        to follow along.
+                    </p>
+
+                    {/* TODO: Make a component prop to avoid repetition */}
 
                     <div className="features-grid-container">
                         <div className="features-grid-content">
@@ -130,14 +125,12 @@ export default function About() {
                         <h2 className="title">ADVERTISE ON SPEEDRUN.COM (NOT!)</h2>
                     </div>
 
-                    <div className="advertise-content">
-                        <p className="info-text">
-                            With Speedrun.com (Not!) being a bad influence for
-                            posting your speedruns, why not help yourself and do
-                            exactly just that. Have fun!
-                        </p>
-                        <button className="button">Post some speedruns</button>
-                    </div>
+                    <p className="info-text">
+                        With Speedrun.com (Not!) being a bad influence for
+                        posting your speedruns, why not help yourself and do
+                        exactly just that. Have fun!
+                    </p>
+                    <button className="bg-[#199C77] rounded-md cursor-pointer font-bold p-2">Post some speedruns</button>
                 </div>
             </div>
         </>
