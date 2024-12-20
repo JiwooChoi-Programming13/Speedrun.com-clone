@@ -89,7 +89,7 @@ export default function About() {
                         tools for runners to track their progress, and fans
                         to follow along.
                     </p>
-
+                    
                     <div className="gap-4 grid grid-cols-2">
                         <FeaturesGrid
                         text="Leaderboards and rankings"
