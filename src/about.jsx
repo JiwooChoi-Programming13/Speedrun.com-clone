@@ -43,7 +43,7 @@ export default function About() {
                     </p>
 
                     <div className="box-border border-8 border-[#199C77] rounded-md">
-                        <iframe className=""
+                        <iframe className="max-h-screen max-w-full"
                         src="https://www.youtube.com/embed/q4hBaYFACIo"
                         width="760" height="440" title="Explanation speedrun" allowFullScreen>
                         </iframe>
@@ -53,14 +53,14 @@ export default function About() {
                 <div className="about-container">
                     <h2 className="title">HOW BIG IS SPEEDRUN.COM (NOT!)?</h2>
 
-                        <p className="info-text">
-                            Speedrunning has exploded in popularity in recent years.
-                            But not here! Speedrun.com (Not!) is a not so vibrant
-                            growing platform with no less than 1 active user.
-                            <span className="block">(That being me)</span>
-                        </p>
+                    <p className="info-text">
+                        Speedrunning has exploded in popularity in recent years.
+                        But not here! Speedrun.com (Not!) is a not so vibrant
+                        growing platform with no less than 1 active user.
+                        <span className="block">(That being me)</span>
+                    </p>
 
-                    <div className="gap-2.5 grid grid-cols-4">
+                    <div className="gap-2.5 grid grid-cols-4 max-[556px]:grid-cols-2">
                         <StatsGrid
                         text="Yearly visitors"
                         />
@@ -90,7 +90,7 @@ export default function About() {
                         to follow along.
                     </p>
                     
-                    <div className="gap-4 grid grid-cols-2">
+                    <div className="gap-4 grid grid-cols-2 max-[566px]:grid-cols-1 max-[566px]:w-full">
                         <FeaturesGrid
                         text="Leaderboards and rankings"
                         />

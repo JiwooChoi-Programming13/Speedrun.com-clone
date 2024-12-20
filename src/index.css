@@ -77,11 +77,11 @@
     }
 
     .about-container {
-        @apply flex flex-col items-center justify-center gap-7;
+        @apply flex flex-col items-center gap-7 px-2;
     }
 
     .title {
-        @apply text-2xl font-bold;
+        @apply font-bold text-2xl text-center;
     }
 
     .info-text {
@@ -94,11 +94,23 @@
     }
     
     .login-input {
-        @apply bg-[#4848894d] border-none h-9 rounded text-[#d8d8d8] p-3;
+        @apply bg-black border-none h-9 rounded text-[#d8d8d8] p-3;
     }
 
     .login-button,
     .other-button {
         @apply bg-[#199C77] border-none cursor-pointer font-bold py-2 px-2.5 rounded text-sm;
+    }
+}
+
+@layer utilities {
+    @media (max-width: 556px) {
+        .info-text {
+            @apply hidden;
+        }
+
+        .grid-items {
+            @apply p-16 w-full;
+        }
     }
 }
