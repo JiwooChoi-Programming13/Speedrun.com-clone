@@ -94,7 +94,7 @@
     }
     
     .login-input {
-        @apply bg-black border-none h-8 rounded text-[#d8d8d8] p-3;
+        @apply bg-[#4848894d] border-none h-9 rounded text-[#d8d8d8] p-3;
     }
 
     .login-button,

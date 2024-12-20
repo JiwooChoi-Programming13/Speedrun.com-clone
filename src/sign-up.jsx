@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "./components/Navigation/nav.jsx";
+import RegisterInput from "./components/Register/input.jsx";
+import "./index.css";
 
 export default function SignUp() {
     return (
@@ -10,42 +12,40 @@ export default function SignUp() {
             FIXME: Have a database for when you register a new account based on the
             information from the inputs
             */}
-            <div className="login-container">
-                <div className="login-content">
-                    <div className="login-title-container">
-                        <h4 className="login-title">SIGN UP FOR SPEEDRUN.COM (NOT!)</h4>
+            <div className="flex items-center justify-center h-[90vh] px-2">
+                <div className="bg-[#252f37] rounded-lg max-w-sm w-full max-[900px]:max-w-none">
+                    <div className="mb-1 pb-4 py-2 px-3.5">
+                        <h4 className="font-bold">SIGN UP FOR SPEEDRUN.COM (NOT!)</h4>
                     </div>
 
-                    <div className="input-container">
-                        <label htmlFor="username">
-                            Username
-                            <span className="required">*</span>
-                        </label>
-                        <input className="login-input" type="text" id="username" required/>
+                    <div className="flex flex-col gap-3 mb-6 py-1 px-3.5">
+                        <RegisterInput
+                        text="Username"
+                        required={<span>*</span>}
+                        />
 
-                        <label htmlFor="email">
-                            Email address
-                            <span className="required">*</span>
-                        </label>
-                        <input className="login-input" type="email" id="email"/>
+                        <RegisterInput
+                        text="Email"
+                        type="email"
+                        required={<span>*</span>}
+                        />
 
-                        <label htmlFor="password">
-                            Password
-                            <span className="required">*</span>
-                        </label>
-                        <input className="login-input" type="password" id="password" required/>
-
+                        <RegisterInput
+                        text="Password"
+                        type="password"
+                        required={<span>*</span>}
+                        />
+                        
                         <label htmlFor="Location">Location</label>
-                        <select name="Location" className="select">
-                            <option>Choose a country</option>
-                            <option value="Korea">SK</option>
+                        <select name="Location" className="bg-black rounded py-2.5 px-1">
+                            <option value="South Korea">South Korea</option>
                         </select>
                     </div>
-                    <hr />
+                    <hr className="opacity-20"/>
 
-                    <div className="button-container">
+                    <div className="flex gap-3 justify-between my-5 py-1 px-3.5 min-w-max max-[306px]:flex-col">
                         <button className="login-button">Sign up</button>
-                        <button className="other-button">
+                        <button className="other-button bg-black text-[#b4b4b4]">
                             <Link className="link" to="/login">Already have an account?</Link>
                         </button>
                     </div>
