@@ -1,5 +1,6 @@
 import Navigation from "./components/Navigation/nav.jsx";
 import RunsList from "./components/Account/runs-list-display.jsx";
+import FullGameRun from "./components/Account/full-game-run.jsx";
 import Avatar from "./assets/AvatarTest.jpg";
 import "./index.css";
 
@@ -37,105 +38,29 @@ export default function Account() {
 
                 <div className="flex gap-8">
                     <div>
-                        <div className="bg-[#252f37] flex items-center gap-2 rounded-2xl p-4">
-                            <div>
-                                <img className="h-24 object-contain rounded-md w-16" src="https://cdn2.steamgriddb.com/grid/9e925dc2d11970c33393990e93664e9d.png" />
-                            </div>
-                            
-                            <div className=" flex flex-col gap-2">
-                                <p className="font-bold text-lg">Super Mario Bros.</p>
-
-                                <div className="border-white border flex gap-4 justify-between p-2">
-                                    <div className="flex flex-col gap-1">
-                                        <p>Any%</p>
-                                        <p>NTSC</p>
-                                    </div>
-                                    <div className="flex flex-col gap-1">
-                                        <p>415th</p>
-                                        <p>4m 59s 973ms</p>
-                                    </div>
-                                    <div className="flex flex-col gap-1 relative">
-                                        <svg className="rounded-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 100" width="24" height="24">
-
-                                            <rect width="190" height="7.7" fill="#B22234"/>
-                                            <rect y="15.4" width="190" height="7.7" fill="#B22234"/>
-                                            <rect y="31.1" width="190" height="7.7" fill="#B22234"/>
-                                            <rect y="46.8" width="190" height="7.7" fill="#B22234"/>
-                                            <rect y="62.5" width="190" height="7.7" fill="#B22234"/>
-                                            <rect y="78.2" width="190" height="7.7" fill="#B22234"/>
-                                            <rect y="93.9" width="190" height="7.7" fill="#B22234"/>
-                                            
-                                            <rect y="7.7" width="190" height="7.7" fill="#ffffff"/>
-                                            <rect y="23.4" width="190" height="7.7" fill="#ffffff"/>
-                                            <rect y="39.1" width="190" height="7.7" fill="#ffffff"/>
-                                            <rect y="54.8" width="190" height="7.7" fill="#ffffff"/>
-                                            <rect y="70.5" width="190" height="7.7" fill="#ffffff"/>
-                                            <rect y="86.2" width="190" height="7.7" fill="#ffffff"/>
-                                            
-                                            <rect width="76" height="53.8" fill="#3C3B6E"/>
-                                            
-                                            <g fill="#ffffff">
-                                                <circle cx="6" cy="4.6" r="1.5"/>
-                                                <circle cx="12" cy="4.6" r="1.5"/>
-                                                <circle cx="18" cy="4.6" r="1.5"/>
-                                                <circle cx="24" cy="4.6" r="1.5"/>
-                                                <circle cx="30" cy="4.6" r="1.5"/>
-                                                <circle cx="36" cy="4.6" r="1.5"/>
-                                            </g>
-
-                                            <g fill="#ffffff">
-                                                <circle cx="6" cy="9.2" r="1.5"/>
-                                                <circle cx="12" cy="9.2" r="1.5"/>
-                                                <circle cx="18" cy="9.2" r="1.5"/>
-                                                <circle cx="24" cy="9.2" r="1.5"/>
-                                                <circle cx="30" cy="9.2" r="1.5"/>
-                                            </g>
-
-                                            <g fill="#ffffff">
-                                                <circle cx="6" cy="13.8" r="1.5"/>
-                                                <circle cx="12" cy="13.8" r="1.5"/>
-                                                <circle cx="18" cy="13.8" r="1.5"/>
-                                                <circle cx="24" cy="13.8" r="1.5"/>
-                                                <circle cx="30" cy="13.8" r="1.5"/>
-                                                <circle cx="36" cy="13.8" r="1.5"/>
-                                            </g>
-
-                                            <g fill="#ffffff">
-                                                <circle cx="6" cy="18.4" r="1.5"/>
-                                                <circle cx="12" cy="18.4" r="1.5"/>
-                                                <circle cx="18" cy="18.4" r="1.5"/>
-                                                <circle cx="24" cy="18.4" r="1.5"/>
-                                                <circle cx="30" cy="18.4" r="1.5"/>
-                                            </g>
-
-                                            <g fill="#ffffff">
-                                                <circle cx="6" cy="23" r="1.5"/>
-                                                <circle cx="12" cy="23" r="1.5"/>
-                                                <circle cx="18" cy="23" r="1.5"/>
-                                                <circle cx="24" cy="23" r="1.5"/>
-                                                <circle cx="30" cy="23" r="1.5"/>
-                                                <circle cx="36" cy="23" r="1.5"/>
-                                            </g>
-
-                                            <g fill="#ffffff">
-                                                <circle cx="6" cy="27.6" r="1.5"/>
-                                                <circle cx="12" cy="27.6" r="1.5"/>
-                                                <circle cx="18" cy="27.6" r="1.5"/>
-                                                <circle cx="24" cy="27.6" r="1.5"/>
-                                                <circle cx="30" cy="27.6" r="1.5"/>
-                                            </g>
-                                        </svg>
-                                        <p className="absolute font-bold text-sm left-7 -top-1">Emu</p>
-                                        <p>2 months ago</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className="bg-[#252f37] flex flex-col gap-6 rounded-2xl p-4">
+                            <FullGameRun />
                         </div>
                     </div>
 
-                    <div className="bg-[#252f37] rounded-2xl p-4">
-                        <h3 className="font-bold">GAMES RUN</h3>
-                        <RunsList />
+                    <div className="flex flex-col gap-3">
+                        <div className="bg-[#252f37] flex flex-col gap-4 rounded-2xl p-4">
+                            <div>
+                                <p className="font-bold text-lg">About Saxophone_Guy123</p>
+                            </div>
+                            <div className="flex items-center justify-between">
+                                <p>Speedrunning is my dream</p>
+                                <div>
+                                    <p className="font-bold text-[#d1d5dbcc]">Runs</p>
+                                    <p className="font-bold">87</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="bg-[#252f37] rounded-2xl min-w-96 p-4 max-[1010px]:w-full">
+                            <h3 className="font-bold">GAMES RUN</h3>
+                            <RunsList />
+                        </div>
                     </div>
                 </div>
             </div>
