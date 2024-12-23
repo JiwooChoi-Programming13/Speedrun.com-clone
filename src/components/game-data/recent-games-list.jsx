@@ -13,13 +13,13 @@ export default function RecentGamesList() {
                     <img className="h-12 object-contain rounded-2xl w-12" src={game.image} alt={game.name} />
                     <div>
                         <h4 className="font-bold text-[#49b697] text-sm w-52">{game.name}</h4>
-                        <p className="release-date">Released {game.releaseYear}-{game.releaseMonth}-{game.releaseDay}</p>
+                        <p className="run-info">Released {game.releaseYear}-{game.releaseMonth}-{game.releaseDay}</p>
                     </div>
                 </div>
 
                 <div className="text-[#49b697] text-center">
                     <p>{game.activePlayers}</p>
-                    <p className="players">Players</p>
+                    <p className="run-info">Players</p>
                 </div>
             </div>
         )}

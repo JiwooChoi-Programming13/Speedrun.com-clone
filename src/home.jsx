@@ -2,10 +2,6 @@ import Navigation from "./components/Navigation/nav.jsx";
 import GamesList from "./components/Game-data/games-list-display.jsx";
 import RecentGamesList from "./components/Game-data/recent-games-list.jsx";
 import "./index.css"
-// import "./CSS/games-list.css";
-// import "./CSS/recent-games.css";
-// import "./CSS/pages.css";
-// import "./CSS/media-queries/home-media-queries.css"
 
 export default function Home() {
 
