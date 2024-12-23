@@ -37,23 +37,24 @@ export default function Account() {
 
                 <div className="flex gap-8">
                     <div>
-                        <div className="bg-[#252f37] flex gap-2 rounded-2xl p-4">
+                        <div className="bg-[#252f37] flex items-center gap-2 rounded-2xl p-4">
                             <div>
-                                <img className="h-24 object-contain rounded-2xl" src="https://cdn2.steamgriddb.com/grid/9e925dc2d11970c33393990e93664e9d.png" />
+                                <img className="h-24 object-contain rounded-md w-16" src="https://cdn2.steamgriddb.com/grid/9e925dc2d11970c33393990e93664e9d.png" />
                             </div>
                             
-                            <div>
-                                <h3>Super Mario Bros.</h3>
-                                <div className="flex">
-                                    <div>
+                            <div className=" flex flex-col gap-2">
+                                <p className="font-bold text-lg">Super Mario Bros.</p>
+
+                                <div className="border-white border flex gap-4 justify-between p-2">
+                                    <div className="flex flex-col gap-1">
                                         <p>Any%</p>
                                         <p>NTSC</p>
                                     </div>
-                                    <div>
+                                    <div className="flex flex-col gap-1">
                                         <p>415th</p>
                                         <p>4m 59s 973ms</p>
                                     </div>
-                                    <div>
+                                    <div className="flex flex-col gap-1 relative">
                                         <svg className="rounded-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 100" width="24" height="24">
 
                                             <rect width="190" height="7.7" fill="#B22234"/>
@@ -124,14 +125,12 @@ export default function Account() {
                                                 <circle cx="30" cy="27.6" r="1.5"/>
                                             </g>
                                         </svg>
-                                        <p>Emu</p>
+                                        <p className="absolute font-bold text-sm left-7 -top-1">Emu</p>
                                         <p>2 months ago</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div></div>
-                        <div></div>
                     </div>
 
                     <div className="bg-[#252f37] rounded-2xl p-4">
