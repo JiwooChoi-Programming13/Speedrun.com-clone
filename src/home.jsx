@@ -35,29 +35,30 @@ export default function Home() {
                                 </select>
                             </div>
                         </div>
-                            {/* 
-                            FIXME: Have a random game selection where you can choose
-                            a random game.
-                            */}
-                            <button className="bg-[#199c77] cursor-pointer flex font-bold items-center min-w-max rounded-sm p-2 hover:bg-[#1ebb8f] max-[1130px]:mb-8">
-                                Random game
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 64 64"
-                                    width="20"
-                                    height="20"
-                                    fill="none"
-                                    >
-                                    <rect x="8" y="8" width="48" height="48" rx="8" fill="#F2F2F2" stroke="#333" strokeWidth="2" />
+                        {/* 
+                        FIXME: Have a random game selection where you can choose
+                        a random game.
+                        */}
+                        <button className="bg-[#199c77] cursor-pointer flex font-bold items-center min-w-max rounded-sm p-2 hover:bg-[#1ebb8f] max-[1130px]:mb-8">
+                            Random game
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 64 64"
+                                width="20"
+                                height="20"
+                                fill="none"
+                                >
+                                <rect x="8" y="8" width="48" height="48" rx="8" fill="#F2F2F2" stroke="#333" strokeWidth="2" />
 
-                                    <circle cx="16" cy="16" r="4" fill="#333" />
-                                    <circle cx="32" cy="32" r="4" fill="#333" />
-                                    <circle cx="48" cy="48" r="4" fill="#333" />
-                                    <circle cx="48" cy="16" r="4" fill="#333" />
-                                    <circle cx="16" cy="48" r="4" fill="#333" />
-                                </svg>
-                            </button>
+                                <circle cx="16" cy="16" r="4" fill="#333" />
+                                <circle cx="32" cy="32" r="4" fill="#333" />
+                                <circle cx="48" cy="48" r="4" fill="#333" />
+                                <circle cx="48" cy="16" r="4" fill="#333" />
+                                <circle cx="16" cy="48" r="4" fill="#333" />
+                            </svg>
+                        </button>
                     </div>
+
                     <div className="gap-4 grid grid-cols-5
                     max-[1130px]:grid-cols-4 max-[1010px]:grid-cols-7
                     max-[950px]:grid-cols-6 max-[824px]:grid-cols-5 max-[696px]:grid-cols-4
