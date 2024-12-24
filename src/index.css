@@ -102,6 +102,12 @@
 }
 
 @layer utilities {
+    @media (max-width: 730px) {
+        .full-game-text {
+            @apply text-xs
+        }
+    }
+
     @media (max-width: 556px) {
         .info-text {
             @apply hidden;
