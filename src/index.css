@@ -10,8 +10,7 @@
     }
 
     body {
-        background-color: rgb(17, 22, 24);
-        color: white;
+        @apply bg-[#111618] text-white;
     }
 }
 
@@ -60,8 +59,7 @@
         }
     }
 
-    .release-date,
-    .players {
+    .run-info{
         @apply text-[#d1d5dbcc] text-sm;
     }
 
@@ -104,6 +102,12 @@
 }
 
 @layer utilities {
+    @media (max-width: 730px) {
+        .full-game-text {
+            @apply text-xs
+        }
+    }
+
     @media (max-width: 556px) {
         .info-text {
             @apply hidden;

@@ -3,16 +3,16 @@ import Home from '../../home.jsx'
 import About from '../../about.jsx'
 import Login from '../../login.jsx'
 import SignUp from '../../sign-up.jsx'
-import Navigation from '../Navigation/nav.jsx'
+import Account from '../../account.jsx'
 
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <Home />,
+        element: <Account />,
     },
     {
         path: "/about",
-        element: <About />,
+        element: <Home />,
     },
     {
         path: "/login",
