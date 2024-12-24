@@ -4,6 +4,7 @@ import About from '../../about.jsx'
 import Login from '../../login.jsx'
 import SignUp from '../../sign-up.jsx'
 import Account from '../../account.jsx'
+import Settings from '../../settings.jsx'
 
 export const router = createBrowserRouter([
     {
@@ -22,4 +23,8 @@ export const router = createBrowserRouter([
         path: "/signup",
         element: <SignUp />,
     },
+    {
+        path: "/settings",
+        element: <Settings/>
+    }
 ])

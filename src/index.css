@@ -6,7 +6,6 @@
     * {
         @apply m-0 p-0;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        /* outline: 1px solid red; */
     }
 
     body {
@@ -25,7 +24,7 @@
 
     .options {
         @apply bg-black rounded-md cursor-pointer mt-2 p-2 w-52;
-    }    
+    }
 
     .game-content {
         @apply relative
@@ -98,6 +97,18 @@
     .login-button,
     .other-button {
         @apply bg-[#199C77] border-none cursor-pointer font-bold py-2 px-2.5 rounded text-sm;
+    }
+
+    .settings-title {
+        @apply font-bold;
+    }
+
+    .settings-text {
+        @apply font-bold mt-1 text-[#d1d5dbcc] text-sm;
+    }
+
+    .settings-location {
+        @apply bg-black font-bold rounded text-[#d1d5dbcc] py-2.5 px-1;
     }
 }
 

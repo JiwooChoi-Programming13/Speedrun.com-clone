@@ -1,6 +1,7 @@
 import Navigation from "./components/Navigation/nav.jsx";
 import RunsList from "./components/Account/runs-list-display.jsx";
 import FullGameRun from "./components/Account/full-game-run.jsx";
+import { Link } from "react-router-dom";
 import Avatar from "./assets/AvatarTest.jpg";
 import "./index.css";
 
@@ -28,9 +29,9 @@ export default function Account() {
                             </div>
                             
                             <div>
-                                <button className="cursor-pointr font-bold text-[#199c77]">
+                                <Link to="/settings" className="cursor-pointr font-bold text-[#199c77]">
                                     Settings
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
