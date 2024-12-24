@@ -1,4 +1,4 @@
-export const SortGames = (category) => {
-    const GamesList = [...category];
+export const SortGames = (games) => {
+    const GamesList = [...games];
     return GamesList.sort((a, b) => b.activePlayers - a.activePlayers);
 }

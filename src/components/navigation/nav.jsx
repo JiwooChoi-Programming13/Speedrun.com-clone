@@ -19,6 +19,7 @@ export default function Navigation() {
 
     return (
         <div className='navigation'>
+            {/* TODO: Have links for the navigation */}
             <div className='navigation-list'>
                 <div className='logo-icon'>
                     <img
@@ -36,6 +37,9 @@ export default function Navigation() {
             </div>
 
             <div className='navigation-list'>
+                {/*
+                FIXME: Make the searchbar interactive based on the value of the input
+                */}
                 <div className='search-icon'>
                     <label htmlFor="search-bar">
                         <img
@@ -65,6 +69,10 @@ export default function Navigation() {
                     
                     {active && (
                     <div className='dropdown-menu'>
+                        {/*
+                            FIXME: Make this dropdown show when you are logged in
+                            and show a login and register buttons when not.
+                        */}
                         <div className='dropdown-menu-list'>
                             <NavigationDropdown
                                 text="Username"
