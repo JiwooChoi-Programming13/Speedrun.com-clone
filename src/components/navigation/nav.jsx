@@ -1,99 +1,82 @@
 import { useState } from 'react'
+import NavigationList from './nav-list-item.jsx'
 import Logo from '../../assets/Logo.png'
-import Search from '../../assets/Search.png'
-import Notification from '../../assets/Notification.png'
-import Avatar from '../../assets/AvatarTest.jpg'
-import Account from '../../assets/Account.png'
-import Settings from '../../assets/Settings.png'
-import Logout from '../../assets/Logout.png'
-import NavigationDropdown from '../dropdown-menus/nav-dropdown.jsx'
-import './nav.css'
-import './nav-media-queries.css'
 
 export default function Navigation() {
-    const [active, setActive] = useState(false);
+    // const [active, setActive] = useState(false);
     
-    const handleDropdown = () => {
-        setActive(!active);
-    };
+    // const handleDropdown = () => {
+    //     setActive(!active);
+    // };
 
     return (
-        <div className='navigation'>
-            {/* TODO: Have links for the navigation */}
-            <div className='navigation-list'>
-                <div className='logo-icon'>
-                    <img
-                    src={Logo}
-                    alt="Logo"
-                    className='logo'
-                    />
-                    <h3>SPEEDRUN.COM</h3>
+        <div className='bg-[#199c77] opacity-95 top-0 sticky z-20'>
+            {/* TODO: Have links for the navigation (ALMOST DONE) */}
+            <div className='flex gap-4 justify-center w-full py-2 px-2 max-[1126px]:justify-between max-[1126px]:gap-2'>
+                <div className='flex gap-4'>
+                    <div className='flex items-center pointer-events-none max-[1000px]:min-w-max'>
+                        <img
+                        src={Logo}
+                        alt="Logo"
+                        className='h-12'
+                        />
+                        <h3 className='font-bold text-lg max-[1000px]:hidden'>SPEEDRUN.COM</h3>
+                    </div>
+                    {/* TODO: Make another dropdown for the list-item-container */}
+                    <div className='flex gap-4 items-center max-[1000px]:hidden'>
+                        <NavigationList
+                        text="Games"
+                        link="/"
+                        />
+                        <div className='hovered'>Series</div>
+                        <NavigationList
+                        text="About"
+                        link="/about"
+                        />
+                        <div className='hovered'>Help</div>
+                    </div>
                 </div>
-
-                <div className='hovered'>Games</div>
-                <div className='hovered'>Series</div>
-                <div className='hovered'>About</div>
-                <div className='hovered help-tooltip'>Help</div>
-            </div>
-
-            <div className='navigation-list'>
+                
                 {/*
                 FIXME: Make the searchbar interactive based on the value of the input
                 */}
-                <div className='search-icon'>
-                    <label htmlFor="search-bar">
-                        <img
-                        src={Search}
-                        alt="Search"
-                        className='search'/>
-                    </label>
+                <div className='flex gap-4'>
+                    <div className='flex items-center gap-2'>
+                        <label htmlFor="search-bar">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 -2 26 26"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="cursor-pointer text-black"
+                                >
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </label>
 
-                    <input className='search-bar' type="text" id='search-bar' placeholder='Search...'/>
-                </div>
-
-                <div className='notification-icon'>
-                    <img src={Notification}
-                    alt="Notification"
-                    className='notification'
-                    />
-                    <p className='notification-tooltip'>Notifications</p>
-                </div>
-
-                <div className='profile-icon' onClick={handleDropdown}>
-                    <img
-                    src={Avatar}
-                    alt="Test"
-                    className='profile'/>
-                    
-                    <p className='down-arrow'>&#9207;</p>
-                    
-                    {active && (
-                    <div className='dropdown-menu'>
-                        {/*
-                            FIXME: Make this dropdown show when you are logged in
-                            and show a login and register buttons when not.
-                        */}
-                        <div className='dropdown-menu-list'>
-                            <NavigationDropdown
-                                text="Username"
-                                src={Account}
-                                alt="Account"
-                            />
-
-                            <NavigationDropdown
-                                text="Settings"
-                                src={Settings}
-                                alt="Settings"
-                            />
-
-                            <NavigationDropdown
-                                text="Sign out"
-                                src={Logout}
-                                alt="Logout"
-                            />
-                        </div>
+                        <input className='bg-[#3232324d] box-border rounded-md cursor-pointer text-base text-white p-2 w-96 max-[1126px]:hidden'
+                        type="text" id='search-bar' placeholder='Search...'/>
                     </div>
-                    )}
+                    <div className='flex gap-2 min-w-max'>
+                        <button>
+                            <NavigationList
+                            text="Log in"
+                            link="/login"
+                            />
+                        </button>
+                        <button className=''>
+                            <NavigationList
+                            text="Sign up"
+                            link="/signup"
+                            />
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

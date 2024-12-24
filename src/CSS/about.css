@@ -11,11 +11,7 @@
 }
 
 .about-container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20vh;
+    width: 100%;
 }
 
 .title-container,
@@ -23,7 +19,8 @@
 .stats-container,
 .features-container,
 .advertise-container {
-    margin-bottom: 20vh;
+    margin: 20vh auto;
+    max-width: max-content;
 }
 
 .title-content {
@@ -31,6 +28,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 4vh;
+    min-width: 40vw;
 }
 
 .title-logo {
@@ -46,7 +44,6 @@
 .info-text {
     font-size: 1.6rem;
     text-align: center;
-    width: 52vw;
 }
 
 .info-text {
@@ -62,14 +59,15 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    max-width: 56vw;
 }
 
 .video-example {
     border: 10px solid #199C77;
     border-radius: 8px;
-    height: 400px;
+    height: 380px;
     margin-top: 4vh;
-    width: 700px;
+    width: 660px;
 }
 
 .grid-container,

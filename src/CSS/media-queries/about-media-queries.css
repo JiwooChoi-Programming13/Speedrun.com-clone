@@ -1,0 +1,15 @@
+@media (max-width: 660px) {
+    .title-container,
+    .explain-container,
+    .stats-container,
+    .features-container,
+    .advertise-container {
+        margin-bottom: 10vh;
+        margin-top: 0;
+    }
+
+    .title-text,
+    .info-text {
+        display: none;
+    }
+}
