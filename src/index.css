@@ -99,8 +99,12 @@
         @apply bg-[#199C77] border-none cursor-pointer font-bold py-2 px-2.5 rounded text-sm;
     }
 
+    .settings-title {
+        @apply font-bold;
+    }
+
     .settings-text {
-        @apply font-bold text-[#d1d5dbcc] text-sm;
+        @apply font-bold mt-1 text-[#d1d5dbcc] text-sm;
     }
 
     .settings-location {

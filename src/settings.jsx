@@ -6,26 +6,19 @@ export default function Settings() {
     return (
         <>
             <Navigation/>
-            <div className="flex justify-center my-20 px-2 w-full">  
-                <div className="bg-[#252f37] flex flex-col gap-8 rounded-2xl p-4 max-w-4xl">
+            <div className="flex justify-center my-20 px-4 w-full">  
+                <div className="bg-[#252f37] flex flex-col gap-8 rounded-2xl p-4 max-w-full">
                     <p className="text-lg font-bold">YOUR PROFILE</p>
-                    <div>
-                        <p>Customization</p>
-                        <p className="settings-text">
-                            Your name and avatar are visible on your profile and associated with your runs.
-                            You can customize their look here.
-                        </p>
-                    </div>
 
-                    <div>
+                    <div className="flex flex-col gap-4">
                         <div>
-                            <p>Account</p>
+                            <p className="settings-title">Account</p>
                             <p className="settings-text">
                                 Only your username will be visible to the public. Change your
                                 account details to whatever you want.
                             </p>
                         </div>
-                        <div className="flex flex-col gap-2 w-7/12">
+                        <div className="flex flex-col gap-2 w-full">
                             <RegisterInput
                             text="CHANGE USERNAME"
                             />
@@ -42,20 +35,20 @@ export default function Settings() {
 
                     <div>
                         <div>
-                            <p>Avatar</p>
+                            <p className="settings-title">Avatar</p>
                         </div>
 
                         <div className="flex gap-2 mt-2">
-                            <img className="h-14 w-14" src={Avatar} alt="" />
+                            <img className="border-4 border-black h-14 w-14" src={Avatar} alt="" />
                             <button className="bg-[#354008] self-start p-2 rounded text-sm">
                                 Change
                             </button>
                         </div>
                     </div>
 
-                    <div>
+                    <div className="flex flex-col gap-4">
                         <div>
-                            <p>Biography and Pronouns</p>
+                            <p className="settings-title">Biography and Pronouns</p>
                             <p className="settings-text">
                                 Information you share is visible to the public. You can change
                                 or remove it any time.
@@ -70,29 +63,40 @@ export default function Settings() {
                         </div>
                         
                         <div>
-                            <p>Pronouns</p>
-                            <div className="flex gap-4">
-                                <div className="flex gap-1">
+                            <p className="settings-title">Pronouns</p>
+                            <div className="grid grid-flow-col
+                            max-[620px]:grid-rows-2 max-[460px]:grid-rows-3 max-[350px]:grid-rows-5">
+                                <div className="flex gap-1.5">
+                                    <label>N/A</label>
+                                    <input className="align-middle" type="checkbox"/>
+                                </div>
+
+                                <div className="flex gap-1.5">
                                     <label>He/him</label>
                                     <input className="align-middle" type="checkbox"/>
                                 </div>
 
-                                <div className="flex gap-1">
+                                <div className="flex gap-1.5">
                                     <label>She/her</label>
                                     <input className="align-middle" type="checkbox"/>
                                 </div>
 
-                                <div className="flex gap-1">
+                                <div className="flex gap-1.5">
                                     <label>They/them</label>
+                                    <input className="align-middle" type="checkbox"/>
+                                </div>
+
+                                <div className="flex gap-1.5">
+                                    <label>It/its</label>
                                     <input className="align-middle" type="checkbox"/>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div>
+                    <div className="flex flex-col gap-4">
                         <div>
-                            <p>Location</p>
+                            <p className="settings-title">Location</p>
                             <p className="settings-text">
                                 Your location will be visible on your profile. Your country flag
                                 will appear on leaderboards.
@@ -110,6 +114,11 @@ export default function Settings() {
                                 <option value="Gangwon-do">Gangwon-do</option>
                             </select>
                         </div>
+                    </div>
+                    
+                    <div className="flex justify-between">
+                        <button className="other-button w-max">Save</button>
+                        <button className="other-button bg-red-600 w-max">Delete</button>
                     </div>
                 </div>
             </div>
