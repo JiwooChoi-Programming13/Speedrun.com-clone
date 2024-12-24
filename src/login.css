@@ -1,0 +1,80 @@
+.login-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+
+.login-content {
+    background: rgb(36, 50, 55);
+    border-radius: 8px;
+    width: 24vw;
+}
+
+.login-title-container {
+    margin-bottom: 4vh;
+    padding: 8px 14px 0 14px;
+}
+
+.login-title {
+    font-size: 16px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 2vh;
+    padding: 4px 14px;
+}
+
+.required {
+    color: #199C77;
+    margin-left: 4px;
+}
+
+.login-input {
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    color: rgb(216, 216, 216);
+    font-size: 15px;
+    height: 16px;
+    padding: 12px;
+}
+
+.select {
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 12px 6px;
+}
+
+hr {
+    opacity: 0.2;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 0;
+    padding: 4px 14px;
+
+}
+
+.login-button,
+.other-button {
+    background-color: #199C77;
+    border: none;
+    border-radius: 4px;
+    color: rgb(180, 180, 180);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+.other-button {
+    background-color: black;
+}
