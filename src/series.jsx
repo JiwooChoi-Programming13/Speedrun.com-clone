@@ -22,7 +22,7 @@ export default function Series() {
                         </div>
                     </div>
 
-                    <div className="gap-4 grid grid-cols-5">
+                    <div className="gap-4 grid grid-cols-5 max-[628px]:grid-cols-2">
                         <SeriesList />
                     </div>
 
