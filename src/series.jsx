@@ -7,6 +7,21 @@ export default function Series() {
             <Navigation/>
             <div className="flex justify-center gap-4 my-20 px-4 max-[1010px]:flex-col max-[320px]:min-w-36">
                 <div className="bg-[#1b1429] rounded-2xl px-4 py-3 pb-4">
+                    <div className="flex items-center justify-between gap-2 mb-2 max-[1130px]:flex-col max-[1130px]:items-start max-[264px]:hidden">
+                        <div>
+                            {/* 
+                            FIXME: Have a sorting list to sort out a list of
+                            specific categories
+                            */}
+                            <h3>Sort by</h3>
+                            <select className="options">
+                                <option value="Most active players">
+                                    Most active players
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
                     <div className="gap-4 grid grid-cols-5">
                         <SeriesList />
                     </div>
