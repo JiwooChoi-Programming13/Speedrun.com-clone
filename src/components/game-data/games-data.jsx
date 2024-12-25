@@ -9,6 +9,7 @@ const games = [{
     ],
     releaseYear: 2018,
     activePlayers: 581,
+    keyword: "Celeste",
 }, {
     id: 1,
     name: "Super Mario 64",
@@ -17,6 +18,7 @@ const games = [{
     otherPlatforms: ["WiiVC", "WiiUVC", "Switch"],
     releaseYear: 1996,
     activePlayers: 417,
+    keyword: "Super Mario",
 }, {
     id: 2,
     name: "Call of Duty: Black Ops 6 Zombies",
@@ -30,6 +32,7 @@ const games = [{
     releaseMonth: 10,
     releaseDay: 25,
     activePlayers: 369,
+    keyword: "Call of Duty",
 }, {
     id: 3,
     name: "Shadow Generations",
@@ -43,6 +46,7 @@ const games = [{
     releaseMonth: 10,
     releaseDay: 25,
     activePlayers: 334,
+    keyword: "Sonic",
 }, {
     id: 4,
     name: "Minecraft: Java Edition",
@@ -51,10 +55,13 @@ const games = [{
     otherPlatforms: [],
     releaseYear: 2011,
     activePlayers: 253,
+    keyword: "Minecraft",
 }, {
     id: 5,
     name: "Cuphead",
     image: "https://cdn2.steamgriddb.com/grid/25dcf1554f13c36b512dfe907acc77d3.png",
+    series: "Cuphead",
+    logo: "https://cdn2.steamgriddb.com/logo/2eace51d8f796d04991c831a07059758.png",
     platform: "PS4",
     otherPlatforms: [
         "XboxOne", "PC", "Mac", "Switch",
@@ -62,6 +69,7 @@ const games = [{
     ],
     releaseYear: 2017,
     activePlayers: 200,
+    keyword: "Cuphead",
 }, {
     id: 6,
     name: "UFO 50",
@@ -72,10 +80,13 @@ const games = [{
     releaseMonth: "09",
     releaseDay: 18,
     activePlayers: 138,
+    keyword: "UFO 50",
 }, {
     id: 7,
     name: "Sonic Generations",
     image: "https://cdn2.steamgriddb.com/grid/11a70bd53186a8f0662ca1a42faa4076.png",
+    series: "Sonic",
+    logo: "https://cdn2.steamgriddb.com/logo/2eace51d8f796d04991c831a07059758.png",
     platform: "PS4",
     otherPlatforms: [
         "XboxOne", "PC", "Switch", "PS5",
@@ -85,6 +96,7 @@ const games = [{
     releaseMonth: 10,
     releaseDay: 25,
     activePlayers: 138,
+    keyword: "Sonic",
 }, {
     id: 8,
     name: "Getting over it with Bennet Foddy",
@@ -93,34 +105,41 @@ const games = [{
     otherPlatforms: ["Android", "IOS"],
     releaseYear: 2017,
     activePlayers: 130,
+    keyword: "Getting over it",
 }, {
     id: 9,
     name: "The legend of Zelda: Echoes of Wisdom",
     image: "https://cdn2.steamgriddb.com/grid/e488d6f4064e1584c115f2cd7bed74f0.png",
+    series: "Zelda",
     platform: "Switch",
     otherPlatforms: [],
     releaseYear: 2024,
     releaseMonth: "09",
     releaseDay: 26,
     activePlayers: 106,
+    keyword: "Zelda",
 }, {
     id: 10,
     name: "Granny",
     image: "https://cdn2.steamgriddb.com/grid/5788c89947da0ee5c644bb4368475cba.jpg",
+    series: "Granny",
     platform: "Android",
     otherPlatforms: ["IOS"],
     releaseYear: 2017,
     activePlayers: 104,
+    keyword: "Granny",
 }, {
     id: 11,
     name: "Super Mario Party Jamboree",
     image: "https://cdn2.steamgriddb.com/grid/d8990f79de598c52139e95e819c86c8c.png",
+    series: "Super Mario",
     platform: "Switch",
     otherPlatforms: [],
     releaseYear: 2024,
     releaseMonth: 10,
     releaseDay: 17,
     activePlayers: 68,
+    keyword: "Super Mario",
 }, {
     id: 12,
     name: "Silent Hill 2 (2024)",
@@ -131,20 +150,24 @@ const games = [{
     releaseMonth: 10,
     releaseDay: "06",
     activePlayers: 66,
+    keyword: "Silent Hill",
 }, {
     id: 13,
     name: "WEBFISHING",
     image: "https://cdn2.steamgriddb.com/grid/f528102b84fe4d49912d29ed98c254ce.png",
+    series: "Silent Hil",
     platform: "PC",
     otherPlatforms: [],
     releaseYear: 2024,
     releaseMonth: 10,
     releaseDay: 11,
     activePlayers: 47,
+    keyword: "WEBFISHING",
 }, {
     id: 14,
     name: "Roblox: Pressure",
     image: "https://cdn2.steamgriddb.com/grid/1d18a1008a6c41ad5343528b64af3971.png",
+    series: "Roblox",
     platform: "PS4",
     otherPlatforms: [
         "XboxOne", "PC", "Android",
@@ -154,6 +177,7 @@ const games = [{
     releaseMonth: "07",
     releaseDay: "07",
     activePlayers: 301,
+    keyword: "Roblox",
 }];
 
 export default games;
