@@ -1,16 +1,20 @@
-import Navigation from "./components/Navigation/nav";
-
+import Navigation from "./components/Navigation/nav.jsx";
 export default function Series() {
     return (
         <>
             <Navigation/>
             <div className="flex justify-center gap-4 my-20 px-4 max-[1010px]:flex-col max-[320px]:min-w-36">
                 <div className="bg-[#1b1429] rounded-2xl px-4 py-3 pb-4">
-                    <div className="gap-4 grid grid-cols-5
-                    max-[1130px]:grid-cols-4 max-[1010px]:grid-cols-7
-                    max-[950px]:grid-cols-6 max-[824px]:grid-cols-5 max-[696px]:grid-cols-4
-                    max-[575px]:grid-cols-3 max-[450px]:grid-cols-2 max-[320px]:grid-cols-1">
-                        {/* <GamesList /> */}
+                    <div className="gap-4 grid grid-cols-5">
+                        <div className="cursor-pointer max-[1130px]:max-w-none">
+                            <div className="bg-[#252f37] p-6 rounded-xl">
+                                <img src="https://cdn2.steamgriddb.com/logo/2eace51d8f796d04991c831a07059758.png"/>
+                                <div className="flex flex-col justify-center">
+                                    <p>Celeste</p>
+                                    <p className="text-[#d1d5dbcc] text-xs">668 active players</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="flex justify-center mt-2.5 max-[355px]:hidden">

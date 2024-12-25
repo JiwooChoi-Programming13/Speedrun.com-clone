@@ -29,9 +29,7 @@ export default function GamesList() {
                                     )}
                                 </div>
                             </div>
-                        ) : game.otherPlatforms.length === 1 ? (
-                            <p className="game-platform">{game.otherPlatforms}</p>
-                        ) : null}
+                        ) : game.otherPlatforms.length === 1 && <p className="game-platform">{game.otherPlatforms}</p>}
                     </div>
                 </div>
             </div>
