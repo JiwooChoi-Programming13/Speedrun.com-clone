@@ -38,7 +38,7 @@ export default function Leaderboard() {
                     </div>
 
                     <div className="flex gap-4">
-                        <div className="bg-[#20463bcc] flex flex-col gap-3 max-w-fit w-full p-2 rounded">
+                        <div className="bg-[#20463bcc] flex flex-col gap-3 max-w-max w-full p-2 rounded">
                             <div className="flex flex-col gap-1.5">
                                 <div>
                                     <p className="text-sm font-semibold text-[#d1d5dbcc]">Platform</p>
@@ -97,7 +97,15 @@ export default function Leaderboard() {
                                             </div>
                                         </td>
                                         <td>1 Month ago</td>
-                                        <td>N64</td>
+                                        <td>
+                                            <div className="flex justify-center items-center gap-1">
+                                                <svg className="rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="20" height="20">
+                                                    <rect width="300" height="200" fill="white" />
+                                                    <circle cx="150" cy="100" r="60" fill="red" />
+                                                </svg>
+                                                N64
+                                            </div>
+                                        </td>
                                         <td>Yes</td>
                                     </tr>
                                     <tr>
@@ -108,7 +116,15 @@ export default function Leaderboard() {
                                             1h 36m 02s
                                         </div>
                                         <td>5 Months ago</td>
-                                        <td>N64</td>
+                                        <td>
+                                            <div className="flex justify-center items-center gap-1">
+                                                <svg className="rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="20" height="20">
+                                                    <rect width="300" height="200" fill="white" />
+                                                    <circle cx="150" cy="100" r="60" fill="red" />
+                                                </svg>
+                                                N64
+                                            </div>
+                                        </td>
                                         <td>Yes</td>
                                     </tr>
                                     <tr>
@@ -119,7 +135,15 @@ export default function Leaderboard() {
                                             1h 39m 31s
                                         </div>
                                         <td>7 days ago</td>
-                                        <td>N64</td>
+                                        <td>
+                                            <div className="flex justify-center items-center gap-1">
+                                                <svg className="rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="20" height="20">
+                                                    <rect width="300" height="200" fill="white" />
+                                                    <circle cx="150" cy="100" r="60" fill="red" />
+                                                </svg>
+                                                N64
+                                            </div>
+                                        </td>
                                         <td>Yes</td>
                                     </tr>
                                 </table>
