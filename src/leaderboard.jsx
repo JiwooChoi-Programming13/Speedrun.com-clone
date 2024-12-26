@@ -1,4 +1,5 @@
 import Navigation from "./components/Navigation/nav";
+import LeaderboardList from "./components/Leaderboard/leaderboard-display";
 import "./index.css"
 
 export default function Leaderboard() {
@@ -38,7 +39,7 @@ export default function Leaderboard() {
                     </div>
 
                     <div className="flex gap-4">
-                        <div className="bg-[#20463bcc] flex flex-col gap-3 max-w-max w-full p-2 rounded">
+                        <div className="bg-[#20463bcc] flex flex-col gap-3 max-w-max p-2 rounded">
                             <div className="flex flex-col gap-1.5">
                                 <div>
                                     <p className="text-sm font-semibold text-[#d1d5dbcc]">Platform</p>
@@ -75,80 +76,7 @@ export default function Leaderboard() {
                             </div>
                         </div>
 
-                        <div className="w-full">
-                            <div className="bg-[#252f37] rounded-md p-4">
-                                <table className="text-center w-full">
-                                    <tr>
-                                        <th>#</th>
-                                        <th className="mr-auto">Player</th>
-                                        <th>Time</th>
-                                        <th>Date</th>
-                                        <th>Platform</th>
-                                        <th>Verified</th>
-                                    </tr>
-
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Suigi</td>
-                                        <td>
-                                            <div className="flex justify-center gap-2">
-                                                <span>message</span>
-                                                1h 35m 28s
-                                            </div>
-                                        </td>
-                                        <td>1 Month ago</td>
-                                        <td>
-                                            <div className="flex justify-center items-center gap-1">
-                                                <svg className="rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="20" height="20">
-                                                    <rect width="300" height="200" fill="white" />
-                                                    <circle cx="150" cy="100" r="60" fill="red" />
-                                                </svg>
-                                                N64
-                                            </div>
-                                        </td>
-                                        <td>Yes</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Weegee</td>
-                                        <div className="flex justify-center gap-2">
-                                            <span>message</span>
-                                            1h 36m 02s
-                                        </div>
-                                        <td>5 Months ago</td>
-                                        <td>
-                                            <div className="flex justify-center items-center gap-1">
-                                                <svg className="rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="20" height="20">
-                                                    <rect width="300" height="200" fill="white" />
-                                                    <circle cx="150" cy="100" r="60" fill="red" />
-                                                </svg>
-                                                N64
-                                            </div>
-                                        </td>
-                                        <td>Yes</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>HorrorDoesSpeedruns</td>
-                                        <div className="flex justify-center gap-2">
-                                            <span>message</span>
-                                            1h 39m 31s
-                                        </div>
-                                        <td>7 days ago</td>
-                                        <td>
-                                            <div className="flex justify-center items-center gap-1">
-                                                <svg className="rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="20" height="20">
-                                                    <rect width="300" height="200" fill="white" />
-                                                    <circle cx="150" cy="100" r="60" fill="red" />
-                                                </svg>
-                                                N64
-                                            </div>
-                                        </td>
-                                        <td>Yes</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
+                        <LeaderboardList />
                     </div>
                 </div>
             </div>
