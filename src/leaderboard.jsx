@@ -37,18 +37,40 @@ export default function Leaderboard() {
                         </div>
                     </div>
 
-                    <div className="bg-[#20463bcc] flex flex-col gap-3 p-2">
-                        <div className="flex gap-3">
-                            <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">120 Star</p>
-                            <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">70 Star</p>
-                            <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">16 Star</p>
-                            <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">1 Star</p>
-                            <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">0 Star</p>
+                    <div className="bg-[#20463bcc] flex flex-col gap-3 max-w-max p-2 rounded">
+                        <div className="flex flex-col gap-1.5">
+                            <div>
+                                <p className="text-sm font-semibold text-[#d1d5dbcc]">Platform</p>
+                            </div>
+                            
+                            <div className="flex -mx-0.5">
+                                <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-3 rounded-l-lg">N64</p>
+                                <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-3">VC</p>
+                                <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-3 rounded-r-lg">EMU</p>
+                            </div>
                         </div>
 
-                        <div className="flex gap-2 items-center max-w-max">
-                            <p className="bg-black cursor-pointer font-bold px-2 py-1 text-[#d1d5dbcc]">Show rules</p>
-                            <p className="bg-[#199C77] cursor-pointer font-semibold px-4 py-1.5 rounded text-black">Submit run</p>
+                        <div className="flex flex-col gap-1.5">
+                            <div>
+                                <p className="text-sm font-semibold text-[#d1d5dbcc]">Category</p>
+                            </div>
+                            <div className="flex gap-3">
+                                <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">120 Star</p>
+                                <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">70 Star</p>
+                                <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">16 Star</p>
+                                <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">1 Star</p>
+                                <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">0 Star</p>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col gap-1.5">
+                            <div>
+                                <p className="text-sm font-semibold text-[#d1d5dbcc]">Other</p>
+                            </div>
+                            <div className="flex gap-2 items-center">
+                                <p className="bg-black cursor-pointer font-bold px-2 py-1 text-[#d1d5dbcc]">Show rules</p>
+                                <p className="bg-[#199C77] cursor-pointer font-semibold px-4 py-1.5 rounded text-black">Submit run</p>
+                            </div>
                         </div>
                     </div>
                 </div>
