@@ -7,15 +7,15 @@ export default function Leaderboard() {
             <Navigation />
 
             <div className="flex justify-center mt-32">
-                <div className="max-w-4xl w-full">
-                    <div className="bg-[#252f37]">
-                        <div className="flex items-center gap-4 p-6">
-                            <img className="max-h-36" src="https://cdn2.steamgriddb.com/grid/f293653ffa5c0e53453463a82401dbec.png" alt="Super Mario 64" />
+                <div className="flex flex-col gap-6 max-w-4xl w-full">
+                    <div className="bg-[#252f37] rounded-md">
+                        <div className="flex items-center gap-4 px-6 py-4">
+                            <img className="max-h-36 rounded-md" src="https://cdn2.steamgriddb.com/grid/f293653ffa5c0e53453463a82401dbec.png" alt="Super Mario 64" />
                             
                             <div className="flex flex-col gap-2">
-                                <div className="flex font-bold gap-1 items-center text-lg">
+                                <div className="flex font-bold gap-1 items-center">
                                     <p className="text-[#58d68d] text-2xl">Super Mario 64</p>
-                                    <p>(1996)</p>
+                                    <p className="text-xl">(1996)</p>
                                 </div>
 
                                 <div className="flex flex-col gap-2">
@@ -36,7 +36,21 @@ export default function Leaderboard() {
                             </div>
                         </div>
                     </div>
-                    <div></div>
+
+                    <div className="bg-[#20463bcc] flex flex-col gap-3 p-2">
+                        <div className="flex gap-3">
+                            <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">120 Star</p>
+                            <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">70 Star</p>
+                            <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">16 Star</p>
+                            <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">1 Star</p>
+                            <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">0 Star</p>
+                        </div>
+
+                        <div className="flex gap-2 items-center max-w-max">
+                            <p className="bg-black cursor-pointer font-bold px-2 py-1 text-[#d1d5dbcc]">Show rules</p>
+                            <p className="bg-[#199C77] cursor-pointer font-semibold px-4 py-1.5 rounded text-black">Submit run</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
