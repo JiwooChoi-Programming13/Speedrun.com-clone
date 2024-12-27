@@ -7,9 +7,9 @@ export default function LeaderboardList() {
         <>
             {leaderboard.map((leaderboards) => 
                 <div key={leaderboards.id} className="w-full">
-                    <div className="bg-[#252f37] py-4 rounded-md">
+                    <div className="bg-[#252f37] p-4 pb-2 rounded-md">
                         <table className="text-center w-full">
-                            <thead>
+                            <thead className="h-12">
                                 <tr>
                                     <th>#</th>
                                     <th>Player</th>
@@ -22,7 +22,7 @@ export default function LeaderboardList() {
 
                             <tbody>
                             {leaderboards.leaderboardTimes.map((time) => 
-                                <tr className="odd:bg-[#181d22] even:bg-[#252f37]">
+                                <tr className="odd:bg-[#181d22] even:bg-[#252f37]"> 
                                     <td className="py-1.5">{placement++}</td>
                                     <td>{time.player}</td>
                                     <td>
@@ -46,6 +46,26 @@ export default function LeaderboardList() {
                             )}
                             </tbody>
                         </table>
+
+                        <div className="flex items-center justify-between px-4 mt-2.5 max-[355px]:hidden">
+
+                            <p>Showing 1 out of the {leaderboards.leaderboardTimes.length}</p>
+                            {/* 
+                            FIXME: Make this page scroll to limit the games that can be
+                            shown on each page.
+                            */}
+                            <div className="bg-black rounded-lg flex gap-5 p-2">
+                                <span className="cursor-pointer">&#8676;</span>
+                                <p>1</p>
+                                <p>2</p>
+                                <p>3</p>
+                                <p>4</p>
+                                <p>5</p>
+                                <p style={{cursor: "default"}}>...</p>
+                                <p>481</p>
+                                <span className="arrows">&#8677;</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             )}
