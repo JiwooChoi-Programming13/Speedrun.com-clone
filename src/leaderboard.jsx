@@ -1,4 +1,5 @@
 import Navigation from "./components/Navigation/nav";
+import Categories from "./components/Leaderboard/leaderboard-category-display.jsx";
 import LeaderboardList from "./components/Leaderboard/leaderboard-display";
 import "./index.css"
 
@@ -39,7 +40,7 @@ export default function Leaderboard() {
                     </div>
 
                     <div className="flex gap-4">
-                        <div className="bg-[#20463bcc] flex flex-col gap-3 max-w-max p-2 rounded">
+                        <div className="bg-[#20463bcc] flex flex-col gap-3 max-w-max p-2 self-start rounded w-full">
                             <div className="flex flex-col gap-1.5">
                                 <div>
                                     <p className="text-sm font-semibold text-[#d1d5dbcc]">Platform</p>
@@ -56,13 +57,8 @@ export default function Leaderboard() {
                                 <div>
                                     <p className="text-sm font-semibold text-[#d1d5dbcc]">Category</p>
                                 </div>
-                                <div className="flex gap-2">
-                                    <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">120 Star</p>
-                                    <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">70 Star</p>
-                                    <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">16 Star</p>
-                                    <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">1 Star</p>
-                                    <p className="bg-black cursor-pointer font-semibold p-2 rounded-md">0 Star</p>
-                                </div>
+                                
+                                <Categories />
                             </div>
 
                             <div className="flex flex-col gap-1.5">

@@ -9,19 +9,22 @@ export default function LeaderboardList() {
                 <div key={leaderboards.id} className="w-full">
                     <div className="bg-[#252f37] py-4 rounded-md">
                         <table className="text-center w-full">
-                            <tr>
-                                <th>#</th>
-                                <th>Player</th>
-                                <th>Time</th>
-                                <th>Date</th>
-                                <th>Platform</th>
-                                <th>Verified</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Player</th>
+                                    <th>Time</th>
+                                    <th>Date</th>
+                                    <th>Platform</th>
+                                    <th>Verified</th>
+                                </tr>
+                            </thead>
 
-                            {leaderboards.leaderboardTimes.map((time) => 
+                            <tbody>
+                            {leaderboards.category.map((time) => 
                             <tr className="odd:bg-[#181d22] even:bg-[#252f37]">
                                 <td className="py-1.5">{placement++}</td>
-                                <td>{time.player}</td>
+                                <td>{time.times.player}</td>
                                 <td>
                                     <div className="flex justify-center gap-2">
                                         <span>message</span>
@@ -41,6 +44,7 @@ export default function LeaderboardList() {
                                 <td>{time.verified === true ? <p>Yes</p> : <p>No</p>}</td>
                             </tr>
                             )}
+                            </tbody>
                         </table>
                     </div>
                 </div>
