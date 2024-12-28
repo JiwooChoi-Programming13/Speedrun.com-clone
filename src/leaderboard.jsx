@@ -1,6 +1,7 @@
 import Navigation from "./components/Navigation/nav";
 import Categories from "./components/Leaderboard/leaderboard-category-display.jsx";
-import LeaderboardList from "./components/Leaderboard/leaderboard-display";
+import LeaderboardList from "./components/Leaderboard/leaderboard-display.jsx";
+import LeaderboardRuns from "./components/Leaderboard/recent-runs-display.jsx";
 import "./index.css"
 
 export default function Leaderboard() {
@@ -73,53 +74,7 @@ export default function Leaderboard() {
                                 </div>
                             </div>
 
-                            <div className="bg-[#20463bcc] rounded-2xl min-w-[22rem] max-[1010px]:w-full">
-                                <h4 className="font-bold p-3.5">RECENT RUNS</h4>
-
-                                <div className="cursor-pointer px-3 py-2 last:rounded-b-lg hover:bg-[#716a7d66]">
-                                    <div className="flex flex-col gap-2">
-                                        <div>
-                                            <p className="font-semibold text-[#49b697]">120 Star</p>
-                                        </div>
-
-                                        <div className="flex items-center gap-12">
-                                            <div>
-                                                <p className="text-sm">N64 <span>(Yes)</span></p>
-                                                <p>1st</p>
-                                                <p className="text-xs">1h 35m 28s</p>
-                                            </div>
-                                            <div className="text-center">
-                                                <div className="flex items-center gap-1">
-                                                    <svg className="rounded-sm"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 64 32"
-                                                        width="26"
-                                                        height="26"
-                                                        aria-label="Canadian Flag"
-                                                        >
-                                                        {/* Left red bar */}
-                                                        <rect width="16" height="32" fill="#FF0000" />
-
-                                                        {/* White field */}
-                                                        <rect x="16" width="32" height="32" fill="#FFFFFF" />
-
-                                                        {/* Right red bar */}
-                                                        <rect x="48" width="16" height="32" fill="#FF0000" />
-
-                                                        {/* Maple leaf */}
-                                                        <path
-                                                            d="M32 4l2 6 6-1-2 6h5l-4 5 3 3h-5l2 7-6-4-6 4 2-7h-5l3-3-4-5h5l-2-6 6 1z"
-                                                            fill="#FF0000"
-                                                        />
-                                                    </svg>
-                                                    <p>Suigi</p>
-                                                </div>
-                                                <p>1 month ago</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <LeaderboardRuns/>
                         </div>
 
                         <LeaderboardList />
