@@ -75,7 +75,6 @@
 
     .about-container {
         @apply flex flex-col items-center gap-7 px-2;
-        background-color: #181d22;
     }
 
     .title {
