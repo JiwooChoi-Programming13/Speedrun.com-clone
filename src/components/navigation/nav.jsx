@@ -28,7 +28,11 @@ export default function Navigation() {
                         text="Games"
                         link="/"
                         />
-                        <div className='hovered'>Series</div>
+                        <NavigationList
+                        text="Series"
+                        link="/series"
+                        />
+
                         <NavigationList
                         text="About"
                         link="/about"
