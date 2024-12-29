@@ -1,5 +1,6 @@
 import Navigation from "./components/Navigation/nav";
-import Categories from "./components/Leaderboard/leaderboard-category-display.jsx";
+import CategoriesList from "./components/Leaderboard/leaderboard-category-display.jsx";
+import PlatformsList from "./components/Leaderboard/leaderboard-platform.jsx";
 import LeaderboardList from "./components/Leaderboard/leaderboard-display.jsx";
 import LeaderboardRuns from "./components/Leaderboard/recent-runs-display.jsx";
 import "./index.css"
@@ -42,26 +43,9 @@ export default function Leaderboard() {
 
                     <div className="flex gap-4 max-[1020px]:flex-col">
                         <div className="flex flex-col max-w-5xl w-full">
-                            <div className="bg-[#20463bcc] flex flex-col gap-3 p-2 rounded">
-                                <div className="flex flex-col gap-1.5">
-                                    <div>
-                                        <p className="text-sm font-semibold text-[#d1d5dbcc]">Category</p>
-                                    </div>
-                                    
-                                    <Categories />
-                                </div>
-
-                                <div className="flex flex-col gap-1.5">
-                                    <div>
-                                        <p className="text-sm font-semibold text-[#d1d5dbcc]">Platform</p>
-                                    </div>
-                                    
-                                    <div className="flex -mx-0.5">
-                                        <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-2.5 rounded-l-lg">N64</p>
-                                        <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-2.5">VC</p>
-                                        <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-2.5 rounded-r-lg">EMU</p>
-                                    </div>
-                                </div>
+                            <div className="bg-[#20463bcc] flex flex-col flex-no gap-3 p-2 rounded">
+                                <CategoriesList />
+                                <PlatformsList />
 
                                 <div className="flex flex-col gap-1.5">
                                     <div>
@@ -73,6 +57,7 @@ export default function Leaderboard() {
                                     </div>
                                 </div>
                             </div>
+                            
                         <LeaderboardList />
                         </div>
 

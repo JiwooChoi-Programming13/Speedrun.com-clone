@@ -5,7 +5,7 @@ const leaderboard = [{
         "N64", "VC", "EMU"
     ],
 
-    category: ["120 Star", "70 Star", "16 Star", "1 Star", "0 Star"],
+    categories: ["120 Star", "70 Star", "16 Star", "1 Star", "0 Star"],
 
     leaderboardTimes: [{
         player: "Suigi",
