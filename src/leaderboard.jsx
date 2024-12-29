@@ -40,9 +40,17 @@ export default function Leaderboard() {
                         </div>
                     </div>
 
-                    <div className="flex gap-4">
-                        <div className="flex flex-col gap-16 max-w-max w-full">
-                            <div className="bg-[#20463bcc] flex flex-col gap-3 p-2 self-start rounded">
+                    <div className="flex gap-4 max-[1150px]:flex-col">
+                        <div className="flex flex-col w-full">
+                            <div className="bg-[#20463bcc] flex flex-col gap-3 p-2 rounded">
+                                <div className="flex flex-col gap-1.5">
+                                    <div>
+                                        <p className="text-sm font-semibold text-[#d1d5dbcc]">Category</p>
+                                    </div>
+                                    
+                                    <Categories />
+                                </div>
+
                                 <div className="flex flex-col gap-1.5">
                                     <div>
                                         <p className="text-sm font-semibold text-[#d1d5dbcc]">Platform</p>
@@ -57,14 +65,6 @@ export default function Leaderboard() {
 
                                 <div className="flex flex-col gap-1.5">
                                     <div>
-                                        <p className="text-sm font-semibold text-[#d1d5dbcc]">Category</p>
-                                    </div>
-                                    
-                                    <Categories />
-                                </div>
-
-                                <div className="flex flex-col gap-1.5">
-                                    <div>
                                         <p className="text-sm font-semibold text-[#d1d5dbcc]">Other</p>
                                     </div>
                                     <div className="flex gap-2 items-center">
@@ -73,10 +73,10 @@ export default function Leaderboard() {
                                     </div>
                                 </div>
                             </div>
-                            <LeaderboardRuns/>
+                        <LeaderboardList />
                         </div>
 
-                        <LeaderboardList />
+                        <LeaderboardRuns/>
                     </div>
                 </div>
             </div>

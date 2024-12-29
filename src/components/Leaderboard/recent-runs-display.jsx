@@ -9,7 +9,7 @@ export default function LeaderboardRuns() {
                     {leaderboard.map((recent) =>
                         <>
                             {recent.leaderboardTimes.map((runs) => 
-                                <div key={runs.player} className="flex flex-col gap-5 px-3 py-2 even:bg-[#284b41cc] hover:bg-[#20463bcc] last:rounded-b-lg">
+                                <div key={runs.player} className="flex flex-col gap-3 px-3 py-2 even:bg-[#284b41cc] hover:bg-[#20463bcc] last:rounded-b-lg">
                                     <div>
                                         <p className="font-semibold text-[#49b697]">{runs.category}</p>
                                     </div>

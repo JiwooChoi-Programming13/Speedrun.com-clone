@@ -20,7 +20,7 @@ export default function LeaderboardList() {
                                 </tr>
                             </thead>
 
-                            <tbody className="p-5 pb-2">
+                            <tbody className="">
                             {leaderboards.leaderboardTimes.map((time) => 
                                 <tr className="cursor-pointer odd:bg-[#181d22] even:bg-[#252f37] hover:bg-[#ffffff1a]"> 
                                     <td className="py-1.5">{placement++}</td>
