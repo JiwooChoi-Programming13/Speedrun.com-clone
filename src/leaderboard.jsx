@@ -9,7 +9,7 @@ export default function Leaderboard() {
         <>
             <Navigation />
 
-            <div className="flex justify-center mt-32">
+            <div className="flex justify-center px-4 mt-32">
                 <div className="flex flex-col gap-6 max-w-5xl w-full">
                     <div className="bg-[#252f37] rounded-md">
                         <div className="flex items-center gap-4 px-6 py-4">
@@ -32,16 +32,16 @@ export default function Leaderboard() {
                                     </div>
 
                                     <div className="flex gap-2">
-                                        <p className="bg-[#ffffff1a] cursor-pointer text-sm opacity-80 p-1 px-2 rounded">Discord</p>
-                                        <p className="bg-[#ffffff1a] cursor-pointer text-sm opacity-80 p-1 px-2 rounded">Website</p>
+                                        <p className="bg-[#ffffff1a] cursor-pointer text-sm opacity-80 py-1 px-2 rounded">Discord</p>
+                                        <p className="bg-[#ffffff1a] cursor-pointer text-sm opacity-80 py-1 px-2 rounded">Website</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="flex gap-4 max-[1150px]:flex-col">
-                        <div className="flex flex-col w-full">
+                    <div className="flex gap-4 max-[1020px]:flex-col">
+                        <div className="flex flex-col max-w-5xl w-full">
                             <div className="bg-[#20463bcc] flex flex-col gap-3 p-2 rounded">
                                 <div className="flex flex-col gap-1.5">
                                     <div>
@@ -57,9 +57,9 @@ export default function Leaderboard() {
                                     </div>
                                     
                                     <div className="flex -mx-0.5">
-                                        <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-3 rounded-l-lg">N64</p>
-                                        <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-3">VC</p>
-                                        <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-3 rounded-r-lg">EMU</p>
+                                        <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-2.5 rounded-l-lg">N64</p>
+                                        <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-2.5">VC</p>
+                                        <p className="bg-black border border-gray-700 cursor-pointer font-semibold py-1.5 px-2.5 rounded-r-lg">EMU</p>
                                     </div>
                                 </div>
 
@@ -68,7 +68,7 @@ export default function Leaderboard() {
                                         <p className="text-sm font-semibold text-[#d1d5dbcc]">Other</p>
                                     </div>
                                     <div className="flex gap-2 items-center">
-                                        <p className="bg-black cursor-pointer font-bold px-2 py-1 text-[#d1d5dbcc]">Show rules</p>
+                                        <p className="bg-black cursor-pointer font-bold px-2.5 py-1 text-[#d1d5dbcc]">Show rules</p>
                                         <p className="bg-[#199C77] cursor-pointer font-semibold px-4 py-1.5 rounded text-black">Submit run</p>
                                     </div>
                                 </div>

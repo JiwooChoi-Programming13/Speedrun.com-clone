@@ -6,13 +6,15 @@ export default function LeaderboardList() {
     return (
         <>
             {leaderboard.map((leaderboards) => 
-                <div key={leaderboards.id} className="w-full">
+                <div key={leaderboards.id} className="max-[628px]:min-w-max">
                     <div className="bg-[#1e242a] rounded-md">
                         <table className="text-center w-full">
                             <thead className="h-12">
                                 <tr>
                                     <th>#</th>
-                                    <th>Player</th>
+                                    <th>
+                                        <div className="flex">Player</div>
+                                    </th>
                                     <th>Time</th>
                                     <th>Date</th>
                                     <th>Platform</th>
@@ -20,14 +22,20 @@ export default function LeaderboardList() {
                                 </tr>
                             </thead>
 
-                            <tbody className="">
+                            <tbody>
                             {leaderboards.leaderboardTimes.map((time) => 
                                 <tr className="cursor-pointer odd:bg-[#181d22] even:bg-[#252f37] hover:bg-[#ffffff1a]"> 
                                     <td className="py-1.5">{placement++}</td>
-                                    <td>{time.player}</td>
                                     <td>
-                                        <div className="flex justify-center gap-2">
-                                            <span>message</span>
+                                        <div className="flex font-semibold text-sm">{time.player}</div>
+                                    </td>
+                                    <td>
+                                        <div className="flex items-center justify-center gap-2">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" height="18" fill="none">
+                                                    <path d="M16 3C9.383 3 4 7.477 4 13c0 2.803 1.437 5.305 3.78 7.135a12.354 12.354 0 0 1-1.446 3.653c-.307.524-.007 1.222.585 1.213 1.858-.026 4.04-.473 5.895-1.17C14.477 25.394 15.223 25.5 16 25.5c6.617 0 12-4.477 12-10.5S22.617 3 16 3z" fill="#ffffff" stroke="#000" stroke-width="2" />
+                                                </svg>
+                                            </span>
                                             {time.hour}h {time.minutes}m {time.seconds}s
                                         </div>
                                     </td>
