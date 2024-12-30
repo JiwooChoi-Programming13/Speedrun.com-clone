@@ -110,6 +110,11 @@
     .settings-location {
         @apply bg-black font-bold rounded text-[#d1d5dbcc] py-2.5 px-1;
     }
+
+    .date-input {
+        @apply bg-black rounded p-1 px-2 w-max;
+        color-scheme: dark;
+    }
 }
 
 @layer utilities {

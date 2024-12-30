@@ -45,7 +45,7 @@ export default function Submit() {
 
                                     <div className="flex flex-col mb-5 px-4 py-2">
                                         <p>Player 1 <span>*</span></p>
-                                        <div className="options flex items-center gap-3 px-3 py-3.5 w-full">
+                                        <div className="options flex items-center gap-3 px-3 py-3 w-full">
                                             <img className="rounded-full h-8 w-8" src={Avatar} alt="" />
                                             <p>Saxophone_guy123</p>
                                         </div>
@@ -64,7 +64,6 @@ export default function Submit() {
                                     </div>
 
                                     <div className="flex flex-col mb-5 px-4 py-2">
-                                        
                                         <p>Time <span>*</span></p>
                                         <form action="">
                                             <div className="flex focus:border-8">
@@ -91,6 +90,67 @@ export default function Submit() {
                                         </form>
                                     </div>
                                     <hr className="opacity-15"/>
+                                </div>
+
+                                <div>
+                                    <div className="p-4">
+                                        <p>Video</p>
+                                        <p>
+                                            The moderators for this game require video proof in order
+                                            to verify this run.
+                                        </p>
+                                    </div>
+
+                                    <div className="flex flex-col mb-5 px-4 py-2">
+                                        <p>Video URL <span>*</span></p>
+                                        <div className="options flex items-center gap-3 px-3 py-5 w-full"></div>
+                                    </div>
+                                    <hr className="opacity-15"/>
+                                </div>
+
+                                <div>
+                                    <div className="p-4">
+                                        <p>Other details</p>
+                                        <p>
+                                            These values provide useful information about the run, but
+                                            do not affect its placement on the leaderboards.
+                                        </p>
+                                    </div>
+
+                                    <div className="flex flex-col mb-5 px-4 py-2">
+                                        <p>Date <span>*</span></p>
+                                        <input type="date" className="date-input"/>
+                                    </div>
+
+                                    <div className="flex flex-col mb-5 px-4 py-2">
+                                        <div className="flex flex-col gap-5">
+                                            <div>
+                                                <p>Platform <span>*</span></p>
+                                                <select className="options w-full">
+                                                    <option value="PC">PC</option>
+                                                </select>
+                                            </div>
+                                            <div className="flex gap-2">
+                                                <input type="checkbox" id="emu-check"/>
+                                                <label htmlFor="emu-check" className="cursor-pointer">
+                                                    An emulator was used for this run
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <div className="flex flex-col mb-5 px-4 py-2">
+                                            <p>Description</p>
+                                            <textarea className="bg-black"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <hr className="opacity-15"/>
+                                </div>
+
+                                <div className="p-3">
+                                    <button className="login-button">Submit</button>
                                 </div>
                             </div>
                         </div>
