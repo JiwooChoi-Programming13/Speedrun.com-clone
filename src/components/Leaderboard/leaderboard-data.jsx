@@ -2,7 +2,7 @@ const leaderboard = [{
     id: 1,
     name: "Super Mario 64",
     platforms: [
-        "N64", "VC", "EMU"
+        "Nintendo 64", "Wii Vitual Console", "WiiU Vitual Console", "Switch"
     ],
 
     categories: ["120 Star", "70 Star", "16 Star", "1 Star", "0 Star"],

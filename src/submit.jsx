@@ -1,5 +1,6 @@
 import Navigation from "./components/Navigation/nav.jsx";
 import TimeForm from "./components/Submit/time-form.jsx";
+import PlatformList from "./components/Submit/platform-select.jsx";
 import LeaderboardRuns from "./components/Leaderboard/recent-runs-display.jsx";
 import Avatar from "./assets/AvatarTest.jpg";
 
@@ -70,20 +71,22 @@ export default function Submit() {
                                             <div className="flex focus:border-8">
                                                 <TimeForm
                                                 time="h"
+                                                padding="pr-3"
                                                 />
 
                                                 <TimeForm
                                                 time="m"
-                                                padding="4"
+                                                padding="pr-4"
                                                 />
 
                                                 <TimeForm
                                                 time="s"
+                                                padding="pr-2.5"
                                                 />
 
                                                 <TimeForm
                                                 time="ms"
-                                                padding="6"
+                                                padding="pr-6"
                                                 />
                                             </div>
                                         </form>
@@ -140,12 +143,8 @@ export default function Submit() {
 
                                     <div className="flex flex-col mb-5 px-4 py-2">
                                         <div className="flex flex-col gap-5">
-                                            <div>
-                                                <p>Platform <span>*</span></p>
-                                                <select className="options w-full">
-                                                    <option value="PC">PC</option>
-                                                </select>
-                                            </div>
+                                            <PlatformList/>
+                                            
                                             <div className="flex gap-2">
                                                 <input type="checkbox" id="emu-check"/>
                                                 <label htmlFor="emu-check" className="cursor-pointer">
@@ -158,7 +157,7 @@ export default function Submit() {
                                     <div>
                                         <div className="flex flex-col mb-5 px-4 py-2">
                                             <p>Description</p>
-                                            <textarea className="bg-black"></textarea>
+                                            <textarea className="bg-black p-3"></textarea>
                                         </div>
                                     </div>
 
