@@ -1,6 +1,7 @@
-import Navigation from "./components/Navigation/nav";
-import Avatar from "./assets/AvatarTest.jpg";
+import Navigation from "./components/Navigation/nav.jsx";
+import TimeForm from "./components/Submit/time-form.jsx";
 import LeaderboardRuns from "./components/Leaderboard/recent-runs-display.jsx";
+import Avatar from "./assets/AvatarTest.jpg";
 
 export default function Submit() {
     return (
@@ -67,7 +68,23 @@ export default function Submit() {
                                         <p>Time <span>*</span></p>
                                         <form action="">
                                             <div className="flex focus:border-8">
-                                                
+                                                <TimeForm
+                                                time="h"
+                                                />
+
+                                                <TimeForm
+                                                time="m"
+                                                padding="4"
+                                                />
+
+                                                <TimeForm
+                                                time="s"
+                                                />
+
+                                                <TimeForm
+                                                time="ms"
+                                                padding="6"
+                                                />
                                             </div>
                                         </form>
                                     </div>

@@ -112,7 +112,7 @@
     }
 
     #time-input {
-        @apply bg-black text-right px-3.5 w-24 focus:outline-none;
+        @apply bg-black text-right w-24 focus:outline-none;
     }
 
     .date-input {
