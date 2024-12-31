@@ -13,10 +13,10 @@ export default function Submit() {
                         <div className="flex flex-col max-w-5xl w-full">
                             <div className="bg-[#2c453f99] flex flex-col flex-no gap-5 rounded">
                                 <div>
-                                    <div className="p-4">
-                                        <p>SUBMIT RUN</p>
-                                        <p>Categorization</p>
-                                        <p>
+                                    <div className="py-2 px-4">
+                                        <p className="font-semibold">SUBMIT RUN</p>
+                                        <p className="font-semibold pt-6">Categorization</p>
+                                        <p className="info-text text-base text-left">
                                             These values determine which leaderboards the run will be
                                             ranked on.
                                         </p>
@@ -38,7 +38,7 @@ export default function Submit() {
                                 <div>
                                     <div className="p-4">
                                         <p>Players</p>
-                                        <p>
+                                        <p className="info-text text-base text-left">
                                             Which player took part in this run?
                                         </p>
                                     </div>
@@ -56,7 +56,7 @@ export default function Submit() {
                                 <div>
                                     <div className="p-4">
                                         <p>Run time</p>
-                                        <p>
+                                        <p className="info-text text-base text-left">
                                             This time determines the placement of the run on the
                                             leaderboards. For the selected category, shorter times
                                             are considered better.
@@ -95,7 +95,7 @@ export default function Submit() {
                                 <div>
                                     <div className="p-4">
                                         <p>Video</p>
-                                        <p>
+                                        <p className="info-text text-base text-left">
                                             The moderators for this game require video proof in order
                                             to verify this run.
                                         </p>
@@ -111,9 +111,26 @@ export default function Submit() {
                                 <div>
                                     <div className="p-4">
                                         <p>Other details</p>
-                                        <p>
+                                        <p className="info-text text-base text-left">
                                             These values provide useful information about the run, but
                                             do not affect its placement on the leaderboards.
+                                        </p>
+                                    </div>
+
+                                    <div className="flex flex-col mb-5 px-4 py-2">
+                                        {/* 
+                                        FIXME: Have a platforms list to filter out a list of
+                                        specific platform
+                                        */}
+                                        <p>Verified <span>*</span></p>
+                                        <select className="options w-full">
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                        
+                                        <p className="info-text text-xs text-left pt-2">
+                                            For moderator use only, please leave set to "Yes".
+                                            See game rules for details.
                                         </p>
                                     </div>
 
