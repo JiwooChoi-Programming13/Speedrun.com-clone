@@ -67,25 +67,7 @@ export default function Submit() {
                                         <p>Time <span>*</span></p>
                                         <form action="">
                                             <div className="flex focus:border-8">
-                                                <div className="relative">
-                                                    <input className="bg-black text-right px-3.5 w-24 focus:outline-none" type="text" maxLength={3}/>
-                                                    <div className="absolute top-0 right-0">h</div>
-                                                </div>
-
-                                                <div className="relative">
-                                                    <input className="bg-black text-right px-4 w-24 focus:outline-none" type="text" maxLength={3}/>
-                                                    <div className="absolute top-0 right-0">m</div>
-                                                </div>
-
-                                                <div className="relative">
-                                                    <input className="bg-black text-right px-3.5 w-24 focus:outline-none" type="text" maxLength={3}/>
-                                                    <div className="absolute top-0 right-0">s</div>
-                                                </div>
-
-                                                <div className="relative">
-                                                    <input className="bg-black text-right px-6 w-24 focus:outline-none" type="text" maxLength={3}/>
-                                                    <div className="absolute top-0 right-0">ms</div>
-                                                </div>
+                                                
                                             </div>
                                         </form>
                                     </div>

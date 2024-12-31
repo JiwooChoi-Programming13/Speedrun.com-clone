@@ -111,6 +111,10 @@
         @apply bg-black font-bold rounded text-[#d1d5dbcc] py-2.5 px-1;
     }
 
+    #time-input {
+        @apply bg-black text-right px-3.5 w-24 focus:outline-none;
+    }
+
     .date-input {
         @apply bg-black rounded p-1 px-2 w-max;
         color-scheme: dark;
