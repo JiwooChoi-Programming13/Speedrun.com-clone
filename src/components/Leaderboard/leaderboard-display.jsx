@@ -2,7 +2,6 @@ import leaderboard from "./leaderboard-data.jsx";
 
 export default function LeaderboardList() {
     let placement = 1;
-
     return (
         <>
             {leaderboard.map((leaderboards) => 
@@ -23,7 +22,8 @@ export default function LeaderboardList() {
                             </thead>
 
                             <tbody>
-                            {leaderboards.leaderboardTimes.map((time) => 
+                            {/* FIXME: Implement the sortGames function into the leaderboard display if possible */}
+                            {leaderboards.leaderboardTimes.sort((a, b) => a.fullTime - b.fullTime).map((time) => 
                                 <tr className="cursor-pointer odd:bg-[#181d22] even:bg-[#252f37] hover:bg-[#ffffff1a]"> 
                                     <td className="py-1.5">{placement++}</td>
                                     <td>

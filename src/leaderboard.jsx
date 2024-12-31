@@ -3,6 +3,7 @@ import CategoriesList from "./components/Leaderboard/leaderboard-category-displa
 import PlatformsList from "./components/Leaderboard/leaderboard-platform.jsx";
 import LeaderboardList from "./components/Leaderboard/leaderboard-display.jsx";
 import LeaderboardRuns from "./components/Leaderboard/recent-runs-display.jsx";
+import { Link } from "react-router-dom";
 import "./index.css"
 
 export default function Leaderboard() {
@@ -43,7 +44,7 @@ export default function Leaderboard() {
 
                     <div className="flex gap-4 max-[1020px]:flex-col">
                         <div className="flex flex-col max-w-5xl w-full">
-                            <div className="bg-[#20463bcc] flex flex-col flex-no gap-3 p-2 rounded">
+                            <div className="bg-[#2c453f99] flex flex-col flex-no gap-3 p-2 rounded">
                                 <CategoriesList />
                                 <PlatformsList />
 
@@ -53,7 +54,7 @@ export default function Leaderboard() {
                                     </div>
                                     <div className="flex gap-2 items-center">
                                         <p className="bg-black cursor-pointer font-bold px-2.5 py-1 text-[#d1d5dbcc]">Show rules</p>
-                                        <p className="bg-[#199C77] cursor-pointer font-semibold px-4 py-1.5 rounded text-black">Submit run</p>
+                                        <Link to="/submit" className="bg-[#199C77] cursor-pointer font-semibold px-4 py-1.5 rounded text-black">Submit run</Link>
                                     </div>
                                 </div>
                             </div>
