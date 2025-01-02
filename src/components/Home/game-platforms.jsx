@@ -3,7 +3,7 @@ import platforms from "./platforms-data.jsx";
 import { platformContext } from "./platforms-context.jsx";
 
 export default function Platform() {
-    const [platform, setPlatform] = useState(platformContext);
+    const { platform, setPlatform } = useState(platformContext);
     
     return (
         <>

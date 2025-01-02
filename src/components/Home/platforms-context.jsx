@@ -6,7 +6,7 @@ export const platformContext = createContext();
 export function PlatformProvider({ children }) {
     const [platform, setPlatform] = useState("Any platform");
 
-    const filterGames =
+    const filteredGames =
     platform === "Any platform"
     ? games : games.filter(
         (game) => game.platform === platform ||
@@ -14,7 +14,7 @@ export function PlatformProvider({ children }) {
     );
 
     return (
-        <platformContext.Provider value={{ platform, setPlatform, filterGames }}>
+        <platformContext.Provider value={{ platform, setPlatform, filteredGames }}>
             {children}
         </platformContext.Provider>
     )

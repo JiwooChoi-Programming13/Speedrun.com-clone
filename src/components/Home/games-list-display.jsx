@@ -1,8 +1,11 @@
-import games from "./games-data.jsx";
+import { useContext } from "react";
+import { platformContext } from "./platforms-context.jsx";
 import { sortGames } from "../sorting.jsx";
 
 export default function GamesList() {
-    const sorting = sortGames(games, (a, b) => b.activePlayers - a.activePlayers);
+    const { filteredGames } = useContext(platformContext);
+
+    const sorting = sortGames(filteredGames, (a, b) => b.activePlayers - a.activePlayers);
 
     return (
         <>
