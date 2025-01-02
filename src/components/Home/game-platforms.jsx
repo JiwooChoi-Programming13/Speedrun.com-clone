@@ -1,20 +1,14 @@
-import { useState, useEffect } from "react";
 import platforms from "./platforms-data.jsx";
 
 export default function Platform() {
-    const [console, setConsole] = useState("Any Platform");
-
-    useEffect(() => {
-        platforms.filter(() => setConsole)
-    }, [console])
-    
     return (
         <>
             <div>
                 <h3>Platform</h3>
                 <select className="options">
+                    <option value="Any Platform">Any Platform</option>
                 {platforms.map((platform) => 
-                    <option key={platform.id} onChange={setConsole} value={platform.name}>{platform.name}</option>
+                    <option key={platform.id} value={platform.name}>{platform.name}</option>
                 )}
                 </select>
             </div>
