@@ -12,16 +12,10 @@ export default function Home() {
                 <div className="bg-[#1b1429] rounded-2xl px-4 py-3 pb-4">
                     <div className="flex items-center justify-between gap-2 max-[1130px]:flex-col max-[1130px]:items-start max-[264px]:hidden">
                         <div className="flex gap-4 mb-5 max-[505px]:flex-col">
-                            <div>
-                                {/* 
+                            {/* 
                                 FIXME: Have a platforms list to filter out a list of
                                 specific platform
-                                */}
-                                <h3>Platform</h3>
-                                <select className="options">
-                                    <option value="Any platform">Any platform</option>
-                                </select>
-                            </div>
+                            */}
                             <div>
                                 {/* 
                                 FIXME: Have a sorting list to sort out a list of
