@@ -1,3 +1,5 @@
+import platforms from "./platforms-data.jsx";
+
 export default function Platform() {
     return (
         <>
