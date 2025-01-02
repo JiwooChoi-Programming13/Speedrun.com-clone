@@ -1,6 +1,7 @@
 import Navigation from "./components/Navigation/nav.jsx";
 import GamesList from "./components/Home/games-list-display.jsx";
 import RecentGamesList from "./components/Home/recent-games-list.jsx";
+import Platform from "./components/Home/game-platforms.jsx";
 import "./index.css"
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
                                 FIXME: Have a platforms list to filter out a list of
                                 specific platform
                             */}
+                            <Platform/>
                             <div>
                                 {/* 
                                 FIXME: Have a sorting list to sort out a list of
