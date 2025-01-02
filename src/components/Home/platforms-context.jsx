@@ -1,7 +1,15 @@
-import { useState } from "react";
-import platforms from "./platforms-data.jsx";
+import { createContext, useState } from "react";
+import games from "./games-data.jsx";
 
-export function Platform() {
-    const [platform, setPlatform] = useState("all");
-    const [games, setGames] = useState(platforms);
+export const platformContext = createContext();
+
+export function Platform({ children }) {
+    const [platform, setPlatform] = useState("Any platform");
+
+    const filterGames =
+    platform === "Any platform"
+    ? games : games.filter(
+        (game) => game.platform === platform ||
+        game.otherPlatforms.includes(platform)
+    );
 }
