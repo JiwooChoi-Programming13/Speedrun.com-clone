@@ -3,7 +3,7 @@ import games from "./games-data.jsx";
 
 export const platformContext = createContext();
 
-export function Platform({ children }) {
+export function PlatformProvider({ children }) {
     const [platform, setPlatform] = useState("Any platform");
 
     const filterGames =
@@ -12,4 +12,10 @@ export function Platform({ children }) {
         (game) => game.platform === platform ||
         game.otherPlatforms.includes(platform)
     );
+
+    return (
+        <platformContext.Provider value={{ platform, setPlatform, filterGames }}>
+            {children}
+        </platformContext.Provider>
+    )
 }
