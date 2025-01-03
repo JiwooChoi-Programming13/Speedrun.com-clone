@@ -1,7 +1,7 @@
 export default function GamesList({ games }) {
     return (
         <>
-        {games.map((game) =>
+        {games.map((game) =>(
                 <div key={game.id} className="cursor-pointer max-w-32 max-[1130px]:max-w-none">
                     <div className="game-content">
                         <img className="rounded-xl" src={game.image} alt={game.name}/>
@@ -28,7 +28,7 @@ export default function GamesList({ games }) {
                         </div>
                     </div>
                 </div>
-            )}
+            ))}
         </>
     )
 }

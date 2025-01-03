@@ -15,7 +15,7 @@ export default function Home() {
 
     const filteredGames = platforms === "Any platform"
     ? games
-    : games.filter((game) => 
+    : games.filter((game) =>
         game.platform === platforms || game.otherPlatforms.includes(platforms)
     )
 
@@ -23,13 +23,9 @@ export default function Home() {
         <>
             <Navigation />
             <div className="flex justify-center gap-4 my-20 px-4 max-[1010px]:flex-col max-[320px]:min-w-36">
-                    <div className="bg-[#1b1429] rounded-2xl px-4 py-3 pb-4">
+                    <div className="bg-[#1b1429] max-h-max rounded-2xl px-4 py-3 pb-4">
                         <div className="flex items-center justify-between gap-2 max-[1130px]:flex-col max-[1130px]:items-start max-[264px]:hidden">
                             <div className="flex gap-4 mb-5 max-[505px]:flex-col">
-                                {/* 
-                                    FIXME: Have a platforms list to filter out a list of
-                                    specific platform
-                                */}
                                 <Platform onPlatformChange={handlePlatform}/>
                                 <div>
                                     {/* 
