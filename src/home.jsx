@@ -1,10 +1,23 @@
+import { useState } from "react";
 import Navigation from "./components/Navigation/nav.jsx";
 import GamesList from "./components/Home/games-list-display.jsx";
 import RecentGamesList from "./components/Home/recent-games-list.jsx";
 import Platform from "./components/Home/game-platforms.jsx";
+import games from "./components/Home/games-data.jsx";
 import "./index.css"
 
 export default function Home() {
+    const [platforms, setPlatforms] = useState("Any platform");
+    
+    const handlePlatform = (platform) => {
+        setPlatforms(platform);
+    }
+
+    const filteredGames = platforms === "Any platform"
+    ? games
+    : games.filter((game) => 
+        game.platform === platforms || game.otherPlatforms.includes(platforms)
+    )
 
     return (
         <>
@@ -17,7 +30,7 @@ export default function Home() {
                                     FIXME: Have a platforms list to filter out a list of
                                     specific platform
                                 */}
-                                <Platform/>
+                                <Platform onPlatformChange={handlePlatform}/>
                                 <div>
                                     {/* 
                                     FIXME: Have a sorting list to sort out a list of
@@ -59,7 +72,7 @@ export default function Home() {
                         max-[1130px]:grid-cols-4 max-[1010px]:grid-cols-7
                         max-[950px]:grid-cols-6 max-[824px]:grid-cols-5 max-[696px]:grid-cols-4
                         max-[575px]:grid-cols-3 max-[450px]:grid-cols-2 max-[320px]:grid-cols-1">
-                            <GamesList />
+                            <GamesList games={filteredGames}/>
                         </div>
 
                         <div className="flex justify-center mt-2.5 max-[355px]:hidden">

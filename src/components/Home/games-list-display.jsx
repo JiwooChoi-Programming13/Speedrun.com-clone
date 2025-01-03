@@ -1,15 +1,7 @@
-import { useContext } from "react";
-import { platformContext } from "./platforms-filter.jsx";
-import { sortGames } from "../sorting.jsx";
-
-export default function GamesList() {
-    const { filteredGames } = useContext(platformContext);
-
-    const sorting = sortGames(filteredGames, (a, b) => b.activePlayers - a.activePlayers);
-
+export default function GamesList({ games }) {
     return (
         <>
-        {sorting.map((game) =>
+        {games.map((game) =>
                 <div key={game.id} className="cursor-pointer max-w-32 max-[1130px]:max-w-none">
                     <div className="game-content">
                         <img className="rounded-xl" src={game.image} alt={game.name}/>
