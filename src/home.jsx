@@ -2,7 +2,6 @@ import Navigation from "./components/Navigation/nav.jsx";
 import GamesList from "./components/Home/games-list-display.jsx";
 import RecentGamesList from "./components/Home/recent-games-list.jsx";
 import Platform from "./components/Home/game-platforms.jsx";
-import { PlatformProvider } from "./components/Home/platforms-filter.jsx";
 import "./index.css"
 
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
         <>
             <Navigation />
             <div className="flex justify-center gap-4 my-20 px-4 max-[1010px]:flex-col max-[320px]:min-w-36">
-                <PlatformProvider>
                     <div className="bg-[#1b1429] rounded-2xl px-4 py-3 pb-4">
                         <div className="flex items-center justify-between gap-2 max-[1130px]:flex-col max-[1130px]:items-start max-[264px]:hidden">
                             <div className="flex gap-4 mb-5 max-[505px]:flex-col">
@@ -82,7 +80,6 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </PlatformProvider>
 
                 <div className="bg-[#1b1429] self-start rounded-2xl min-w-96 max-[1010px]:w-full">
                     <h4 className="font-bold p-3.5">POPULAR NEW GAMES</h4>
