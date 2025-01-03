@@ -1,6 +1,6 @@
 import { useState } from "react";
 import platforms from "./platforms-data.jsx";
-import { platformContext } from "./platforms-context.jsx";
+import { platformContext } from "./platforms-filter.jsx";
 
 export default function Platform() {
     const { platform, setPlatform } = useState(platformContext);

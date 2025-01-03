@@ -2,7 +2,7 @@ import Navigation from "./components/Navigation/nav.jsx";
 import GamesList from "./components/Home/games-list-display.jsx";
 import RecentGamesList from "./components/Home/recent-games-list.jsx";
 import Platform from "./components/Home/game-platforms.jsx";
-import { PlatformProvider } from "./components/Home/platforms-context.jsx";
+import { PlatformProvider } from "./components/Home/platforms-filter.jsx";
 import "./index.css"
 
 export default function Home() {

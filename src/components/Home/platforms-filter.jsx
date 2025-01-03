@@ -1,9 +1,9 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
+import Platform from "./game-platforms.jsx";
+import GamesList from "./games-list-display.jsx";
 import games from "./games-data.jsx";
 
-export const platformContext = createContext();
-
-export function PlatformProvider({ children }) {
+export function PlatformProvider() {
     const [platform, setPlatform] = useState("Any platform");
 
     const filteredGames =

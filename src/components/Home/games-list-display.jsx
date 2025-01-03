@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { platformContext } from "./platforms-context.jsx";
+import { platformContext } from "./platforms-filter.jsx";
 import { sortGames } from "../sorting.jsx";
 
 export default function GamesList() {
